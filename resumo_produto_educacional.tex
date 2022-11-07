@@ -1,0 +1,190 @@
+\documentclass[
+   % -- opções da classe memoir --
+   article,       % indica que é um artigo acadêmico
+   12pt,          % tamanho da fonte
+   oneside,       % para impressão apenas no recto. Oposto a twoside
+   a4paper,       % tamanho do papel. 
+   % -- opções da classe abntex2 --
+   %chapter=TITLE,      % títulos de capítulos convertidos em letras maiúsculas
+   %section=TITLE,      % títulos de seções convertidos em letras maiúsculas
+   %subsection=TITLE,   % títulos de subseções convertidos em letras maiúsculas
+   %subsubsection=TITLE % títulos de subsubseções convertidos em letras maiúsculas
+   % -- opções do pacote babel --
+   english,       % idioma adicional para hifenização
+   brazil,           % o último idioma é o principal do documento
+   sumario=tradicional
+   ]{abntex2}
+
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{times}         % Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}      % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}      % Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}      % Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl}          % Lista de simbolos
+\usepackage{color}            % Controle das cores
+\usepackage{graphicx}         % Inclusão de gráficos
+\usepackage{microtype}        % para melhorias de justificação
+% ---
+      
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}           % para geração de dummy text
+% ---
+      
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}  % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite} % Citações padrão ABNT
+% ---
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1 %
+      Nenhuma citação no texto.%
+   \or
+      Citado na página #2.%
+   \else
+      Citado #1 vezes nas páginas #2.%
+   \fi}%
+% ---
+
+% --- Informações de dados para CAPA e FOLHA DE ROSTO ---
+\titulo{Resumo - Vídeo Projeto educacional}
+\tituloestrangeiro{}
+
+\autor{João Henrique da Silva}
+
+\local{Maringá}
+\data{Julho - 2022}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+      %pagebackref=true,
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={},
+      pdfcreator={},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,           % false: boxed links; true: colored links
+      linkcolor=blue,            % color of internal links
+      citecolor=blue,            % color of links to bibliography
+      filecolor=magenta,            % color of file links
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ---
+% Altera as margens padrões
+% ---
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{2cm}{*}
+\checkandfixthelayout
+% ---
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Espaçamento simples
+\linespread{1.3}
+
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+
+\maketitle
+
+
+\newpage
+
+\textual
+\section{DOS FORMATOS}
+
+O vídeo acerca do tema produto educacional apresentado por \citeonline{video_prd_ed} apresenta uma discussão acerca das características de tais produtos e detalha sua construção e aplicação. A tipificação dos formatos que pode ter um produto educacional é apresentada considerando sua aplicação e o contexto da referida profissão.
+
+Acerca do formato de protótipo, é destacado que este produto educacional atende melhor os estudos de mestrado profissional feitos nas ciências duras e a contextualização onde este produto é aplicado é destacada. O formato de manual é discutido considerando sua operacionalização dentro do contexto profissional, e é destacado que, dentro do contexto profissional que é o ensino de ciências, este formato de produto educacional é uma forma viável e com aplicação mais dirigida ao docente. A forma do produto educacional que é o software também é apresentada, e sugere-se que sua aplicação enquanto ferramenta pode ser dirigida tanto ao docente quanto ao discente, sendo utilizado tanto para o monitoramento do ensino como para a organização dos conteúdos. É trazido também a relação de tais formas de produtos educacionais com a possibilidade de produção de patentes, situação mais comum nas produções científicas-profissionais das ciências duras. 
+
+O formato de produto educacional que é o treinamento é apresentado, e destaca-se que este possui aplicação em diversas áreas atendidas pelos mestrados profissionais. Na área do ensino de ciências, tal produto se apresenta como uma alternativa viável e geralmente dirigida à preparação dos docentes. O formato de produto que é o material didático se destaca dentro das produções científico-profissionais vinculadas à educação, por sua ampla aplicação e familiaridade dos profissionais com o tema. Sobre esse formato, percebe-se também a utilidade enquanto ferramenta mediadora dos processos de ensino-aprendizagem. Uma outra forma de produto educacional que é a produção e divulgação artística pode ser destacada de vido sua especificidade e capacidade de comunicação, sendo também relevante para as atividade de ensino-aprendizagem devido à capacidade de informar através do apelo estético, trazendo assim referências sem a mediação formal das formas de produção do conhecimento científico formal.
+
+Outros formatos de produto educacional são apresentados, sendo estes dotados de um campo mais estreito de aplicações. Nesta seara são destacados os formatos de zoneamento e plano diretor, nos quais a aplicação dos produtos da pesquisa científica podem servir na orientação de discussões socioespaciais pertinentes às atividades de gestão pública.
+
+A aplicabilidade dos formatos de produto que são o relatório técnico, a divulgação técnica, a prestação de serviços e o desenvolvimento de técnicas e processos é também apresentada, e sua relação com as atividades da gestão privada podem ser inferidas. Visto que a utilidade destes formatos de conhecimento científico se apresentam em contextos similares ao contexto das formas do protótipo, infere-se que a aplicabilidade deste formato está condicionada à atividades industriais e comerciais,tipicamente privadas, e cujas operações podem ser refinadas usando tais conhecimentos.
+
+
+\section{DOS PROCEDIMENTOS}
+
+Os procedimentos na elaboração dos produtos educacionais são apresentados e as necessidades relacionadas às dimensões do domínio do conteúdo são destacadas. Sugere-se quatro dimensões do domínio dos conteúdos delimitadas primeiramente pelo seu caráter factual, onde é destacada a apropriação por parte do mestrando profissional, dos elementos que devem ser apresentados; um segundo desdobramento de tal delimitação é percebido na dimensão conceitual, sendo esta particularmente evidente nas atividades de ensino-aprendizagem atendidas pelo formato de mestrado profissional; a dimensão procedimental é destacada e dessa infere-se que a aplicabilidade deve ser um elemento central nos procedimentos de elaboração do produto educacional; por fim sugere-se que a dimensão atitudinal, centrada na conduta do mestrando profissional, deve ser considerada durante a referida elaboração.
+
+Tais precauções embasam a necessidade de se transcender o conteudismo operacionalizado nas sequências colocadas pelos livros didáticos. Para tanto sugere-se que o produto educacional considere tais conteúdos, mas não se limite aos mesmos, incorporando outras formas de apresentação embasadas nas teorias de aprendizagem discutidas adiante.
+
+Visando reforçar as especificidades de um mestrado profissional, é destacada a importância da produção técnica necessária para se embasar o produto educacional. A paridade de importância dada ao produto educacional, quando comparada à importância dada à dissertação é destacada e a associação deste com as teorias presentes na área do ensino é discutida. O contexto onde é dada tal associação varia conforme as especificidades de cada curso de mestrado profissional e o palestrante toma como referência a seguinte sequência, e ressalta que podem ocorrer diferenças nas etapas apresentadas.
+
+Iniciando com o ingresso no curso, segue-se para a distribuição dos orientadores entre os aprovados, procedimento que se pauta pelas afinidades entre os projetos e os campos de pesquisa de cada orientador. Segue-se daí as discussões sobre o tema a ser estudado 
+durante o curso, entendimento que embasa o procedimento seguinte, que seleciona qual será o embasamento teórico da dissertação e do produto educacional. Tal discussão acerca do embasamento teórico deve considerar o referencial teórico na área de ensino apropriado para a pesquisa proposta, e daí pode-se inferir quais questões problema e objetivos necessitam ser atendidos pela pesquisa. Conclui-se refinando a sinergia entre os objetivos e problemas ao se detalhar a aplicação dos conhecimentos que foram pesquisados para a elaboração da dissertação e produto educacional.
+
+O palestrante ressalta a importância de se ler primeiramente o produto, antes de se conhecer a dissertação, afim de se avaliar a qualidade da produção, considerando-se também a perspectiva contida no relato de experiência da implementação proposta.
+
+
+\section{DA APLICAÇÃO DA TEORIAS}
+
+O imperativo da sinergia entre o planejamento das situações de aprendizagem e os referenciais teóricos escolhidos é discutido e daí infere-se a importância de uma seleção adequada de tais referenciais. O palestrante destaca três grupos de teorias da educação, sendo o primeiro grupo dotado de teorias cognitivistas da aprendizagem, dentro do qual se incluem os seguintes autores: Piaget, Vygotsky, Ausubel, Bruner e Gardner. Tais autores compartilham discussões acerca do papel da cognição na formação psíquica, fator que, consequentemente, afeta os processos de socialização através da educação. Segue-se classificando outros autores como comportamentalistas, grupo no qual figuram os autores Pavlov, Watson e Skinner. Tal grupo se destaca pelas discussões acerca do papel que os repertórios de comportamentos exercem sobre a formação psicossocial dos indivíduos, fator que afeta outras dimensões da educação.
+Conclui-se classificando como humanistas os teóricos Maslow, Wallon e Rogers e percebe-se que o viés societal presente em tais teorias psicossociais é capaz de influenciar a produção das dissertações e produtos educacionais.
+
+Partindo de tais entendimentos, destaca-se a sinergia entre tais fundamentações e os possíveis recursos didáticos presentes nos produtos educacionais. Ao se discutir tais sinergias sugere-se que os seguintes recursos podem estar presentes nos produtos educacionais, nomeadamente: atividades práticas, onde o discente ativamente aplica e exercita fragmentos do tema proposto; recursos das tecnologias estudadas, onde a aplicação real de tais fragmentos do tema são vivenciados pelos discentes; elementos de história da ciência, onde o discente toma conhecimento da historicidade presente nos elementos estudados; jogos e gameficação, onde o conteúdo é transformado em um jogo lúdico capaz de comunicar as especificidades do tema abordado, sem usar o formato convencional de aula ou apresentação; Conclui-se destacando como as formas da argumentação científica e das questões sociocientíficas podem conter elementos que contribuem para a aplicação das teorias psicossociais discutidas anteriormente.
+
+Sugere-se também que a implementação do produto educacional e coleta de dados se dê em um momento anterior à qualificação, e que esta contribua para o procedimento de finalização da escrita dos trabalhos.
+
+
+
+\postextual
+
+\bibliography{Interdisciplinaridade}
+
+\end{document}

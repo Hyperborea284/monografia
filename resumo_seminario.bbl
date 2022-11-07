@@ -1,0 +1,16 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Macedo 2018]{etica_educacao_2}
+\abntrefinfo{Macedo}{MACEDO}{2018}
+{MACEDO, S. M.~F. A alian{\c c}a entre a {\'e}tica, a {\'e}tica profissional e
+  a educa{\c c}{\~a}o. In:  \emph{A {\'E}tica, a {\'e}tica profissional e a
+  educa{\c c}{\~a}o}. [S.l.]: CRV Editora, 2018,  (La{\c c}os e Enlances:
+  {\'e}tica e profissionaliza{\c c}{\~a}o do pedagogo, v.~1). p.~29.
+ISBN 987-85-444-2803-0.}
+
+\end{thebibliography}

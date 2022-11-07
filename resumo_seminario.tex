@@ -1,0 +1,190 @@
+\documentclass[
+   % -- opções da classe memoir --
+   article,       % indica que é um artigo acadêmico
+   12pt,          % tamanho da fonte
+   oneside,       % para impressão apenas no recto. Oposto a twoside
+   a4paper,       % tamanho do papel. 
+   % -- opções da classe abntex2 --
+   %chapter=TITLE,      % títulos de capítulos convertidos em letras maiúsculas
+   %section=TITLE,      % títulos de seções convertidos em letras maiúsculas
+   %subsection=TITLE,   % títulos de subseções convertidos em letras maiúsculas
+   %subsubsection=TITLE % títulos de subsubseções convertidos em letras maiúsculas
+   % -- opções do pacote babel --
+   english,       % idioma adicional para hifenização
+   brazil,           % o último idioma é o principal do documento
+   sumario=tradicional
+   ]{abntex2}
+
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{times}         % Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}      % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}      % Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}      % Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl}          % Lista de simbolos
+\usepackage{color}            % Controle das cores
+\usepackage{graphicx}         % Inclusão de gráficos
+\usepackage{microtype}        % para melhorias de justificação
+% ---
+      
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}           % para geração de dummy text
+% ---
+      
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}  % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite} % Citações padrão ABNT
+% ---
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1 %
+      Nenhuma citação no texto.%
+   \or
+      Citado na página #2.%
+   \else
+      Citado #1 vezes nas páginas #2.%
+   \fi}%
+% ---
+
+% --- Informações de dados para CAPA e FOLHA DE ROSTO ---
+\titulo{A ética, a ética profissional e a educação Vol.1}
+\tituloestrangeiro{Resumo do Cap.2}
+
+\autor{João Henrique da Silva}
+
+%\local{Brasil}
+\data{Novembro - 2022}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+      %pagebackref=true,
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={},
+      pdfcreator={},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,           % false: boxed links; true: colored links
+      linkcolor=blue,            % color of internal links
+      citecolor=blue,            % color of links to bibliography
+      filecolor=magenta,            % color of file links
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ---
+% Altera as margens padrões
+% ---
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{2cm}{*}
+\checkandfixthelayout
+% ---
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Espaçamento simples
+\linespread{1.3}
+
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+
+\maketitle
+
+
+\newpage
+
+\textual
+\section{Introdução}
+
+
+O capítulo apresentado por \citeonline{etica_educacao_2} discute a dimensão ética do fenômeno educativo e o resultado práticos desta sobre o conhecimento humano. Para tanto o texto, dividido em quatro blocos, aborda 'a) Concepções sobre a ética; b) As ideias que adotamos sobre o que se entende pelos vocábulos “profissão e profissional”; c) Ética profissional; d) Os quatro grupos de compromissos ético pedagógicos para se forjar na prática a aliança entre a ética e a educação'\footnote{\citeonline[p.55]{etica_educacao_2}}.
+
+A perspectiva humanista embasa a discussão acerca da ética e essa é usada para destacar o caráter societal das relações educacionais. Destas discussões é derivado o conceito de moral e este é percebido como o direcionamento necessário para a criação de uma boa vivência social. De tais argumentos infere-se que a ética pode ser percebida como uma racionalização da conduta. Espera-se que tais conhecimentos sirvam para a mediação entre a postura passiva e contemplativa e a postura pragmática necessária para a boa vivência social. A relação entre práxis ética e os exemplos dados pelas atitudes individuais fundamenta a moralidade. De tais observações deriva-se o conceito de 'ensinagem\footnote{\citeonline[p.56]{etica_educacao_2}}', necessário para destacar esta característica prática da moralidade embasada na ética. O texto entende que a racionalidade necessária para o exercício da moralidade através ética prática compartilha fundamentos racionais com a racionalidade científica. De tal observação deriva-se que a ética pode ser entendida como um elemento transdisciplinar limitador de 'verdades incautas\footnote{\citeonline[p.56]{etica_educacao_2}}' exteriores à ciência. O hábito ético calcado no pensamento científico interdisciplinar consolidou o caráter investigativo da atividade científico, e tal hábito se consolidou em detrimento de visões históricas equivocadas.
+
+O texto apresenta a discussão presente em diversas fontes, exteriores ao escopo deste resumo, acerca da relação entre ética e moral. Para tanto, o texto apresenta as relações de causalidade entre ética e moral e destaca como a racionalidade dos regramentos vigentes no contexto societal gera tais determinações. Tais juízos de valor explicitam a lógica da moralidade vigente num determinado contexto societal. Tal racionalidade da ética é compartilhada pela práxis científica e é associada no texto com uma possível ciência do comportamento. Sugere-se também que tal racionalidade não deve empobrecer a práxis da ética através de um mecanicismo racionalista, situação que pode inclusive, mascarar o caráter societal da aplicação moral da ética. O caráter experimental da práxis ética é destacado e o texto apresenta a influência do caráter societal de tais práticas, acerca desta dimensão, sugere-se que: 
+
+\begin{citacao}
+(...) a ética social (estudo dos fenômenos éticos em pequenos ou grandes grupos sociais, tais como na família, na escola, no trabalho, na rua, no espaço público etc.), a ética política, a ética profissional, a bioética, a antropoética etc. Possui um corpo de conhecimentos próprios, que podem ser sistematizados, investigados, comprovados e cujas categorias fenomenológicas permitem ser metodizadas de forma racional e sensível \citeonline[p.58]{etica_educacao_2}. 
+\end{citacao}
+
+De tais observações infere-se que o caráter fenomenológico da ética se apresenta-se através da dimensão sensível, com destaque para a dimensão afetiva de tal fenômeno. O caráter humanista dos sentimentos despertados por tais práticas da ética, sugere o texto, pode mediar uma aproximação entre as dimensões racional-científica e moral-afetiva. 
+
+o tema do respeito à vida é sintomático da dimensão humanista de tal problemática, e o tema da prudência é trazido afim de destacar a importância da sensibilidade na construção da racionalidade moral. É destacado também a necessidade de uma dosimetria capaz de equilibrar a relação entre as dimensões racional e afetiva, afim de se evitar a romantização desconectada da realidade. Tal caráter crítico acerca da moralidade é discutido e apresentado como sintoma da práxis ética e o caráter societal de tais atividades é apresentado. A fundamentação filosófica presente nas observações kantianas e aristotélicas é apresentada para complementar os argumentos apresentados. Sugere-se, com base em tais entendimentos, que a dimensão abstrata da atividade humana complementa o caráter empírico dos fenômenos práticos que manifestam a abstração dos entendimentos éticos e destaca-se que a mediação afetiva de tais atividades gera uma tríade biopsicoespiritual, afirma \citeonline[p.60]{etica_educacao_2} aproveitando de fontes que fogem ao escopo deste resumo.
+
+De tais argumentos, entende-se que a ética se manifesta através do devir, onde o ser individual gera suas potencialidades sem se imiscuir de maneira passiva e reativa, sendo pautado pelo seu contexto societal. Para fundamentar tal argumentação, é destacado o papel das identidades individuais e sua relação com a alteridade societal. Sintomático de tal relação é o processo de autoconhecimento e os vícios identitários presentes na construção do self são percebidos como um viés à ser considerado. Quando se discute tal construção, percebe-se como a relação entre polarização e individualização é mediada pelas idiossincrasias e sugere-se que de tal mediação, emergem vieses cognitivos capazes de viciar a práxis moral da ética. Tais vícios se manifestam pelas diversas formas da intolerância. Sintomático de tais vieses são os julgamentos de valor universalizados pela coerção social vigente, e destaca-se que tais julgamentos convergem com o cultivo das virtudes e com o vício das pseudo virtudes, argumento que se embasa na filosofia aristotélica. Esta discussão se conecta com o imperativo da humanização freiriana, mediada pela ética no campo educacional.
+
+O texto segue a argumentação ao incorporar as discussões sobre a dimensão profissional, e analisa a etimologia da palavra, associando esta ao ato de professar. Para tanto se destaca várias situações onde o engajamento nas diversas atividades sociais foi moldado por condições históricas e societais. Exemplo de tais condições é o termo 'métier\footnote{\citeonline[p.64]{etica_educacao_2}}', associado ao caráter liberal das profissões coligadas pelas corporações de ofício que funcionavam no contexto do surgimento do capitalismo. Tal conceito comunica a distinção entre as atividades qualificadas e não qualificadas. O texto segue a argumentação trazendo o papel das profissões no contexto da revolução industrial, contexto no qual o conceito de profissão liberal amadurece associado ao caráter elitista do termo, dado pelo contexto societal. 
+
+O elitismo e a moralidade associados ao exercício profissional é discutido e a especificidade das atividades com base na técnica e na instrução é destacada. Tal caráter serve para a diferenciação das atividades laborais através de uma análise utilitarista das mesmas. A formalidade da instrução associada ao utilitarismo de tais atividades é apresentada como elemento de distinção destas atividades e o processo de capacitação para se exercer tais atividades gera o controle monopolístico da inserção dos indivíduos em tais atividades profissionais. O acesso ao ambiente formador dos profissionais destaca o caráter societal e político do exercício das profissões, e daí deriva-se discussões acerca da mobilidade social possível em um dado contexto histórico. Tais condições influenciam o desempenho e a qualidade das atividades profissionais, sugere o texto que as qualidades do profissional são antecedidas pelo pertencimento aos grupos sociais legitimados.
+
+De tais condições sócio-políticas derivam situações institucionalizadas como o princípio da estabilidade e o direito à associação, projeção social e outros benefícios. O corporativismo se apresenta então como resultado de tais condicionalidades impostas pela sociedade industrial. De tais condições emerge também o fenômeno da divisão do trabalho social, gerando inclusive a diferenciação entre as atividades laborais privadas e públicas. A dimensão ética de tais atividades é trazida pelo texto ao apresentar como o 'ideal de serviço\footnote{\citeonline[p.67]{etica_educacao_2}}', elemento ideal que fundamenta parte dos elementos semânticos, técnicos e outros critérios relevantes para o pleno exercício profissional. Os determinantes econômicos e a necessidade lucro são também mediados por tais ideais que são influenciados pela ética humanista.
+
+A análise do texto incorpora outra dimensão abstrata ao ressaltar a importância da conscientização e da 'tomada de consciência\footnote{\citeonline[p.68]{etica_educacao_2}}'. Partindo da interpretação freiriana, entende-se que o limite imposto pelos elementos cogniscíveis presentes no horizonte de significação dos indivíduos, servem de episteme para o indivíduo construir sua explicação idiossincrática da realidade. Devida daí a criticidade da conscientização individual necessária para a atuação ética na sociedade.
+
+A dinâmica da divisão do trabalho social possui consequências políticas percebidas na disputa pelo acesso aos espaços privilegiados do poder, fato permitido pelo exercício de determinadas profissões. Ressalta o texto que a convergência de tais condicionantes materiais e abstratos moldam a ética profissional. As determinações locais e globais se apresentam então como expansão de tais potencialidades do trabalho, dentro do contexto moderno e pós-moderno. O texto aponta como sintoma desta faceta, a superação das fronteiras e destaca as implicações morais que condicionam e resultam de tal complexidade. Parte daí o entendimento de ser a ética profissional, um elemento provocador da construção de uma consciência social\footnote{\citeonline[p.70]{etica_educacao_2}}. Entende-se então que a ligação entre as formas da ética profissional e da ética pessoal são mediadas pela conscientização presente na formação da consciência individual, e que a relação entre direitos e deveres é um sintoma da complexidade vigente. Destaca-se que o reducionismo individualista pode viciar tais processos societais. Tal postura individualista se manifesta nas relações de recompensa, prêmios e punições acessíveis através do exercício profissional e esta pode ser percebida ao se analisar as representações criadas pelos profissionais acerca de si mesmos, e sobre como tais representações são difundidas nas sociedades. Ademais, adiciona-se à tais condições a dimensão normativa da atividade jurídica e percebe-se esta como uma dimensão institucionalizada de parâmetros para a atividade pautada pela ética profissional legitimadora.
+
+Conclui-se analisando a razão ontológica da profissão percebendo as potencialidades condicionadas pelas dimensões abstratas supracitadas, na medida em que estas convergem com as condições societais historicamente construídas. Convergência esta que visa despertar a criticidade necessária para atuação ética permitida pelas atuações profissionais.
+
+Após todas estas digressões, o texto avança sobre o tema específico da ética profissional exigida pela atividade da educação\footnote{\citeonline[p.76]{etica_educacao_2}}; daí destaca-se o caráter imperativo da educação e o impacto pedagogizante desta atividade sobre a sociedade. No nível operacional, as atividades escolares e universitárias administram tais responsabilidades e, portanto, são o locus onde o compromisso do profissional com a aprendizagem ocorrem. O texto destaca o caráter afetivo de tais compromissos educacionais e destaca a relação entre a apropriação dos conhecimentos pelos discentes, condição necessária para a plena expressão das potencialidades humanas autônomas.
+
+O texto avança sobre o tema da 'ensinagem\footnote{\citeonline[p.78]{etica_educacao_2}}' e entende o termo como o ritual que estabelece a relação entre o saber e o indivíduo aprendente. Três dimensões desta relação são destacadas, sendo a primeira pautada pela crença conteudista, e esta é criticada por permitir um dogmatismo empobrecedor capaz de viciar o desenvolvimento ético. Contrapondo esta dimensão, o texto destaca a dimensão gnosiológica afim de destacar as omissões do conhecimento positivado e a completude dialética necessária pra a plena expressão da ensinagem. A valorização dos conhecimentos segregados releva as situações políticas que excluíram conhecimentos necessários e tais situações precisam ser estar presentes na ensinagem para que esta cumpra com sua função ética. A humanização dos indivíduos se completa ao se atentar para a terceira dimensão desta problemática. Sugere o texto que a seleção cautelosa dos conteúdos permite uma expressão plena das potencialidades dos discentes. 
+Tais potencialidades se tornam claras para dos discentes na medida em que ocorre a devida politização\footnote{\citeonline[p.81]{etica_educacao_2}}, e o texto caracteriza esta como superação das posturas apolíticas. A perspectiva dos indivíduos oprimidos contribui então, com os elementos semânticos, para a plena expressão ética do indivíduo aprendente. Sintomático de tais condições é a perspectiva classista e a relação desta com o processo de humanização. O texto conclui sua argumentação com um apelo biográfico, destacando o legado das atividades educacionais e sua dimensão política na formação dos entendimentos e identidades individuais. Para tanto, aproveita-se do conceito de habitus e estrutura apresentados por Bordieu\footnote{\citeonline[p.82]{etica_educacao_2}}, afim de se destacar o impacto societal gerado do legado ético permitido pelo locus privilegiado da atividade educadora.
+
+
+
+\postextual
+
+\bibliography{Interdisciplinaridade}
+
+\end{document}

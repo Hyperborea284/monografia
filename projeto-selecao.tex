@@ -1,0 +1,302 @@
+\documentclass[
+   % -- opções da classe memoir --
+   article,       % indica que é um artigo acadêmico
+   12pt,          % tamanho da fonte
+   oneside,       % para impressão apenas no recto. Oposto a twoside
+   a4paper,       % tamanho do papel. 
+   % -- opções da classe abntex2 --
+   %chapter=TITLE,      % títulos de capítulos convertidos em letras maiúsculas
+   %section=TITLE,      % títulos de seções convertidos em letras maiúsculas
+   %subsection=TITLE,   % títulos de subseções convertidos em letras maiúsculas
+   %subsubsection=TITLE % títulos de subsubseções convertidos em letras maiúsculas
+   % -- opções do pacote babel --
+   english,       % idioma adicional para hifenização
+   brazil,           % o último idioma é o principal do documento
+   sumario=tradicional
+   ]{abntex2}
+
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{times}         % Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}      % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}      % Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}      % Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl}          % Lista de simbolos
+\usepackage{color}            % Controle das cores
+\usepackage{graphicx}         % Inclusão de gráficos
+\usepackage{microtype}        % para melhorias de justificação
+% ---
+      
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}           % para geração de dummy text
+% ---
+      
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}  % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite} % Citações padrão ABNT
+% ---
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1 %
+      Nenhuma citação no texto.%
+   \or
+      Citado na página #2.%
+   \else
+      Citado #1 vezes nas páginas #2.%
+   \fi}%
+% ---
+
+% --- Informações de dados para CAPA e FOLHA DE ROSTO ---
+\titulo{A densidade energética e armazenamento de energia usando hidreto metálico: objeto de estudo nas práticas do ensino transdisciplinar}
+\tituloestrangeiro{Linha 2 - Recursos Naturais e Tecnologia}
+
+\autor{}
+
+%\local{Brasil}
+\data{}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+      %pagebackref=true,
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={},
+      pdfcreator={},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,           % false: boxed links; true: colored links
+      linkcolor=blue,            % color of internal links
+      citecolor=blue,            % color of links to bibliography
+      filecolor=magenta,            % color of file links
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ---
+% Altera as margens padrões
+% ---
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{2cm}{*}
+\checkandfixthelayout
+% ---
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Espaçamento simples
+\linespread{1.3}
+
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+
+\maketitle
+
+
+\newpage
+
+\textual
+\section{Introdução}
+
+Este projeto observa a tecnologia emergente que é a armazenagem de hidrogênio na forma de hidreto metálico \cite[p. 29-31]{Materials_for_hydrogen_storage} e propõe uma interpretação didática orientada pela interpretação histórico-crítica de suas possíveis aplicações. Para tanto considera-se também os objetivos 7, 'Assegurar o acesso confiável, sustentável, moderno e a preço
+acessível à energia para todos' \cite[p. 21]{Agenda_2030} e 9, 'Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação', \cite[p. 22]{Agenda_2030} propostos pela Agenda 2030.
+
+A ambição de criar uma sociedade menos desigual e capaz de criar condições para o desenvolvimento pleno do ser humano é tratada pela ONU de maneira multidimensional, fato que exige uma perspectiva histórico-crítica e uma didática transdisciplinar \cite[Cap.~7-9]{Lincoln1985-ua} para que tais objetivos sejam compreendidos e implementados nos diversos níveis educacionais.
+
+Com destacado interesse nas dimensões econômica, social e ambiental \cite[p. 6]{Agenda_2030}, as lideranças que representaram os países signatários, elaboraram objetivos ambiciosos, as quais exigem profundas mudanças na relação entre o ser humano e a natureza, com especial atenção para as determinações colocadas pelo paradigma\footnote{\cite[Cap.~3]{Kuhn2012-oa}} tecnológico presente nos setores da energia e da infraestrutura.
+
+A dimensão tecnológica de tal empreitada impõe consequentemente uma discussão acerca da disponibilidade de fundamentos científicos, de meios tecnológicos e de processos produtivos coerentes\footnote{A natureza dialética dos processos de transformação indicados por \cite{DIALECTICAL_TECHNOLOGY} percebe a sinergia entre tais elementos.}.
+
+A mensuração do percentual de produção energética renovável carrega consigo um viés legado do paradigma vigente que é o da inexistência \cite{OECD_IEA_2012}, dentro dos sistemas elétricos contemporâneos, de grandes elementos armazenadores de energia. Tal condição implica na existência de redes energéticas onde geradores e consumidores atuam em tempo real; temos como exemplo o Operador Nacional do Sistema - ONS, no Brasil \cite{Servicos_Ancilares}.
+
+Existe uma diversidade de abordagens propostas para o armazenamento energético em grande escala, as quais utilizam principalmente variações de processos eletroquímicos, como os presentes em baterias de lítio. Sistemas mecânicos de armazenamento de energia também já foram propostos e implementados. Tais sistemas, já amplamente estudados, fogem do escopo \cite{Energetic_evaluation} aqui proposto.
+
+A emergência de um paradigma tecnológico ao redor das tecnologias do hidrogênio é sintomática da maturidade científica deste setor da atividade humana, e suas práticas permitem que mensuremos algumas das responsabilidades colocadas pela Agenda 2030. Este paradigma tecnológico emergente possui o estudo da fusão do átomo de hidrogênio como seu elemento de maior destaque. Percebe-se também as contribuições do campo de estudos das células geradoras de eletricidade movidas a hidrogênio, as quais já se encontram em sistemas industriais e produtos comerciais, em menor escala.
+
+O tema da armazenagem e manuseio do hidrogênio, nas suas diversas formas, permeia este paradigma e traz consigo processos e padrões industriais que criaram um mercado próprio \cite{hydrogen_markets} e suas respectivas redes comerciais.
+
+A discussão acerca da origem verde ou não-verde \cite{Developments_hydrogen} do hidrogênio é outro elemento sintomático da maturidade deste paradigma científico. Este fato se associa ao legado da infraestrutura energética presente e sua historicidade. Deve-se perceber também que a origem não-verde é majoritária no hidrogênio produzido, no presente momento. Fato este que entra em conflito com parte da proposta presente na Agenda 2030. 
+
+Ademais sugere-se que a inexistência de grandes elementos armazenadores de energia supracitada possa, eventualmente, ser mitigada usando de arranjos de células geradoras de eletricidade movidas a hidrogênio associadas às tecnologias de armazenagem de hidrogênio na forma de hidreto metálico \cite{Comparison_hydrogen_hydrates}, aqui descritas.
+
+Por fim, a densidade energética potencial \cite{B815553B} e o ciclo de vida dos sistemas e dos materiais necessários para a implementação de macro sistemas energéticos podem impactar nas mensurações do percentual de produção energética renovável colocadas pela Agenda 2030.
+
+
+
+
+\section{Justificativa}
+
+A produção de materiais didáticos acerca deste paradigma tecnológico se apresenta como necessária, visto que o tema traz diversos elementos transdisciplinares.
+
+Estão presentes elementos das ciências da natureza, na forma dos conceitos das disciplinas de física e química; nomeadamente: conceitos de energia, perda de energia, densidade energética, absorção e adsorção, termodinâmica, geração de eletricidade, consumo de eletricidade, sistemas industriais.
+
+Estão presentes elementos das ciências humanas, na forma dos conceitos das disciplinas de filosofia e sociologia; nomeadamente: conceitos de paradigma, dialética, sistemas sociais e impacto humano sobre o meio ambiente.
+
+Este projeto se justifica pela abundância de materiais ainda não catalogados e sistematizados acerca do tema; fato sintomático da profusão de esforços de diversas organizações estatais, privadas e da sociedade civil organizada.
+
+Este projeto se justifica também pela ausência de materiais educacionais acerca das tecnologias do hidrogênio, sua produção armazenagem e consumo e pela necessidade de criar comparações entre as diversas abordagens tecnológicas e suas respectivas densidades energéticas.
+
+Finalmente, se justifica pela necessidade de informar e subsidiar o processo de acompanhamento e avaliação pela comunidade acadêmica, agentes públicos e tomadores de decisão, acerca de tais mudanças tecnológicas e seus possíveis impactos.
+
+
+
+
+
+\section{Referencial teórico}
+
+Para fundamentar a análise proposta sugere-se a utilização do conceito de paradigma presente em \cite{Kuhn2012-oa}. Tal discussão conduz à percepção do caráter transdisciplinar da análise, a qual sugere-se, pode ser fundamentada usando as discussões sobre a superação do paradigma positivista e as abordagens que o sucederam presentes em \cite{Lincoln1985-ua}. Conclui-se percebendo o caráter dialético da mudança tecnológica presente na análise com base nas impressões presentes em \cite{DIALECTICAL_TECHNOLOGY}.
+
+
+
+
+
+
+\section{Objetivos}
+
+
+\subsection{Objetivo geral}
+
+Pretende-se caracterizar as práticas tecnológicas, industriais e comerciais colocadas pelo advento dos sistemas de armazenamento de energia usando hidreto metálico.
+
+Para tanto faz-se necessária a catalogação da documentação industrial, comercial e científica acerca do tema, associada à respectiva revisão bibliográfica.
+
+\subsection{Objetivos específicos}
+
+Pretende-se produzir publicação científica, na forma de dissertação, acerca dos sistemas de armazenamento de energia usando hidreto metálico.
+
+Pretende-se produzir materiais didático-científicos acerca dos sistemas de armazenamento de energia usando hidreto metálico, especificamente nos formatos de: Linha do tempo de eventos relevantes; Caracterização dos materiais; Caracterização dos sistemas; Análise de possíveis cenários futuros.
+
+
+
+
+
+
+
+
+\section{Metodologia}
+
+Para a produção das publicação científica na forma de dissertação sugere-se a utilização da metodologia histórico-dialética, visando fundamentar a interpretação histórico-crítica capaz de perceber as tensões presentes na transformação tecnológica investigada. 
+
+Por se tratar de uma tecnologia em transição, sugere-se partir de uma descrição detalhada dos objetos propostos, considerando também o contexto histórico de tais mudanças. Pode-se assim perceber também a tensão e mudanças entre as estruturas e práticas historicamente consolidadas na referida à rea do conhecimento.
+
+Para a produção de material didático acerca do tema sugere-se utilizar da mesma abordagem, apresentada na forma de brochura ou livreto ilustrado.
+
+
+
+
+\section{Produto educacional}
+
+
+O produto educacional proposto será apresentado na forma de brochura ou livreto ilustrado, contendo como argumento central uma linha do tempo histórica da transformação tecnológica analisada. Sugere-se que esta contextualização deve ser seguida da caracterização dos materiais e da subsequente caracterização dos sistemas. Por fim sugere-se que o material contenha uma análise de possíveis cenários futuros afim de reforçar a percepção da dinâmica de tais transformações. Possíveis tensões, críticas e outros elementos deletérios ou inviabilizadores podem ser incluídos afim de reforçar o detalhamento de tais transformações. Sobre o papel da concreticidade nos estudos de tais transformações afirma \cite[p. 56-57]{ANTONIO_CARLOS_HIDALGO}
+
+
+
+\begin{citacao}
+
+Aqui entendida no âmbito da unidade teoria-prática social: abrangendo finalidade,
+relevância, significado, contextualidade, profundidade, conexões, poder de interferência e
+transformação, consciência e historicidade do conhecimento. Refere-se à densidade do
+conteúdo histórico-social do conhecimento, sua inserção enquanto parte de uma totalidade
+complexa que compõe a cultura humana em seu sentido mais geral, sua clareza crítica
+expressa na consciência de suas múltiplas determinações e condicionamentos, e da dialética
+reprodução-produção da cultura e do homem em seu processo de humanização, sua relevância
+totalizadora e consciente em relação à construção e à evolução da cultura humana, expressa
+nas finalidades a que se destina e na prática transformadora em que se efetiva. Sua
+contribuição consciente na construção da visão de mundo do homem e na melhoria da
+qualidade de vida dos homens.
+\end{citacao}
+
+
+
+Prevê-se então que o produto educacional detalhará a historicidade concreta que permite a transição colocada por este paradigma tecnológico, característica que, como afirmado anteriormente, atende a necessidade de informar e subsidiar o processo de acompanhamento e avaliação pela comunidade acadêmica, agentes públicos e tomadores de decisão, acerca de tais mudanças tecnológicas e seus possíveis impactos.
+
+
+
+\section{Cronograma}
+
+Sugere-se a integralização das 96 (noventa e seis) unidades de créditos necessárias, sendo 27 (vinte e sete) créditos em disciplinas concentradas em cinco disciplinas obrigatórias, a serem cursadas no período letivo de 2022, conforme a disponibilidade: 
+
+
+
+\begin{description}[font=$\bullet$~\normalfont\scshape]
+
+
+
+\item [DCI4002] - Gestão Ambiental
+\item [DCI4003] - Interdisciplinaridade em Ciências Ambientais
+\item [DCI4004] - Metodologia Científica e Desenvolvimento de Projetos em Educação nas Ciências Ambientais
+\item [DCI4005] - Seminário de Pesquisa
+\item [DCI4006] - Ambiente, Sociedade e Educação
+\end{description}
+
+
+Seguidas de outras três disciplinas eletivas, a serem cursadas, conforme a disponibilidade, no período letivo de 2023, preferencialmente:
+
+\begin{description}[font=$\bullet$~\normalfont\scshape]
+
+
+\item [DCI4011] - Energia e Meio Ambiente
+\item [DCI4013] - Gestão de Recursos Naturais
+\item [DCI4017] - Mudanças Climáticas e Meio Ambiente
+\item [DCI4015] - Indicadores para Avaliação de Desenvolvimento Sustentável
+\end{description}
+
+Conclui-se com outros 69 (sessenta e nove) créditos na elaboração da Dissertação e do Produto Técnico ou Educacional, distribuídos nos anos letivos de 2022 e 2023.
+
+
+
+
+\postextual
+
+\bibliography{abntex2-modelo-references}
+
+\end{document}

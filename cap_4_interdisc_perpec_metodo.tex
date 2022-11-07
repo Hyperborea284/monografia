@@ -1,0 +1,223 @@
+\documentclass[
+   % -- opções da classe memoir --
+   article,       % indica que é um artigo acadêmico
+   12pt,          % tamanho da fonte
+   oneside,       % para impressão apenas no recto. Oposto a twoside
+   a4paper,       % tamanho do papel. 
+   % -- opções da classe abntex2 --
+   %chapter=TITLE,      % títulos de capítulos convertidos em letras maiúsculas
+   %section=TITLE,      % títulos de seções convertidos em letras maiúsculas
+   %subsection=TITLE,   % títulos de subseções convertidos em letras maiúsculas
+   %subsubsection=TITLE % títulos de subsubseções convertidos em letras maiúsculas
+   % -- opções do pacote babel --
+   english,       % idioma adicional para hifenização
+   brazil,           % o último idioma é o principal do documento
+   sumario=tradicional
+   ]{abntex2}
+
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{times}         % Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}      % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}      % Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}      % Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl}          % Lista de simbolos
+\usepackage{color}            % Controle das cores
+\usepackage{graphicx}         % Inclusão de gráficos
+\usepackage{microtype}        % para melhorias de justificação
+% ---
+      
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}           % para geração de dummy text
+% ---
+      
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}  % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite} % Citações padrão ABNT
+% ---
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1 %
+      Nenhuma citação no texto.%
+   \or
+      Citado na página #2.%
+   \else
+      Citado #1 vezes nas páginas #2.%
+   \fi}%
+% ---
+
+% --- Informações de dados para CAPA e FOLHA DE ROSTO ---
+\titulo{Resenha - Cap. 4 A PERSPECTIVA METODOLÓGICA}
+\tituloestrangeiro{}
+
+\autor{João Henrique da Silva}
+
+%\local{Brasil}
+\data{Junho - 2022}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+      %pagebackref=true,
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={},
+      pdfcreator={},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,           % false: boxed links; true: colored links
+      linkcolor=blue,            % color of internal links
+      citecolor=blue,            % color of links to bibliography
+      filecolor=magenta,            % color of file links
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ---
+% Altera as margens padrões
+% ---
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{2cm}{*}
+\checkandfixthelayout
+% ---
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Espaçamento simples
+\linespread{1.3}
+
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+
+\maketitle
+
+
+\newpage
+
+\textual
+\section{Resenha}
+
+\subsection{A NECESSIDADE METODOLÓGICA}
+
+O texto de \cite{Paradigma_Transdisciplinar_Metodologica} discute o papel da metodologia na interdisciplinaridade e apresenta a necessidade dialógica entre teoria e prática, após discussão acerca das abordagens inter e transdisciplinares.
+
+Ao destacar a necessidade de se avançar a discussão teórica e o intercâmbio de experiências, o fazem com a finalidade de fazer avançar uma discussão metodológica que permita aumentar a capacidade de intervenção pessoal e coletiva.
+
+Sugere-se que tais discussões se manifestem através de ações que transcendam as fronteiras das disciplinas e dos limites institucionais e culturais das nações e de seus povos devido à reconhecida urgência dos temas colocados pela questão ambiental. Sugerem também que o caráter paradigmático de tais soluções não permite imitação de situações antes vivenciadas e que a sistematização deste novo paradigma não será um processo individual.
+
+O texto contextualiza a estratégia coletiva da perspectiva transdisciplinar enquanto estratégia metodológica e apresenta o caso de estudos anteriores do mesmo autor o qual pode realizar estudos no campo da hidrologia, tema que o fez perceber o caráter transdisciplinar de seu objeto de estudo.
+
+Sugere o autor o terceiro momento numa lógica dialética do entendimento de um dado objeto se hierarquiza num patamar superior de verdade, se comparado aos elementos anteriores e que a efetividade de tal superação se dá através da construção das relações sociais onde tal objeto se manifesta.
+
+
+
+\subsection{COMEÇANDO PELAS EMOÇÕES}
+
+O autor inicia sua argumentação sobre a efetividade da metodologia transdisciplinar ao perceber que as emoções, enquanto dimensão autopoiética da atividade abstrata humana, e apresenta três razões: primeiro, pela percepção da degradação que não se limita ao racional; segundo, pelo pela da transcendência dentro da abordagem transdisciplinar e terceiro, pelo papel funcional de religare, realizado pelo conhecimento. Percebe também que o viés da materialidade seria repetido e entende que isso determinaria uma repetição da abordagem anterior. Para tanto, o autor recorre a obra de Maturana, tema que foge do escopo dessa resenha, mas que, no texto do autor, ressalta o papel das emoções no processo de acoplamento estrutural que ocorre entre o indivíduo e o ambiente.
+Sugere também que as emoções estão num nível inferior aos paradigmas e que, ao mesmo tempo, as emoções são a ‘episteme’ dos paradigmas \cite[p. 86]{Paradigma_Transdisciplinar_Metodologica}.
+
+O autor segue decompondo a dimensão afetiva afim de demonstrar seu método de compreensão e a divide em três abordagens sendo estas:  a cooperativa, abordagem associada ao religare; a estética, abordagem que percebe o acoplamento estrutural entre o sujeito e o ambiente e a terceira, a abordagem cognitiva que percebe a importância emocional das representações intersubjetivas presentes na linguagem.
+
+O autor conclui o argumento afirmando que a metodologia transdisciplinar usa o elemento emotivo para efetivar sua transcendência e garantir a humanização de seu objeto de estudo.
+
+
+\subsection{CONSTRUINDO O DOMÍNIO LINGÜÍSTICO DA SUSTENTABILIDADE}
+
+Partindo da contradição entre pessoas e ambiente, o autor aproveita da ideia de religare sugerindo um apriorismo da ‘dimensão superior, a conceitual \cite[p. 88]{Paradigma_Transdisciplinar_Metodologica}’ dada por um conjunto conceitual mínimo que fundamenta o paradigma da sustentabilidade.
+
+O autor traz o conceito de ‘domínio linguístico’, fundado em Habermas e Maturana e percebe este como o ‘espaço não material de significações semelhantes de uma mesma realidade’ \cite[p. 86]{Paradigma_Transdisciplinar_Metodologica} para perceber os campos semânticos compartilhados por áreas do conhecimento unidas por um objeto transdisciplinar e sugere a necessidade de dar amplitude à esses conceitos compartilhados, evitando assim a repetição.
+
+
+
+\subsection{PLANEJAMENTO ESTRATÉGICO DA PESQUISA}
+
+
+O autor percebe a contradição presente na dimensão conceitual  ao sugerir que o paradigma da sustentabilidade não pode ser reduzido aos seus componentes disciplinares e traz um breve histórico das tensões presentes na discussão sobre a degradação camada de ozônio, sugerindo que o aceitamento de tal fato é sinal do amadurecimento de tal abordagem.
+
+O texto então detalha a evolução estratégica de tais paradigmas complexos passando pelo acordo inicial, resgate histórico, mandato atual da normas vigentes, elaboração de um diagnóstico estratégico, formulação de estratégias e criação de uma visão de sucesso.
+
+
+\subsection{CONCEPÇÃO E ESCRITA DO PROJETO}
+
+
+O processo de escrita de projetos dentro dessa abordagem transdisciplinar é discutido e a tensão entre os ambientes interno e externos são analisados afim de se criar um equilíbrio entre os pontos fortes e fracos de cada ambiente. 
+
+O autor sugere que tal disposição binária se transforma num elemento terciário, completando a dialética da tal tensões. Portanto, percebem que neste ‘tertium quid’ reside a lógica ternária da metodologia transdisciplinar.
+
+A substância da chamada ‘dimensão conceptiva p.90’ pode ser decomposta em três elementos sendo estes a noção de ‘coordenação solidária’ que percebe como a ‘capacidade mediadora resulta do domínio do raciocínio dialógico’ presente no domínio linguístico incorporado para a explicação do objeto transdisciplinar proposto. Tais condições moldam a chamada ‘concepção dimensional’ na qual acontece a identificação das dimensões que atendem as necessidades da dimensão anterior e finalmente, sugere-se a que a ‘dimensão fractal’ enquanto produto final multifacetado manterá a sinergia da ‘estrutura
+de acoplamento de cada ação individual e disciplinar ao espaço transdisciplinar \cite[p. 90]{Paradigma_Transdisciplinar_Metodologica}’.
+
+
+\subsection{APRENDENDO COM O OPERAR}
+
+O caráter operacional de tal abordagem metodológica é apresentado como o resultado da tensão entre a ‘a concepção da pesquisa formulada pela equipe e a realidade
+ontológica sobre a qual o projeto irá atuar \cite[p. 90]{Paradigma_Transdisciplinar_Metodologica}’. Partindo do viés idealista, percebe uma dimensão secundária onde tais elementos abstratos convergem com a realidade material de forma difusa e que resulta no terceiro momento tá complexidade. Para tanto o projeto transdisciplinar deve levar a cognição como elemento operador da produção do conhecimento.
+
+O autor separa a dimensão cognitiva nos seguintes componentes, primeiramente: do aporte epistêmico, sintomático da relação com o grupo de pesquisadores e que exige a necessidade de abertura; em segundo lugar, a dimensão do aporte pedagógico, a qual considera a disseminação e incorporação de conhecimentos novos e, finalmente, a dimensão do aporte metodológico, entendido aqui como a necessidade de rigor formal na práxis de pesquisa.
+
+
+\subsection{A BUSCA DA EFETIVIDADE - FECHANDO O CICLO e CONCLUSÃO}
+
+O tema da autopoiesis é percebido como um desdobramento cognitivo das relações de poder. Poder este que age de maneira agregadora de informações e que coexiste, de maneira binária, com a lógica de suas externalidades.
+
+O objetivo do ‘gerenciamento autopoiético da informação \cite[p. 91]{Paradigma_Transdisciplinar_Metodologica}’ se realiza na dimensão superior da linguagem e, sugere o autor, pode se beneficiar de ferramentas da informática.
+
+A dimensão do efetivo se manifesta então como fluxo de informação e consciência que transcende as barreiras disciplinares e se substancia nas externalidades sociais da pesquisa.
+
+O movimento final se dá na criação do elemento que é a afetividade humanizadora oriunda de tais conhecimentos, que agora, depois de processados dialogam com a dimensão emocional, cumprindo a função de religare anunciada anteriormente
+
+\postextual
+
+\bibliography{interdisciplinaridade}
+
+\end{document}

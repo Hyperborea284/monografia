@@ -1,0 +1,205 @@
+\documentclass[
+   % -- opções da classe memoir --
+   article,       % indica que é um artigo acadêmico
+   12pt,          % tamanho da fonte
+   oneside,       % para impressão apenas no recto. Oposto a twoside
+   a4paper,       % tamanho do papel. 
+   % -- opções da classe abntex2 --
+   %chapter=TITLE,      % títulos de capítulos convertidos em letras maiúsculas
+   %section=TITLE,      % títulos de seções convertidos em letras maiúsculas
+   %subsection=TITLE,   % títulos de subseções convertidos em letras maiúsculas
+   %subsubsection=TITLE % títulos de subsubseções convertidos em letras maiúsculas
+   % -- opções do pacote babel --
+   english,       % idioma adicional para hifenização
+   brazil,           % o último idioma é o principal do documento
+   sumario=tradicional
+   ]{abntex2}
+
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{times}         % Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}      % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}      % Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}      % Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl}          % Lista de simbolos
+\usepackage{color}            % Controle das cores
+\usepackage{graphicx}         % Inclusão de gráficos
+\usepackage{microtype}        % para melhorias de justificação
+% ---
+      
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}           % para geração de dummy text
+% ---
+      
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}  % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite} % Citações padrão ABNT
+% ---
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1 %
+      Nenhuma citação no texto.%
+   \or
+      Citado na página #2.%
+   \else
+      Citado #1 vezes nas páginas #2.%
+   \fi}%
+% ---
+
+% --- Informações de dados para CAPA e FOLHA DE ROSTO ---
+\titulo{Resenha - Cap. 4 O Plágio na pesquisa científica e suas consequências}
+\tituloestrangeiro{}
+
+\autor{João Henrique da Silva}
+
+%\local{Brasil}
+\data{Junho - 2022}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+      %pagebackref=true,
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={},
+      pdfcreator={},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,           % false: boxed links; true: colored links
+      linkcolor=blue,            % color of internal links
+      citecolor=blue,            % color of links to bibliography
+      filecolor=magenta,            % color of file links
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ---
+% Altera as margens padrões
+% ---
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{2cm}{*}
+\checkandfixthelayout
+% ---
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Espaçamento simples
+\linespread{1.3}
+
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+
+\maketitle
+
+
+\newpage
+
+\textual
+\section{Resenha}
+
+\subsection{Introdução}
+
+O texto de \cite{cap_4_plagio} trata dos os desdobramentos metodológicos e éticos impostos pelos desafios da pesquisa acadêmica, e percebe isso na discussão do plágio. Percebe-se este como ato criminoso presente no ambiente Acadêmico e persistente, mesmo diante de suas consequências negativas que ferem a integridades da pesquisa científica.
+
+Percebe-se também o papel das tecnologias que facilitam o processo de captura das ideias e a apropriação indevida das mesmas ao sugerir que as tecnologias de cópia de texto tem reforçado a situação. O tema da Preservação da propriedade intelectual traz consigo a discussão das implicações de âmbito legal e ético que podem ser minimizadas ao se combater o plágio nas diversas instituições onde esse pode aparecer.
+
+
+\subsection{O Plágio na vida acadêmica}
+
+O texto aponta o caso, em 2021, onde o ministro da Defesa alemão renunciou ao cargo após denúncias de plágio em sua tese de doutorado e percebe a situação no Brasil citando o caso do Ministro da Educação que, em 2020, passou por situação similar. O texto afirma que tais situações ainda são frequentes e comuns ocorrendo em monografias dissertações e teses, que tem apresentado tais problemas.
+
+O texto empresta a concepção de plágio presente na publicação de Wachowickz e Costa, fonte que foge do escopo desata resenha, e que entende esse como o conflito ético que consiste no ato de tomar para si a autoria de obra intelectual de outrem, seja essa apropriação uma transcrição, uma reescrita ou uma reconfiguração dos termos que ocorre sem a devida referência à fonte original.
+
+Como consequência, é percebido que no ambiente acadêmico, a ética e a integridade da pesquisa acabam violadas, e aparece no texto o fato de que os pesquisadores, ao buscarem a criação  de formas legítimas de um conhecimento original, acabam prejudicados. 
+
+O caráter doloso do ato plageador é percebido tendo como base o argumento de Wachowickz e Costa que percebem também a possibilidade de se enquadrar estar atos como um procedimento fraudulento ou de ‘desleixo incompatível com quaisquer boas práticas’ (grifo no original).
+
+O texto também percebe a dimensão jurídica de tais atitudes enquadrando o plagiador nos crimes de falsidade ideológica, presentes nos art.299 e art.184 do Código Penal que versam sobre crimes relativos à propriedade intelectual e direitos autorais.
+
+
+\subsection{Os tipos de plágio}
+
+No tópico 2.1, o texto conceitua os tipos de plágio classificando estes segundo suas características, sendo essas: o plágio integral, onde a cópia profunda e não alterada é apresentada; o plágio de tipo parcial, onde uma sequência menor das ideias contidas no texto original é aproveitada; plágio de tipo mosaico, onde diversas peças extraídas de maneira irregular acabam compondo uma peça que é apresentada como se fosse original; o misto, plágio de tipo menos consistente que os outros apresentados até agora e o plágio, chamado nesse texto, de “se faz de desentendido”, por se embasar na atitude do plagiador que apela para um suposto desconhecimento da atitude plagiadora. Segue apresentando o auto plágio, plágio do tipo que reaproveita conteúdos que não são originais e os apresentam como conteúdos originais, e conclui apresentando o plágio conceitual, sendo este aquele que se constitui do aproveitamento de ideias argumentos e linhas de raciocínio sem a devida referenciação.
+A facilidade da Identificação do plágio também é percebida no texto, uma vez que esse tipo de prática pode ser percebido através da utilização de softwares específicos para verificação do originalidade dos textos.
+
+A maneira correta de se aproveitar das informações já produzidas e presentes no contexto original das publicações científicas e acadêmicas aparece no texto ao se perceber como que a ABNT, Associação Brasileira das normas técnicas, coloca procedimentos para a correta referenciação das informações presentes em obras originais 
+
+
+
+\subsection{Como detectar o plágio acadêmico}
+
+
+O tópico 2.2 Versa sobre as maneiras correntes para se detectar o ato do plágio e para tanto os autores recorrem a outras fontes fora do escopo desse resumo.
+
+A tipologia dos trabalhos plagiados pode ser constituída através das características desses, onde sugere-se que, como primeiro critério, perceba-se as  características da ‘necessária apresentação’, revelando-se assim desvios na apresentação formal e estrutural do documento; um segundo critério que pode ser usado na identificação do plágio deve ser a correta nomeação das fontes e sua identificação; a situação da entrega de um trabalho original é percebida como propícia para a prática do plágio; a situação da utilização de fontes que não foram suficientemente identificadas e por fim, nas situações que envolvem a obtenção de créditos e títulos acadêmicos, estas também se apresentam como situações onde pode ocorrer o plágio.
+
+
+O texto apresenta também mecanismos digitais de detecção de plágio que estão presentes gratuitamente na internet, e reforça a impressão causada pela presença de poucas fontes numa determinada obra apresentada como original, situação esta que pode ser indicativa de plágio.
+
+
+\subsection{Consequências da prática de plágio - Considerações finais}
+
+
+O tópico 3 retoma o tema das consequências da prática de plágio percebendo que este vai contra as expectativas da comunidade acadêmica e anunciando que a instituição, assim como o indivíduo, acabam prejudicados por essa prática. tais situações tem repercussões nas instituições de ensino que já se encontra fragilizadas, e percebe também o ato falacioso ao redor da suposta produtividade do plagiador.
+
+
+
+
+Os casos de plágio também podem implicar um penalizações financeiras além das implicações institucionais e penais já anunciadas, e os autores concluem o texto com uma sequência de exemplos de situações que envolveram implicações institucionais, jurídicas e indenizações.
+
+
+\postextual
+
+\bibliography{interdisciplinaridade}
+
+\end{document}

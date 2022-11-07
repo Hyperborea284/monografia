@@ -1,0 +1,235 @@
+\documentclass{beamer}
+
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{times}         % Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}      % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}      % Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}      % Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl}          % Lista de simbolos
+\usepackage{color}            % Controle das cores
+\usepackage{graphicx}         % Inclusão de gráficos
+\usepackage{microtype}        % para melhorias de justificação
+% ---
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}           % para geração de dummy text
+% ---
+      
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}  % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite} % Citações padrão ABNT
+% ---
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1 %
+      Nenhuma citação no texto.%
+   \or
+      Citado na página #2.%
+   \else
+      Citado #1 vezes nas páginas #2.%
+   \fi}%
+% ---
+\usetheme{Berlin}
+
+% --- Informações de dados para CAPA e FOLHA DE ROSTO ---
+\title{Resenha - Cap. 6 Estudo de caso : Da ontologia e epistemologia aos procedimentos para a pesquisa}
+
+\author{João Henrique da Silva\\
+--
+Prof. Dr. Carlos Alberto de Oliveira Magalhães Júnior}
+\institute{UEM DCI PROFCIAMB}
+\logo{
+\includegraphics[width=1cm]{logo.png}
+\includegraphics[width=1cm]{uem.png}
+}
+
+%\local{Brasil}
+\date{Junho - 2022}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+      %pagebackref=true,
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={},
+      pdfcreator={},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,           % false: boxed links; true: colored links
+      linkcolor=blue,            % color of internal links
+      citecolor=blue,            % color of links to bibliography
+      filecolor=magenta,            % color of file links
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Espaçamento simples
+\linespread{1.3}
+
+
+%\usetheme{lucid}
+\begin{document}
+    \frame {
+        \titlepage
+    }
+    \frame {
+        \frametitle{Conceitos e Proposta 1}
+        \framesubtitle{Os conceitos norteadores do trabalho}
+	\begin{itemize}
+		\item Ontologia
+		\item Metodologia
+		\item Superação do reducionismo Positivista
+        \item Necessidade de definir pesquisa qualitativa
+
+	\end{itemize}
+    }
+    \frame{
+        \frametitle{Conceitos e Proposta 2}
+        \framesubtitle{Necessidade de definir pesquisa qualitativa}
+        \begin{itemize}
+            \item Método indutivo e a interpretação do investigador
+            \item Concepção do método molda o objeto
+            \item Exemplo : Maringá (lugar); resposta (28)
+        \end{itemize}
+    }
+    \frame{
+        \frametitle{Conceitos e Proposta 3}
+        \framesubtitle{Abordagens na pesquisa}
+        \begin{itemize}
+            \item Métodos nas ciências qualitativas \cite[p.172]{cap_6_ontologia}
+            \item O tipo de pesquisa 'Estudo de caso' e suas limitações
+            \item Pluralismo conceitual dos estudos de caso
+        \end{itemize}
+    }
+    \frame{
+        \frametitle{Ontologia e Epistemologia}
+        \framesubtitle{Apriorismos}
+        \begin{itemize}
+            \item Corrente Positivista; natureza estática
+            \item Corrente Interpretativista; o observador altera o objeto observado
+            \item Atores sociais constroem a realidade; convergência
+        \end{itemize}
+    }
+    \frame{
+        \frametitle{Tipos de estudos de caso 1}
+        \framesubtitle{Unidade de análise}
+        \begin{itemize}
+            \item Intralocal ou plurilocal
+            \item Episódico ou casuística
+        \end{itemize}
+    }
+    \frame{
+        \frametitle{Tipos de estudos de caso 2}
+        \framesubtitle{Escopo da compreensão}
+        \begin{itemize}
+            \item Intrínseco; voltado aos casos particulares
+            \item Instrumental; refinar teorias
+            \item Coletivo; comparações generalizadas
+        \end{itemize}
+    }
+    \frame{
+        \frametitle{Tipos de estudos de caso 3}
+        \framesubtitle{Natureza dos objetivos}
+        \begin{itemize}
+            \item Exploratório; obter evidências
+            \item Descritivo; detalhamento
+            \item Explanatório; busca a causalidade
+        \end{itemize}
+    }
+    \frame{
+        \frametitle{Procedimentos nos estudos de caso 1}
+        \framesubtitle{Fluxo de trabalho}
+        \begin{itemize}
+            \item Visão geral do projeto de estudo de caso
+            \item Descrição do processo de coleta de dados
+            \item Questões norteadoras da pesquisa
+            \item Formato do relatório final
+        \end{itemize}
+    }
+    \frame{
+        \frametitle{Procedimentos nos estudos de caso 2}
+        \framesubtitle{Fluxo de trabalho}
+        \begin{itemize}
+            \item Idiossincrasias do investigador
+            \item Contexto do investigador
+            \item Elementos comuns que trancendem os casos
+            \item Discrição sistemática dos dados e das inferências
+        \end{itemize}
+    }
+    \frame{
+        \frametitle{Procedimentos nos estudos de caso 3}
+        \framesubtitle{Triangulação, uma 'arte'}
+        \begin{itemize}
+            \item Triangulação do investigador
+            \item Triangulação dos dados
+            \item Triangulação metodológica
+            \item Triangulação e paralaxe; credibilidade das investigações qualitativas
+        \end{itemize}
+    }
+    \frame{
+        \frametitle{Procedimentos nos estudos de caso 4}
+        \framesubtitle{Elaboração do relatório final, validade}
+        \begin{itemize}
+            \item Validade do construto
+            \item Validade interna
+            \item Validade externa
+            \item Confiabilidade
+            \item Convergência com \cite{Lincoln1985-ua}
+        \end{itemize}
+    }
+    \frame{
+        \frametitle{Interpretações}
+        \begin{itemize}
+            \item Alta empregabilidade e credibilidade científica
+            \item Ontologia, epistemologia e idiossincrasias
+            \item Estudo de caso na particularidade e nas generalizações
+            \item Confiabilidade e triangulação dos dados
+        \end{itemize}
+    }
+\bibliography{interdisciplinaridade}
+
+\end{document}

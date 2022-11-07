@@ -1,0 +1,221 @@
+\documentclass[
+   % -- opções da classe memoir --
+   article,       % indica que é um artigo acadêmico
+   12pt,          % tamanho da fonte
+   oneside,       % para impressão apenas no recto. Oposto a twoside
+   a4paper,       % tamanho do papel. 
+   % -- opções da classe abntex2 --
+   %chapter=TITLE,      % títulos de capítulos convertidos em letras maiúsculas
+   %section=TITLE,      % títulos de seções convertidos em letras maiúsculas
+   %subsection=TITLE,   % títulos de subseções convertidos em letras maiúsculas
+   %subsubsection=TITLE % títulos de subsubseções convertidos em letras maiúsculas
+   % -- opções do pacote babel --
+   english,       % idioma adicional para hifenização
+   brazil,           % o último idioma é o principal do documento
+   sumario=tradicional
+   ]{abntex2}
+
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{times}         % Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}      % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}      % Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}      % Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl}          % Lista de simbolos
+\usepackage{color}            % Controle das cores
+\usepackage{graphicx}         % Inclusão de gráficos
+\usepackage{microtype}        % para melhorias de justificação
+% ---
+      
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}           % para geração de dummy text
+% ---
+      
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}  % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite} % Citações padrão ABNT
+% ---
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1 %
+      Nenhuma citação no texto.%
+   \or
+      Citado na página #2.%
+   \else
+      Citado #1 vezes nas páginas #2.%
+   \fi}%
+% ---
+
+% --- Informações de dados para CAPA e FOLHA DE ROSTO ---
+\titulo{Resenha - Cap. 6 Estudo de caso : Da ontologia e epistemologia aos procedimentos para a pesquisa}
+\tituloestrangeiro{}
+
+\autor{João Henrique da Silva}
+
+%\local{Brasil}
+\data{Junho - 2022}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+      %pagebackref=true,
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={},
+      pdfcreator={},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,           % false: boxed links; true: colored links
+      linkcolor=blue,            % color of internal links
+      citecolor=blue,            % color of links to bibliography
+      filecolor=magenta,            % color of file links
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ---
+% Altera as margens padrões
+% ---
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{2cm}{*}
+\checkandfixthelayout
+% ---
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Espaçamento simples
+\linespread{1.3}
+
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+
+\maketitle
+
+
+\newpage
+
+\textual
+\section{Resenha}
+
+\subsection{Introdução}
+
+O texto de \cite[cap.6]{cap_6_ontologia} aborda as consequências da abordagem positivista, percebendo seu determinismo e reducionismo, condições que exigem a formulação de uma ontologia associada à discussão epistemológica. Sugere também que os comportamentos humanos não podem ser reduzidos ao mecanicismo de supostas leis sociais e aponta o interacionismo simbólico, a fenomenologia e a etnometodologias como atores da superação do caráter irrefutável da abordagem positivista.
+
+Dois elementos são destacados pelos autores ao definirem a abordagem qualitativa, sendo o primeiro destes relacionada à ontologia do campo estudado, percebendo como esta se relaciona com os princípios metodológicos adotados por cada iniciativa de pesquisa; ressaltam também o caráter indutivo da pesquisa qualitativa e percebem a polissemia presente nos pressupostos filosóficos da estrutura cognitiva de cada iniciativa de pesquisa e, para tanto, remetem à fontes fora do escopo dessa resenha.
+
+A caracterização da pesquisa qualitativa que segue este argumento reforça o entendimento de que este tipo de pesquisa costuma ser influenciado pela subjetividade do pesquisador e afirma que tais vieses devem ser um elemento explícito da metodologia, ao mesmo tempo, percebem que estes vieses explícitos são um elemento indutivo, funcionando como uma propriedade emergente moldada pela experiência do pesquisador.
+
+O texto recorre à discussão sobre outras metologias de investigação e percebe a necessidade de uma abordagem humanística que evite os procedimentos quantitativos e reforça a especificidade de cada iniciativa de pesquisa qualitativa. Como exemplo, o texto aproveita de suas fontes e cita a seguinte sequencia de possibilidades qualitativas, nomeadamente\footnote{\cite[p.172]{cap_6_ontologia}}: 'análise documental; observação direta; estudo de caso; observação participante; pesquisa participante; pesquisa ação; e grupos focais. \cite[p.172]{cap_6_ontologia}.'
+
+A especificidade de cada abordagem citada permite que o pesquisador perceba qual controle este possui sobre o objeto estudado, seu ambiente de pesquisa e temporalidade, exigindo do pesquisador então, que este reconheça os limites do controle que possui e considere tais condições ao moldar sua episteme. Percebe-se aqui a relação dialógica entre a metodologia e a construção do objeto de estudo.
+
+As pesquisas do tipo 'estudo de caso' são analisadas a seguir e os autores destacam as críticas à esse método e a falta de rigor, clareza conceitual e falta de finalidade presente em alguns estudos; ressaltam também a existência de um 'pluralismo conceitual' nas abordagens rotuladas de estudo de caso, fato que dificulta o aproveitamento de seus resultados e afirmam que existe pouca clareza acerca da qualidade dos estudos de caso.
+
+
+\subsection{A ONTOLOGIA E EPISTEMOLOGIA DO ESTUDO DE CASO}
+
+
+Nesta parte do texto apresenta-se a relação entre epistemologia e ontologia no tipo de pesquisa qualitativa que é o estudo de caso e aproveita de suas fontes para apresentar o conceito sugerindo que “a ontologia está relacionada literalmente com a natureza do ser”\footnote{Texto destacado pelos autores no original; referencia fontes que estão fora do escopo desta resenha.}. 
+
+Ao apontar o papel da ontologia como apriorismo que fundamenta o objeto estudado, os autores ressaltam o caráter subjacente dos fenômenos sociais e a independência destes perante a observação de seus atores sociais, e sugere que os significados percebidos pelo esforço do conhecimento científico podem ser deduzidos por tais atores.
+
+O texto segue apresentando argumento contrário embasado em outra fonte ao sugerir que a presença do ator social dentro da ontologia estudada, altera esta e, portanto, torna esta impossível de servir enquanto apriorismo; argumento que reforça o caráter indutor das metodologias.
+
+O tema da epistemologia aparece no texto enquanto ferramenta do pesquisador; ferramenta que media o ato de conhecer e ressalta a necessidade de posicionamento e consciência por parte do pesquisador.
+
+A polarização entre o caráter anti e fundamentalista da epistemologia é percebida, no campo das ciências sociais, ao se contrapor os princípios metodológicos subjacentes à corrente positivista e, sugere o texto que, isto é percebido pelo apriorismo estático positivista, o qual, não considera o observador como elemento construtor da realidade. Segue-se o argumento de que a corrente interpretativista das ciências sociais supera tal viés ao considerar que o observador é parte construtora da realidade observada e, portanto, elemento que refuta a natureza determinística da abordagem positivista.
+
+O texto retorna às características dos estudos de caso, ressalta sua efemeridade e unicidade e reforça a necessidade de profundidade em tal tipo de investigação e conclui a seção se posicionando de maneira favorável à abordagem antifundamentalista presente no interpretativismo.
+
+
+\subsection{DEFINIÇÕES E CLASSIFICAÇÕES DO ESTUDO DE CASO}
+
+O texto define e classifica os tipos de estudo de caso e reforça seu caráter empírico, fenomenológico, e a difusão desse fenômeno dentro de seu contexto; também reforça a percepção da maneira como a capacidade interpretativa do pesquisador completa as lacunas deixadas pelo reducionismo estatístico da abordagem positivista.
+
+Ao discutir as possíveis consequências das lacunas deixadas pelo reducionismo estatístico da abordagem positivista, o texto destaca a opinião de estas abordagens poderem complementar e aprimorar as metodologias qualitativas embora o foco no objeto não possa ser substituído pelo foco na aplicação fria da metodologia. A quantidade casuística e a espacialidade dos casos são destacados adiante e a multiplicidade dos casos é percebida como característica relevante e converge com a discussão acerca da definição na unidade de análise isto é, a definição do que 'caso'.
+
+Segue o argumento de alguns estudos apresentados como 'estudo de caso' não o serem por não se enquadrarem nas três possíveis compreensões acerca da natureza do objeto de pesquisa, nomeadamente\footnote{\cite[p.177]{cap_6_ontologia}}, objeto de tipo 'intrínseco', 'instrumental' ou 'coletivo'. Usando de suas fontes, o texto apresenta o entendimento de ser o caso intrínseco um tipo de estudo de caso focado numa situação menos generalizável; sugere também ser o estudo de caso de tipo instrumental, um estudo de caso que media e aprofunda outros estudos e, conclui apresentando o estudo de caso de tipo coletivo, percebendo que este pretende aprofundar os conhecimentos sobre fenômenos ou populações mais generalizáveis.
+
+Acerca dos objetivos, o texto apresenta três possíveis naturezas, sendo estas exploratória, descritiva e explanatória. Sobre o objetivo exploratório, este é percebido pela capacidade de obter evidências; sendo o objetivo do estudo de caso descritivo, percebe este por sua descrição pormenorizada e sendo este estudo de objetivo exploratório, pode-se caracterizá-lo por responder questões acerca do objeto.
+
+A seção conclui afirmando que não existe hierarquia entre tais classificações e reforça a distinção entre as interpretações sistematizadas do investigador e a mera imaginação do pesquisador.
+
+
+\subsection{PROCEDIMENTOS PARA A CONDUÇÃO DE UM ESTUDO DE CASO}
+
+Partindo do argumento acerca dos objetivos o texto reafirma as situações onde o estudo de caso pode ser aplicado, ressaltando a importância da clareza a cerca do objeto, sendo que esta necessidade pode ser substituída pela necessidade de aprofundamento no entendimento do caso, ou pela necessidade de se explicitar as causas de um determinado caso ou coleção de casos.
+
+O caráter empírico e a presença do observador reforçam o caráter fenomenológico dos estudos de caso e percebe-se que as variáveis, em tal fenômeno, não estão sob controle do pesquisador.
+
+As etapas dos estudos de caso são representadas esquematicamente na forma de um protocolo de quatro etapas, nomeadamente\footnote{\cite[p.179]{cap_6_ontologia}}: etapa de 'visão geral do projeto de estudo de caso'; etapa de 'descrição do processo de coleta de dados; etapa de definição das 'questões norteadoras da pesquisa' e, finalmente, etapa da definição do 'formato do relatório final'.
+
+O caráter holístico e a multiplicidade das fontes de informação é destacado e o caráter emergente dos dados analisados; tal caráter deve ser analisado, considerando-se as especificidades das idiossincrasias e historicidade de cada investigador. A ênfase de cada pesquisador na complexidade de cada análise deve seguir tais procedimentos, culminando na busca de temas comuns de caráter transcendental.
+
+O argumento sobre as necessidades de múltiplas fontes, de se formar cadeias de evidências e sobre a construção de uma base de dados é apresentado como princípio que deve ser atendido antes de se proceder à descrição sistemática dos dados e à finalização, através das inferências que farão emergir as informações sobre àquela realidade.
+
+A multiplicidade de abordagens na triangulação dos protocolos de pesquisa não é descartada. Aponta o texto para três tipos de triangulação, nomeadamente\footnote{\cite[p.180]{cap_6_ontologia}}: a 'triangulação do investigador', na qual percebe-se a paralaxe de pontos de vista que consideram o investigador como parte da análise; a 'triangulação da teoria' na qual percebe a paralaxe de pontos de vista teóricos que abarcam o mesmo fenômeno e, finalmente, a 'triangulação metodológica' que atenta para a multiplicidade de combinações metodológicas afim de validar um resultado já conhecido.
+
+Sobre a elaboração dos relatórios finais, sugere o texto que o pesquisador deve se apropriar de critérios\footnote{\cite[p.181]{cap_6_ontologia}} para a 'validação de construto', que percebam a importância das medidas operacionais no estudo; a 'validade interna', necessária para a abordagem exploratória e, finalmente, a validade externa, abordagem na qual se buscam as generalizações possíveis. Sugere-se que o estudo de caso seja concluído com uma fase interpretativa final onde a heurística e as generalizações são discutidas validadas ou refutadas.
+
+
+\subsection{CONSIDERAÇÕES FINAIS}
+
+O texto conclui retomando o tema da precisão e afirma que 'a alta
+empregabilidade não é sinônimo de credibilidade científica\footnote{\cite[p.182]{cap_6_ontologia}}', e retoma a relação entre ontologia e idiossincrasias percebendo como estas são mediadas pela epistemologia. Ressalta também que o estudo de caso permite abordar tanto singularidades como sistematizações generalizadoras; e conclui entendendo que para se comprovar tais evidências pode-se usar de procedimentos como a triangulação de dados.
+
+
+\postextual
+
+\bibliography{interdisciplinaridade}
+
+\end{document}

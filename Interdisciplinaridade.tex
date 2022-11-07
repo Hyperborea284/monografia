@@ -1,0 +1,695 @@
+\documentclass[
+   % -- opções da classe memoir --
+   article,       % indica que é um artigo acadêmico
+   12pt,          % tamanho da fonte
+   oneside,       % para impressão apenas no recto. Oposto a twoside
+   a4paper,       % tamanho do papel. 
+   % -- opções da classe abntex2 --
+   %chapter=TITLE,      % títulos de capítulos convertidos em letras maiúsculas
+   %section=TITLE,      % títulos de seções convertidos em letras maiúsculas
+   %subsection=TITLE,   % títulos de subseções convertidos em letras maiúsculas
+   %subsubsection=TITLE % títulos de subsubseções convertidos em letras maiúsculas
+   % -- opções do pacote babel --
+   english,       % idioma adicional para hifenização
+   brazil,           % o último idioma é o principal do documento
+   sumario=tradicional
+   ]{abntex2}
+
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{times}         % Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}      % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}      % Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}      % Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl}          % Lista de simbolos
+\usepackage{color}            % Controle das cores
+\usepackage{graphicx}         % Inclusão de gráficos
+\usepackage{microtype}        % para melhorias de justificação
+% ---
+      
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}           % para geração de dummy text
+% ---
+      
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}  % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite} % Citações padrão ABNT
+% ---
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1 %
+      Nenhuma citação no texto.%
+   \or
+      Citado na página #2.%
+   \else
+      Citado #1 vezes nas páginas #2.%
+   \fi}%
+% ---
+
+% --- Informações de dados para CAPA e FOLHA DE ROSTO ---
+\titulo{Resenhas - Interdisciplinaridade em Ciências Ambientais}
+% \tituloestrangeiro{Resenha do Cap.2}
+
+\autor{João Henrique da Silva}
+
+%\local{Brasil}
+\data{Junho - 2022}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+      %pagebackref=true,
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={},
+      pdfcreator={},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,           % false: boxed links; true: colored links
+      linkcolor=blue,            % color of internal links
+      citecolor=blue,            % color of links to bibliography
+      filecolor=magenta,            % color of file links
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ---
+% Altera as margens padrões
+% ---
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{2cm}{*}
+\checkandfixthelayout
+% ---
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Espaçamento simples
+\linespread{1.3}
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+\maketitle
+
+\textual
+
+\newpage
+
+\section{Resenha - Introdução - A Interdisciplinaridade como atributo da C\&T}
+
+
+Sobre o tema do amadurecimento das pesquisas em ciências ambientais, \cite{Interdisciplinaridade_CT} apresenta a conjuntura que deu legitimidade à este campo e destaca o amadurecimento da percepção da área enquanto componente relevante para o desenvolvimento nacional. A necessidade da formação de mão de obra especializada e a criação de uma base científica e tecnológica compatível se mostrava necessária. Procedimentos de adaptação e transferência de tecnologia poderiam destacar o Brasil, como ator relevante no contexto das soluções ambientais.
+
+A integração institucional não seria possível sem a formação de mão de obra especializada em nível de pós-graduação. Dentro de tal contexto, a necessidade de formar profissionais dotados de metodologias que abordassem um paradigma interdisciplinar se destacou. Projetos interdisciplinares en níveis intra e inter Institucional se viabilizaram uma vez que a formação de recursos humanos e a geração de novos conhecimentos incentivou novos estudos acerca da qualidade ambiental. 
+
+A parceria entre ciência e tecnologia gerou uma quantidade de metodologias interdisciplinares que pretendem sanar as lacunas deixadas pela excessiva compartimentalização das ciências positivadas, fato que é reforçado pelo atraso na criação dos primeiros órgãos de controle ambiental.
+
+A convergência entre as exigências internacionais e as necessidades ambientais levaram à uma inserção na economia globalizada, que foi mediada por padrões de qualidade como as normas ISO. No contexto do Brasil, surge em 1984 o Programa de Apoio ao Desenvolvimento Científico e Tecnológico - PADCT, órgão dentro do Ministério da Ciência e Tecnologia atribuída da incumbência de formular e desenvolver projetos na área. Como resultado do fomento à ciência e tecnologia, criou-se então novas formas de financiamento da 'interação universidade-indústria-centros de pesquisa\footnote{\cite[p.7]{Interdisciplinaridade_CT}}'. Acerca dos órgãos colegiados, o autor destaca a presença de instituições públicas e privadas, comunidade científica e empresarial e as agências de fomento CAPES, CNPq e Finep. As três fases quinquenais do PADCT e suas atividades são destacadas; destaca-se entre os elementos de sua terceira, vigente no momento de escrita do texto, a especialização das atividades dentro do componente de ciência e tecnologia.
+
+O pressuposto da defesa do meio ambiente aparece, e a interpretação acerca da origem antrópica dos impactos negativos que determinam as mudanças ambientais correntes é destacada. O texto afirma que o aprofundamento das propostas epistemológicas interdisciplinares coincidiu com o expressivo avanço da consciência ambiental no Brasil, fato que também se expressa na incorporação das ciências ambientais em diversos subprogramas. O reconhecimento da relevância do PADCT é destacado pela sinergia entre este e os espaços internacionais de discussão sobre o meio ambiente.
+
+A percepção da pluridimensionalidade e abrangência das ciências ambientais é associada às práticas interdisciplinares na formulação de projetos em ciência e tecnologia\footnote{\cite[p.8]{Interdisciplinaridade_CT}}. A necessidade de qualificação de recursos humanos foi destacada nas chamadas de projetos para a qualificação de cursos de pós-graduação strictu senso, e o caráter do CIAMB, enquanto indutor de avanços epistemológicos, afetou profundamente a cultura que se propagou à partir dos grupos de ensino e pesquisa. Sintomático de tal propagação foi o surgimento de seminários anuais de acompanhamento e a conseguinte formação de uma comunidade incumbida da aferição e incorporação das melhores práticas desenvolvidas na área. Os resultados dos seminários são amplamente discutidos com ênfase na capacidade integradora das atividades, destaca-se aí a 'interação universidade-indústria-centros de pesquisa\footnote{\cite[p.14]{Interdisciplinaridade_CT}}' e desdobra-se se tal acumulo de discussões o entendimento de que as ciências ambientais se apresentam como elemento integrador de conhecimentos socioambientais através da abordagem interdisciplinar.
+
+
+
+\newpage
+
+\section{Resenha - Cap.2 - Complexidade, Interdisciplinaridade e Saber Ambiental}
+
+\subsection{Interdisciplinaridade e formação ambiental:
+antecedentes e contribuições da América Latina}
+
+
+Os temas presentes em \cite{Agenda_2030} convergem com a obra de \citeauthor{Interdisciplinaridade_Ambientais} na medida em que este agrega uma coletânea de artigos publicada em 2000, numa associação de esforços entre NISAM / USP, NEPO / UNICAMP e INPE onde é discutida a questão ambiental, com a sua complexidade, e a interdisciplinaridade e como estas emergem no último terço do século XX (finais dos anos 60 e começo da década de 70).
+
+Tais problemáticas contemporâneas, nascem compartilhando o sintoma de uma crise de civilização, de uma crise que se manifesta pelo fracionamento do conhecimento e pela degradação do ambiente, também nascem marcados pelo logocentrismo da ciência moderna e pelo transbordamento da
+economização do mundo, sendo esta guiada pela racionalidade tecnológica e pelo livre mercado.
+
+Neste contexto, a noção de interdisciplinaridade se aplica tanto a uma prática multidisciplinar (colaboração de profissionais com diferentes formações disciplinares), assim como ao diálogo de saberes que funciona em suas práticas, e que não conduz diretamente à articulação de conhecimentos disciplinares, onde o disciplinar pode referir - se à conjugação de diversas visões, habilidades, conhecimentos e saberes dentro de práticas de educação, análise e gestão ambiental, que, de algum modo, implicam diversas 'disciplinas'– formas e modalidades de trabalho –, mas que não se esgotam em uma relação entre disciplinas científicas, campo no qual originalmente se requer a interdisciplinaridade para enfrentar o racionamento e a superespecialização do conhecimento.
+
+Os autores afirmam ser comum que diversos centros e organizações não-governamentais, dedicados não só à educação e à formação ambiental, como também à assessoria e promoção de projetos de desenvolvimento (regional, social, comunitário), se autodenominem e se assumam como centros de estudos interdisciplinares exemplos são o Foro Latino-Americano de Ciências Ambientais na Argentina, ou o Centro de Estudos Regionais Interdisciplinares no Paraguai. 
+Isso não só se reflete pelos poucos recursos destinados à educação, à ciência e à tecnologia na maior parte dos países da América Latina e Caribe; reflete-se também pela falta de políticas de pesquisa interdisciplinar para o desenvolvimento sustentável, pelo abandono do propósito de alcançar uma capacidade de auto-determinação científico-tecnológica, pelo esquecimento dos saberes e práticas tradicionais de uso sustentável dos recursos naturais. 
+
+Dessa maneira, o termo interdisciplinaridade vem sendo usado como sinônimo e metáfora de toda interconexão e 'colaboração' entre diversos campos do conhecimento e do saber dentro de projetos que envolvem tanto as diferentes disciplinas acadêmicas, como as práticas não científicas que incluem as instituições e atores sociais diversos.
+
+Pretende-se portanto ampliar o estudo das determinações estruturais e dos sistemas de organização de diferentes ordens de materialidade do real, a uma chamada ’energética’, realizando assim um cálculo dos fluxos de matéria e energia, que, demonstra-se útil para o fim prático de avaliar
+o potencial produtivo e a sustentabilidade dos ecossistemas através de diferentes práticas culturais e
+econômicas de uso e apropriação da natureza. 
+
+Tal organização se embasa também nas discussões da Escola de Frankfurt e não constitui o princípio último de um conhecimento sobre a organização dos processos ecológicos, econômicos e simbólicos nem um conhecimento último das relações entre a natureza, a técnica e a cultura
+
+
+\subsection{A CRISE AMBIENTAL COMO PROBLEMA DO CONHECIMENTO:
+ESTRATÉGIAS EPISTEMOLÓGICAS E APROPRIAÇÃO DE SABERES}
+
+
+Com base nesse entendimento, os autores seguem argumentando que as ciências são corpos teóricos que integram conceitos, métodos de experimentação e formas de validação do conhecimento, que permitem apreender cognoscitivamente a estruturação e a organização de processos materiais e simbólicos.
+
+Funcionam para entender as leis e as regularidades de seus fenômenos, para estabelecer os parâmetros e o campo dos possíveis eventos nos processos de reprodução e transformação do real que constitui-se dos seguintes objetos científicos específicos: processos de produção, de reprodução e de transformação social; processos de adaptação - transformação - mutação biológica; processos de simbolização cultural e de significação ideológica. 
+
+Percebe-se que os autores contemplam a dimensão abstrata da atividade humana e percebem com esta se relaciona com a interdisciplinaridade estudada.
+
+Os autores aqui aproveitam a base epistemológica colocada pela teoria geral dos sistemas, e sugerem que a interdisciplinaridade pode ser entendida como a transformação de seus núcleos fortes de racionalidade pela internalização, no saber ambiental, de suas externalidades multidimensionais.
+
+Partindo então da articulação de processos ontológicos, o entendimento da complexidade ambiental se abre para um diálogo de saberes que acarreta uma abertura à inter-relação, ao confronto e ao intercâmbio de interesse, em uma relação diametral que vai da solidariedade e complementariedade entre disciplinas, ao antagonismo de saberes. 
+
+Percebem também como e onde se inter-relacionam processos significativos, mais que posições científicas, interesses disciplinares e verdades objetivas e ressaltam essas características presentes nas abordagens transdisciplinares.
+
+A relação entre o indivíduo e o ambiente não costuma ser percebida como uma relação de continuidade. Afirmam os autores sobre a externalidade do objeto 'ambiente' que este pode ser entendido ao se considerar a trans-disciplinaridade que confronta o indivíduo, enquanto exige deste o processo mobilizador de um conhecimento apressado, ao qual se fecharam as vias da complexidade; é o encontro do conhecimento isolado com sua externalidade, com sua alteridade, que abre as comportas do saber para irrigar novos territórios do ser; para que, em sua eterna recorrência, os conhecimentos se reencontrem com os saberes subjugados em novos horizontes de racionalidade.
+
+\subsection{PENSAMENTO DA COMPLEXIDADE, MÉTODOS
+INTERDISCIPLINARES E DIÁLOGO DE SABERES}
+
+
+A temática dos paradigmas científicos apontada por \cite{Kuhn2012-oa} aparece na discussão metodológica existente na interdisciplinaridade. Os temas da ontologia e da ressignificação acompanham tal argumento onde será possível entender como um procedimento metodológico relacionado com o processo de 'finalização das ciências', que , como resultado de ter alcançado um estado de 'maturidade', deveria levá - las a redirecionar seu potencial aplicativo para a demanda social de conhecimentos \footnote{Termos destacados pelos autores na obra original. Tal discussão se extende sobre outras fontes que fogem ao escopo dessa resenha.}, internalizando uma exigência de 'reintegração está sendo impulsionada por indivíduos (alguns dos quais trabalham em equipes de pesquisa) vinculados às universidades e aos centros nacionais de pesquisa científica, mas cujo interesse e paixão para transgredir os paradigmas disciplinares e para ultrapassar as fronteiras do conhecimento, não responde a uma política científica ou uma política universitária. 
+
+A ontologização do saber codificado para apreender, 'coisificar', objetivar o real é percebida ao se sugerir que a interdisciplinaridade ambiental implica a reconstrução dos objetos de conhecimento pela internalização dos campos ônticos desconhecidos e desalojados, dos saberes subjugados e postos à margem, mas que intervêm na determinação dos processos que estuda uma ciência. 
+
+Conclui-se percebendo que a organização e racionalidades de caráter 'não linear', de diferentes escalas e níveis (do local ao global) que, em sua conjugação, geram sinergias e novidades; o ambiente é um real solidário da complexidade, da diversidade, da 'generatividade' e da criatividade.
+
+O tema das identidades construídas através da relação social com o ambiente aparece quando os autores percebem que a complexidade ambiental reclama a participação de especialistas que trazem pontos de vista diferentes e complementares sobre um problema e uma realidade – a visão e a sensibilidade do ecólogo, do etnólogo, do geógrafo, do agrônomo, do geomorfólogo em relação ao 'ambiente físico'; do economista. 
+
+Na integração dessas disciplinas genéricas dentro de cada campo temático se desenvolvem 'escolas de pensamento', com diferentes princípios teóricos, metodológicos e ideológicos, com posições diferenciadas que criam obstáculos ou favorecem o diálogo interdisciplinar através das simpatias e antagonismos entre os portadores desses interesses disciplinares. 
+
+Os autores seguem sugerindo que a construção de uma racionalidade ambiental demanda também a interdisciplinaridade, mas não só como um método integrador do existente, senão como uma perspectiva transformadora dos paradigmas atuais do conhecimento, da abertura à hibridização das ciências, das tecnologias e dos saberes populares. 
+
+Especialidades sobre os diferentes processos que integram o ambiente, que buscam retotalizá-lo com um conhecimento holístico gerado por um método interdisciplinar. Uma re-significação do mundo e a reapropriação da natureza, a partir de um questionamento das formas de conhecimento e apropriação que produz a ciência moderna. 
+
+Ela significa uma revisão de suas formas de conhecimento e sua abertura para outras formas 'não científicas' de compreensão do mundo e das relações do homem com a natureza através da inter-relação das ciências e da abertura para um diálogo de saberes, visando a hibridização entre ciências, tecnologias e saberes, para a produção de novos paradigmas de apreensão do real e comunicação entre saberes visando o encontro entre a epistemologia e a hermenêutica. 
+
+A interdisciplinaridade extende dessa maneira seu campo de intervenção 'entre disciplinas científicas' para abarcar todo contato, intercâmbio, inter-relação e articulação entre paradigmas, disciplinas, saberes e práticas. 
+
+Conclui-se que esta abordagem teórica serve de base para a compreensão dos problemas complexos, problemas estes que exigem investigação participativa e de construção coletiva de conhecimentos através do intercâmbio de saberes, assim como da hibridização de sabedorias e conhecimentos, cosmovisões e paradigmas científicos. Nesse sentido, são os conflitos ambientais que estão na raiz da problemática ambiental, e estes implicam visões e interesses diferenciados, nos quais se inscrevem diferentes formas de saber e estratégias de poder no saber, as quais não se poderão anular.
+
+Dessa maneira, sugerem os autores, haverá que distinguir os processos interdisciplinares da hibridização de conhecimentos e do diálogo de saberes, restringindo o conceito de interdisciplinaridade ao tratamento do trabalho no que concerne às relações entre disciplinas científicas constituídas dentro de paradigmas científicos, em sentido kuhniano.
+
+Pode-se entender que objetos heterogêneos de conhecimento produzem estratégias heterodoxas de investigação e que o sentido da interdisciplinaridade deveria limitar-se a denotar os procedimentos e objetivos intercientíficos da 'ciência normal', que se remetem a suas possibilidades de inter-relacionar processos e de articular conhecimentos a partir de seus métodos de investigação e suas óticas disciplinares dentro de seus próprios paradigmas científicos. 
+
+Os autores também destacam que a problemática da 'articulação das ciências para a gestão ambiental' deve concentrar-se na análise de suas relações possíveis a partir das condições que impõem a própria estrutura paradigmática das ciências, de onde derivam os obstáculos epistemológicos à complementaridade e retotalização do campo do conhecimento, assim como suas possíveis relações interdisciplinares. 
+
+Essa articulação científica não pode ser pensada como uma fusão dos objetos teóricos das ciências, aqueles que constituem sua especificidade teórica de onde derivam seu efeito de conhecimento. Devem ser pensados como uma sobre-determinação ou uma interdeterminação dos processos materiais dos quais as ciências produzem um efeito de conhecimento em seus respectivos campos, de uma problemática trans-científica e intra-científica, da qual pode-se indicar  formas possíveis do saber no campo ambiental; as quais incluem a importação de conceitos provenientes de outras ciências para serem trabalhados e transformados pelas necessidades internas do desenvolvimento do conhecimento da ciência importadora.
+
+Sobre a dimensão econômica da ontologia analisada, percebe-se que a racionalidade produtiva tem implicado a reformulação de conceitos da economia (valor, recurso, desenvolvimento das forças produtivas, apropriação cultural) os quais agem através da 'aplicação' de teorias e conceitos da cultura, da ecologia e da tecnologia–produtividade ecológica, produtividade eco-tecnológica, produtividade cultural; temas como o  ecossistema-recurso, taxas ecológicas de exploração e uso de recursos, significado cultural da apropriações e, um tema pertinente mas não citado pelos autores a ROI sigla em Inglês para retorno sobre o investimento, elemento pragmático que orienta uma parte significante das decisões no pragmatismo economicista contemporâneo.
+
+Os autores concluem a seção afirmando que conhecimentos, saberes e comportamentos que configuram o campo complexo do saber e da ação ambiental  confluem dos efeitos de dois ou mais processos materiais, objeto de diferentes disciplinas, em um fenômeno empírico chamado de sistema ambiental complexo o qual, ao não pertencer ao objeto de conhecimento de nenhuma de suas ciência, não implica a inclusão dos efeitos de um processo em outro, nem a articulação contribui para desenvolver um campo mais complexo. Usam para tanto os exemplos da demografia e da etno-botânica, mas afirmam que estas não se estabelecem como objetos científicos complexos. 
+
+A articulação dos efeitos de processos materiais, objeto de uma ou mais ciências, sobre processos que são objeto de outra ciência, é o que implica uma determinação de processos externos e estes só podem entender-se como uma sobredeterminação ou uma articulação dos efeitos dos processos objeto dessas ciências.
+
+
+\subsection{Interdisciplinaridade e articulação de ciências no campo ambiental}
+
+
+Os autores retomam o tema da produção científica latino-americana ao afirmarem que a problemática ambiental gerou na América Latina uma reflexão sobre a articulação das ciências para a gestão ambiental, abrindo o campo de uma interdisciplinaridade teórica. Tal proposta epistemológica estabelecia a reconstituição de objetos de conhecimento para internalizar o saber ambiental complexo, além da vinculação entre duas ou mais disciplinas confluentes em uma problemática ambiental. 
+
+A execução plena das ciências em um 'sentido forte', carece de materialidade em nível generoso, pressuposição ou condição dos processos de outra ciência que lhe servem de base. 
+
+Como exemplo os autores constrõem uma analogia entre o trabalho abstrato e material onde o ser biológico do homem usa (dos elementos materiais) como suporte dos processos de trabalho ou de seus processos simbólicos.
+
+No caso de suas estruturas materiais terem efeitos determinantes nos processos simbólicos em que se articulam, usam os autores como exemplo, os efeitos do modo de produção sobre os ecologistas que desconhecem a especificidade das relações sociais de produção, as regras de organização cultural e as formas de poder político nas quais se inscrevem as estratégias do conhecimento e as formas de uso dos recursos naturais. 
+
+Sugerem os autores que nesses processos, os conhecimentos e os saberes jogam um papel instrumental ao potenciar a apropriação econômica da natureza. Afirmam também que tais processos jogam como saberes que forjam sentidos e que mobilizam a ação com valores não mercantis e para fins desenvolvimento através das práticas sociais de produção e transformação da natureza. Portanto, daí entende-se que este processo transcende os alcances de um princípio metodológico para a reintegração dos conhecimentos existentes. 
+
+A necessidade de apreender esses processos em sua especificidade é o que obriga a reelaborar os conceitos teóricos de cada ciência e a produzir novos conceitos a partir do trabalho teórico sobre os conceitos importados de outras ciências, transformação que é mobilizada pelo sentido do saber ambiental externalizado pelas ciências.
+
+Sobre o espaço e legitimidade da abordagem aqui estudada, os autores afirmam que na maioria dos casos, se tem dado espaço para um trabalho teórico interdisciplinar, e que se está definido o processo interdisciplinar como o intercâmbio de conhecimentos que resulta em uma transformação dos paradigmas teóricos das disciplinas envolvidas; ou seja, em uma 'revolução dentro de seu objeto' de conhecimento, a qual pode percebida ser como a construção de um novo objeto científico a partir da colaboração de diversas disciplinas, e não só como o tratamento comum de uma temática.
+
+O tratamento dos elementos comuns numa determinada temático ressalta o caráter convergente da abordagem transdisciplinar e percebe este como um processo que tem sido consumado em poucos casos da história das ciências.
+
+Daí conclui-se que a re-fundação do objeto teórico de diversas ciências, problematizadas pode ser feita pelo saber ambiental externo a seus paradigmas de conhecimento. 
+
+O caso da etno-botânica é trazido pelos autores que analisam onde intervem a ecologia para explicar as condições naturais de produção e regeneração do meio vegetal; as disciplinas etnológicas (etno-tecnologia, etno-ecologia e etno-linguística), são usadas para explicar o processo cultural de aproveitamento dos recursos do meio; a antropologia ecológica, para dar conta do condicionamento ecológico sobre a organização social e produtiva seus vegetais; as disciplinas históricas, para explicar os processos de transculturação que afetam as práticas produtivas e a utilização dos recursos dos povos; enfim, a história econômica recente e a análise do sistema econômico dominante, para dar conta das determinações que impõem as condições de valorização e exploração dos recursos sobre as práticas tradicionais de reconhecimento e aproveitamento de seu ambiente.
+
+Sobre a intensidade do processo interdisciplinar este, quando menos 'forte', se apresenta, nas práticas da biologia genética, tanto que seu objeto constitui-se como um campo de aplicação de diferentes ciências nas quais não se estabelece uma transformação de seus objetos de conhecimento.
+Vê-se o quanto distante desses princípios da interdisciplinaridade científica está o projeto constituído pela colaboração de umas supostas 'ciências ambientais'.
+
+Tal projeto encarregado de analisar o campo generalizado das relações entre sociedade e ambiente aparece como um campo de problematização do conhecimento que induz um processo desigual de 'internalização' de certos princípios, valores e saberes 'ambientais' oriundos de paradigmas tradicionais das ciências. Tal argumento, sugerem os autores, não refunda o objeto de estudo e converge com o argumento de serem esses sistemas desconhecedores da especificidade conceitual de cada ciência, daí se torna possível pensar sua integração limitada com outros campos do conhecimento, sua articulação com outros processos materiais e sua hibridação com outros saberes.
+
+Nessa perspectiva, a interdisciplinaridade ambiental transborda o campo científico, acadêmico e disciplinar do conhecimento formal certificado, e se abre a um diálogo de saberes, onde se dá o encontro do conhecimento codificado das ciências com os saberes codificados pela cultura.
+
+Sugerem os autores que este processo sustentável aparece como a síntese de processos naturais, sociais, culturais e tecnológicos, cognitivos e identificáveis, e que estabelecem os processos sinergéticos de um sistema produtivo ambiental complexo. A história das ciências da vida oferece um exemplo de interdisciplinaridade teórica no processo de reconstrução do objeto científico da biologia, sendo este a ruptura e reformulação do objeto teórico que é o conhecimento sobre a estrutura e as funções da matéria vivente.
+
+Ao perceber que o ambiente não é o conceito que designa a ruptura de uma ciência ou, da articulação das ciências existentes, o autor avança sobre a ideias da igualdade e do enfrentamento das hierarquias de uma sociedade estratificada e normalizada a qual, ao mesmo tempo, reforça a emancipação pessoal do sentido e do individualismo contemporâneo, abrindo as comportas para a era do vazio e para a cultura da pós-modernidade. 
+
+Sugerem também, aproveitando de Foucault e Leff que o conhecimento das ciências formais e empíricas, das ciências da matéria, da vida e da cultura ambiental estabelecem bases materiais e princípios conceituais para a construção de uma nova economia fundada no potencial ambiental que produz a sinergia dos processos ecológicos, tecnológicos e culturais que transbordam do conhecimento científico, e se inscrevem em relações de poder pela apropriação social da natureza e da cultura.
+
+O autor encerra o texto argumentando sobre o conceito de 'real' e afirma que aquilo que autoriza-nos a pensar em uma articulação das ciências, não surge dos pressupostos que explicam a gênese evolutiva e a emergência de novos níveis do real, entendendo tal fato como elemento reduzido, por exemplo, na emergência da organização biológica a partir de suas bases físicas, ou da ordem simbólica e cultural como epifenômeno da ordem vital. Segue percebendo a capacidade de gerar significado ao argumentar que tal epifenômeno tampouco se fundamenta nas impossíveis relações de constituição de uma ciência em outra. 
+
+
+Importante notar a conclusão de que a transdisciplina leva, assim, à desconstrução do conhecimento disciplinar e abre as vias para uma hibridização e diálogo de saberes no campo da complexidade ambiental. No entanto, essa orientação 'interdisciplinar' para objetivos ambientais não autoriza a constituição de um novo objeto científico –o ambiente– como domínio generalizado das relações sociedade-natureza.
+
+Percebe-se tal situação nos efeitos reducionistas – de formalistas, empiristas, ecologistas. Nessas abordagens metodológicas existe uma pretendida interdisciplinaridade ambiental e se constroem os princípios epistemológicos que dão especificidade às ciências e às formas de articulação da ordem  física, biológica, histórica e simbólica. 
+
+O projeto positivista de unificação das ciências faz frente à crítica do logocentrismo da ciência moderna e seus impactos no ambiente, assim como à inevitável e necessária intervenção dos saberes não científicos na gestão ambiente. Assim sendo, percebem os autores que o paradigma interdisciplinar implica um rompimento com o conhecimento universal e disciplinar que implanta o regime de dominação da natureza através da ciência e que se situa acima dos saberes e identidades culturais.
+
+
+
+
+\newpage
+
+\section{Resenha - Cap.3 - Considerações sobre a Interdisciplinaridade}
+
+
+O texto de \cite{consideracoes_Interdisciplinaridade} trata do tema da interdisciplinaridade e de sua aceitação dentro do vocabulário acadêmico usual. Destaca-se o caráter renovador colocado pela incorporação deste conceito. Tal procedimento embasado na filosofia das ciências, discute como a epistemologia se adapta à novas condições de produção acadêmica. É destacada a necessidade de se criar uma produção científica e tecnológica que não esteja alienada da realidade, e percebe-se o contexto da pós-modernidade como um ambiente nebuloso e dialético. Em tal ambiente ocorre a incorporação de novos valores influenciados pela sociedade onde a atividade acadêmica está inserida e, dialeticamente, a atividade acadêmica influencia sua exterioridade, que é a sociedade.
+
+O texto alerta para o mal estar causado pela compartimentalização vivada na alta especialização dos conhecimentos e percebe o poder alienante de tal fragmentação. Surge a daí o entendimento de que a ingerência antrópica sobre o ambiente, em parte advém, da falta de uma percepção holística acerca das determinações que moldam a relação entre indivíduo, sociedade e natureza. A necessidade de se perceber a ontologia da totalidade do planeta, é relevante para o entendimentos dos processos globalizados. A necessidade de uma mudança de paradigma científico, que esteja em acordo com a unicidade da cosmovisão holística exigida pelo objeto ambiental, é destacada no texto, e tal reorganização, é realizada através da aplicação de práticas interdisciplinares.
+
+
+\subsection{Conceituação Etimológica}
+
+O texto detalha a etimologia dos seguintes conceitos: 'Inter', 'Disciplinaridade' e 'Interdisciplinaridade' e destaca que a fragmentação das ciências disciplinares pode gerar barreiras que impedem a transmissão de conhecimentos.
+
+
+\subsection{Conceito epistemológico}
+
+O papel dinâmico das adaptações na ferramenta que é a linguagem é destacado através da discussão sobre os termos: 'multidisciplinar, intradisciplinar,
+interdisciplinar e transdisciplinar\footnote{\cite[p.57]{consideracoes_Interdisciplinaridade}}' e suas funcionalidades na vida social.
+Acerca do termo multidisciplinar, o texto destaca que mais de uma disciplina pode interpretar um mesmo objeto presente na realidade, sem compartilhar seus entendimentos sobre o objeto.
+
+\subsubsection{Variações da disciplinaridade}
+
+Acerca do termo intradisciplinar, o texto destaca o escopo desta abordagem e percebe esta como restrita ao âmbito interno de uma disciplina. Percebe também a falta de intencionalidade acerca incorporação dos saberes presentes em outras áreas do conhecimento. Por fim sugere-se que esta compartimentalização pode ser uma fase inicial de na construção de novos conhecimentos.
+Acerca do termo interdisciplinar, o texto destaca a intencionalidade com que se estabelecem nexos de uma forma de conhecimento mais abrangente. Ressalta o caráter 'diversificado e unificado' de tal abordagem e o 'envolvimento direto dos interlocutores'\footnote{\cite[p.58]{consideracoes_Interdisciplinaridade}}. Acerca do termo transdisciplinar, o texto destaca o escopo desta abordagem ao sugerir que esta transcende os limites da interdisciplinaridade, por exigir um tratamento do seu objeto que seja capaz de realizar uma progressiva incorporação de saberes de outras áreas. Destaca-se a percepção de uma graduação da integração em tais atividades, partindo da maior integração nas atividades transdisciplinares, seguida da associação interdisciplinar; tal integração diminui mais na multidisciplinaridade e enfim, os conhecimentos acaba encapsulados na intradisciplinaridade.
+
+
+\subsubsection{Caminhos da interdisciplinaridade}
+
+Os aspectos históricos da formação dos conhecimentos e sua integração sã detalhados no texto e o autor contextualiza sua evolução. São destacadas os seguintes contextos históricos e é apresentada a progressiva integração dos conhecimentos presentes em cada situação histórica, nomeadamente: na Antiguidade Clássica, no contexto do Medievo,  do Renascimento, do Iluminismo, a emergência do paradigma cartesiano-newtoniano, seu dessobramento no contexto da era industrial, a emergência do paradigma positivista, culminando na proposta de integração das disciplinas apresentada pelo Círculo de Viena.
+
+
+\subsubsection{Construção da Interdisciplinaridade}
+
+O papel demiúrgico da atuação de mediador dos elementos estruturais do pensamento é destacado e as ideações acerca do mundo real são percebidas como unidades num processo unificador das ciências. Destaca-se também a necessidade inata de uma abordagem transdisciplinar e sua dificuldade. O processo de ideação do discurso é detalhado e este é percebido como uma construção linguística. As inovações curriculares são percebidas como um sintoma de tais inovações e a diferenciação entre os objetos formais do discurso e os objetos formais da realidade é destacada. A percepção desta polarização e a intencionalidade de superá-la é apresentada como uma condição sine qua non para a consolidação da interdisciplinaridade.
+
+
+\subsection{Considerações complementares}
+
+Nesta seção o texto destaca a crise nos modelos de aprendizagem e sua relação com as transformações paradigmáticas. Tais mudanças podem ser percebidas nas mudanças de cosmovisão e conduta
+
+\subsubsection{Em torno da interdisciplinaridade - Em torno da transdisciplinaridade - À guisa de conclusão}
+
+Nesta seção o texto retoma e detalha o papel da interdisciplinaridade ao perceber esta como ferramenta para a criação de uma ciência com 'maior amplitude de horizonte (extensão) e mais profundo entendimento (compreensão)\footnote{\cite[p.66]{consideracoes_Interdisciplinaridade}}'.  Ressalta também a intencionalidade do processo trans e interdisciplinar e a disposição exigida dos indivíduos vocacionados para tais atividades.
+
+\newpage
+
+\section{Resenha - Cap.4 - O Paradigma Transdisciplinar:
+uma Perspectiva Metodológica para a Pesquisa Ambiental}
+
+\subsection{A NECESSIDADE METODOLÓGICA}
+
+
+O texto de \cite{Paradigma_Transdisciplinar_Metodologica} discute o papel da metodologia na interdisciplinaridade e apresenta a necessidade dialógica entre teoria e prática, após discussão acerca das abordagens inter e transdisciplinares.
+
+Ao destacar a necessidade de se avançar a discussão teórica e o intercâmbio de experiências, o fazem com a finalidade de fazer avançar uma discussão metodológica que permita aumentar a capacidade de intervenção pessoal e coletiva.
+
+Sugere-se que tais discussões se manifestem através de ações que transcendam as fronteiras das disciplinas e dos limites institucionais e culturais das nações e de seus povos devido à reconhecida urgência dos temas colocados pela questão ambiental. Sugerem também que o caráter paradigmático de tais soluções não permite imitação de situações antes vivenciadas e que a sistematização deste novo paradigma não será um processo individual.
+
+O texto contextualiza a estratégia coletiva da perspectiva transdisciplinar enquanto estratégia metodológica e apresenta o caso de estudos anteriores do mesmo autor o qual pode realizar estudos no campo da hidrologia, tema que o fez perceber o caráter transdisciplinar de seu objeto de estudo.
+
+Sugere o autor o terceiro momento numa lógica dialética do entendimento de um dado objeto se hierarquiza num patamar superior de verdade, se comparado aos elementos anteriores e que a efetividade de tal superação se dá através da construção das relações sociais onde tal objeto se manifesta.
+
+
+
+\subsection{COMEÇANDO PELAS EMOÇÕES}
+
+O autor inicia sua argumentação sobre a efetividade da metodologia transdisciplinar ao perceber que as emoções, enquanto dimensão autopoiética da atividade abstrata humana, e apresenta três razões: primeiro, pela percepção da degradação que não se limita ao racional; segundo, pelo pela da transcendência dentro da abordagem transdisciplinar e terceiro, pelo papel funcional de religare, realizado pelo conhecimento. Percebe também que o viés da materialidade seria repetido e entende que isso determinaria uma repetição da abordagem anterior. Para tanto, o autor recorre a obra de Maturana, tema que foge do escopo dessa resenha, mas que, no texto do autor, ressalta o papel das emoções no processo de acoplamento estrutural que ocorre entre o indivíduo e o ambiente.
+Sugere também que as emoções estão num nível inferior aos paradigmas e que, ao mesmo tempo, as emoções são a ‘episteme’ dos paradigmas \cite[p. 86]{Paradigma_Transdisciplinar_Metodologica}.
+
+O autor segue decompondo a dimensão afetiva afim de demonstrar seu método de compreensão e a divide em três abordagens sendo estas:  a cooperativa, abordagem associada ao religare; a estética, abordagem que percebe o acoplamento estrutural entre o sujeito e o ambiente e a terceira, a abordagem cognitiva que percebe a importância emocional das representações intersubjetivas presentes na linguagem.
+
+O autor conclui o argumento afirmando que a metodologia transdisciplinar usa o elemento emotivo para efetivar sua transcendência e garantir a humanização de seu objeto de estudo.
+
+
+\subsection{CONSTRUINDO O DOMÍNIO LINGÜÍSTICO DA SUSTENTABILIDADE}
+
+Partindo da contradição entre pessoas e ambiente, o autor aproveita da ideia de religare sugerindo um apriorismo da ‘dimensão superior, a conceitual \cite[p. 88]{Paradigma_Transdisciplinar_Metodologica}’ dada por um conjunto conceitual mínimo que fundamenta o paradigma da sustentabilidade.
+
+O autor traz o conceito de ‘domínio linguístico’, fundado em Habermas e Maturana e percebe este como o ‘espaço não material de significações semelhantes de uma mesma realidade’ \cite[p. 86]{Paradigma_Transdisciplinar_Metodologica} para perceber os campos semânticos compartilhados por áreas do conhecimento unidas por um objeto transdisciplinar e sugere a necessidade de dar amplitude à esses conceitos compartilhados, evitando assim a repetição.
+
+
+
+\subsection{PLANEJAMENTO ESTRATÉGICO DA PESQUISA}
+
+
+O autor percebe a contradição presente na dimensão conceitual  ao sugerir que o paradigma da sustentabilidade não pode ser reduzido aos seus componentes disciplinares e traz um breve histórico das tensões presentes na discussão sobre a degradação camada de ozônio, sugerindo que o aceitamento de tal fato é sinal do amadurecimento de tal abordagem.
+
+O texto então detalha a evolução estratégica de tais paradigmas complexos passando pelo acordo inicial, resgate histórico, mandato atual da normas vigentes, elaboração de um diagnóstico estratégico, formulação de estratégias e criação de uma visão de sucesso.
+
+
+\subsection{CONCEPÇÃO E ESCRITA DO PROJETO}
+
+
+O processo de escrita de projetos dentro dessa abordagem transdisciplinar é discutido e a tensão entre os ambientes interno e externos são analisados afim de se criar um equilíbrio entre os pontos fortes e fracos de cada ambiente. 
+
+O autor sugere que tal disposição binária se transforma num elemento terciário, completando a dialética da tais tensões. Portanto, percebem que neste ‘tertium quid’ reside a lógica ternária da metodologia transdisciplinar.
+
+A substância da chamada ‘dimensão conceptiva p.90’ pode ser decomposta em três elementos sendo estes a noção de ‘coordenação solidária’ que percebe como a ‘capacidade mediadora resulta do domínio do raciocínio dialógico’ presente no domínio linguístico incorporado para a explicação do objeto transdisciplinar proposto. Tais condições moldam a chamada ‘concepção dimensional’ na qual acontece a identificação das dimensões que atendem as necessidades da dimensão anterior e finalmente, sugere-se a que a ‘dimensão fractal’ enquanto produto final multifacetado manterá a sinergia da ‘estrutura
+de acoplamento de cada ação individual e disciplinar ao espaço transdisciplinar' \cite[p. 90]{Paradigma_Transdisciplinar_Metodologica}.
+
+
+\subsection{APRENDENDO COM O OPERAR}
+
+O caráter operacional de tal abordagem metodológica é apresentado como o resultado da tensão entre a ‘a concepção da pesquisa formulada pela equipe e a realidade
+ontológica sobre a qual o projeto irá atuar \cite[p. 90]{Paradigma_Transdisciplinar_Metodologica}’. Partindo do viés idealista, percebe uma dimensão secundária onde tais elementos abstratos convergem com a realidade material de forma difusa e que resulta no terceiro momento tá complexidade. Para tanto o projeto transdisciplinar deve levar a cognição como elemento operador da produção do conhecimento.
+
+O autor separa a dimensão cognitiva nos seguintes componentes, primeiramente: do aporte epistêmico, sintomático da relação com o grupo de pesquisadores e que exige a necessidade de abertura; em segundo lugar, a dimensão do aporte pedagógico, a qual considera a disseminação e incorporação de conhecimentos novos e, finalmente, a dimensão do aporte metodológico, entendido aqui como a necessidade de rigor formal na práxis de pesquisa.
+
+
+\subsection{A BUSCA DA EFETIVIDADE - FECHANDO O CICLO e CONCLUSÃO}
+
+O tema da autopoiesis é percebido como um desdobramento cognitivo das relações de poder. Poder este que age de maneira agregadora de informações e que coexiste, de maneira binária, com a lógica de suas externalidades.
+
+O objetivo do ‘gerenciamento autopoiético da informação \cite[p. 91]{Paradigma_Transdisciplinar_Metodologica}’ se realiza na dimensão superior da linguagem e, sugere o autor, pode se beneficiar de ferramentas da informática.
+
+A dimensão do efetivo se manifesta então como fluxo de informação e consciência que transcende as barreiras disciplinares e se substancia nas externalidades sociais da pesquisa.
+
+O movimento final se dá na criação do elemento que é a afetividade humanizadora oriunda de tais conhecimentos, que agora, depois de processados dialogam com a dimensão emocional, cumprindo a função de religare anunciada anteriormente
+
+
+\newpage
+
+\section{Resenha - Cap.5 - Marcos Conceituais para o Desenvolvimento da Interdisciplinaridade}
+
+\subsection{Natureza e sociedade: passagem para uma nova ciência}
+
+O tema da necessidade de um sistema de conhecimentos acerca da natureza e da sociedade é apresentado no texto, como uma junção de elementos naturais e sociais. Sugere-se daí que cabe à epistemologia ambiental unificá-los, e para tanto deve-se considerar o fato de a percepção humana moldar o entendimento acerca daquilo que é rotulado como natureza. A capacidade de significação associada à capacidade de transformação das energias presentes no ambiente natural são destacadas, e percebe-se a relevância da construção social daquilo que é rotulado como natureza.
+
+A interação dialética entre o indivíduo e sua exterioridade é percebida ao se destacar o caráter criador da linguagem. A noção da objetividade da exterioridade é questionada ao se destacar que esta independe da existência humana e de seus rótulos. Tal argumento leva à percepção do caráter autopoiético do conhecimento, ao se destacar que este conhecimento pode atuar como força criadora de si mesmo. A ciência então é percebida como campo simbólico unificado por um ethos\footnote{\cite[p.96]{Marcos_Conceituais_Interdisciplinaridade}} corporativo autogerador. O papel dos contextos sociais estruturados onde se 'produz e consome ciência' é destacado usando a argumentação de Prigogine e, embora exista a contaminação colocada por externalidades à ciência, esta deve se incumbir de 'reafirmar verdades\footnote{\cite[p.97]{Marcos_Conceituais_Interdisciplinaridade}}'
+
+O caráter contraditório das externalidades à ciência normal influenciam as novas possibilidades metodológicas, embora gerem incertezas nas ciências positivadas. A crença no poder da ciência é destacada como problema dado pelo grau da confiança que esta carrega. O texto aponta dois desdobramentos de tais condições, primeiro a dependência causada pela instrumentalização da técnica necessária para a vida e segundo, a introdução de esquemas cognitivos provisórios semi-científicos, são percebidas através dos esquemas de apropriação técnica da natureza. Também questiona-se as condições que causam a mudança nas bases epistemológicas do saber científico e de que maneira tais condições se relacionam com as mudanças paradigmáticas.
+
+
+\subsection{Pré-condições para uma ciência da complexidade (natureza-sociedade)}
+
+A necessidade de romper com as repetições da práxis e da ideação acerca do saber ambiental é destacada no texto, e é percebida como parte da crítica epistemológica que ocorre dentro das ciências ambientais. Para tanto sugere-se a superação de tais condições através de estratégias como a da revalorização dos saberes culturais. Acerca dos fundamentos e resultados da ciência, destacam-se as especificidades do processo cognitivo em seus objetos do conhecimento e funções simbólicas, a função social da ciência e o papel (tradicional ou inovador) do cientista. Acerca do papel do observador, o cientista, enquanto produtor de funções simbólicas e processos cognitivos, este apresenta uma continuidade frente o ambiente natural e possui um papel gerador em tal realidade, não se dissociando dos papéis de sujeito e objeto.
+
+
+
+\subsection{Interdisciplinaridade e pesquisa na relação sociedade-natureza}
+
+O tema da prática interdisciplinar é detalhado ao se destacar seus fundamentos. Alguns erros comuns das estratégias epistemológicas que prentender gera a interdisciplinaridade podem ser gerados pelos viéses reducionista e pelo viés das generalizações. A paralaxe  dada pelos diversos pontos de vista que pretendem interpretar o ambiente é apresentada como uma caratcterística multicêntrica e focada na intervenção. A possibilidade de um indivíduo sozinho realizar um trabalho sintetizador transdisciplinar é questionada, e é comparada à mera união de profissionais de diversas disciplinas, sem a intenção de produzir um trabalho interdisciplinar. O texto destaca o fato de as conclusões dos trabalhos interdisciplinares poderem ser generalizados enquanto suas práticas não o podem ser. A interação entre as várias subjetividades é uma característica do trabalho interdisciplinar, e o isolamento do pesquisador não é recomendado. A hibridização dos saberes é apresentada\footnote{\cite[p.102]{Marcos_Conceituais_Interdisciplinaridade}} considerando sua polarização entre 'débil' e 'forte' e os conflitos intersubjetivos no processo de confronto de experiências necessários para a construção dos saberes ambientais é destacado.
+
+Acerca da hibridização débil, esta é caracterizada pela ausência do objetivo explícito de gerar a interdiscipliaridade; a forma da hibridização forte se caracteria pela ausência da primazia de uma forma de saber sobre as outras. O texto segue apresentando exemplos da implementação da interdisciplinaridade em estudos recentes e destaca o seu caráter desestabilizador e multidimensional.
+
+
+
+\newpage
+
+\section{Resenha - Cap.6 - Práticas Interdisciplinares em Grupos Consolidados}
+
+A relação entre a degradação ambiental é apontada no texto de \cite{Interdisciplinares_Consolidados} como fato que impulsionou os órgãos públicos e a comunidade científica à desenvolverem novas práticas científicas. O texto descata as mudanças ocorridas no foco das ciências ambientais as quais, num primeiro momento se encontravam separadas das discussões presentes nas ciências humanas. Num segundo momento, a incorporação das ciências humanas se deu, fato que reforça a interdisciplinaridade. 
+
+A sequencia histórica dos grandes programas de pesquisa internacional acerca da relação entre ambiente e humanidade reforçou tal situação. Esta vertente da pesquisa foi acolhida por uma diversidade de instiuições, nomeadamente: a UNESCO, que já na década de 60 já se incumbia de discutir a questão do meio ambiente, incorporou os entendimentos das humanidades em seus estos na década de 70 realizados pelo chamado 'Programa MAB\footnote{\cite[p.111]{Interdisciplinares_Consolidados}}'; é destacado também os estudos do programa PIREN, realizados na França dos anos 70. 
+
+O texto ressalta o temas da 'interdisciplinaridade prática', ao destacar a incorporação e aplicação pragmática de entendimentos acerca do cartáter societal, nas situações de degradação ambiental. Tal incorporação de ementos inovadores permitiu a difusão de procedimentos e sistematizações. Advém daí o entendimento de que a interdisciplinaridade ambiental se baseia no estudo das 'formas de utilização dos recursos naturais pelo homem\footnote{\cite[p.113]{Interdisciplinares_Consolidados}}'.
+
+
+
+\subsection{Diferentes abordagens para a pesquisa interdisciplinar}
+
+Três abordagens para a pesquisa são apresentadas: uma primeira, centrada no estudo do recurso natural; uma segunda, focada nas relações societais, e uma terceira, forcada no impacto dos modelos de desenvolvimento industrial. Afirma-se que a primeira abordagem tende à produzir uma rigidez concitual e destaca-se a interdisciplnaridade nas fases mais tardias do processo. Das duas abordagens societais é destacada a diferenciação através de seus objetos. Percebe-se um viés mais generalista na primeira e uma especificidade na discussão dos meios de produção presente na segunda.
+
+
+\subsection{Condições para a prática interdisciplinar}
+
+Ao discutir o tema da fundamentação teórica necessária para a prática interdisciplinar é reforçado o argumento da natureza societal do objeto de estudo ambiental. O tema é compartinlado pelos diversos saberes interessados em um determinado objeto de estudo, o qual é tratado como um problema comum. A cooperação interdisciplinar não pode ser reduzida à criação de uma metadisciplina que possívelmente confundiria ferramentas de análise. Uma sequência de dificuldades é apontada, sendo a primeira: a construção de objetos científicos, considerando o possível reducionismo da abordagem disciplinar; uma segunda dificuldade advém da contrução de uma problemática comum, condição que afeta a elaboração de programas de trabalho interdisciplinar. O confrontamente das diferentes visões disciplinares deve ter como propriedade emergente o objeto complexo, este então se apresenta como um produto das convergências geradas nos diálogos epistemológicos. As tensões e controvérsias que ainda existirem nas abordagens disciplinares pode ser, em parte solucionadas, com a atividade de campo e sua empiria. O tema dos paradigmas científicos é trazido e o conflito entre 'ciências duras (hard sciences) e ciências moles (soft sciences)\footnote{\cite[p.117]{Interdisciplinares_Consolidados}}' é destacado. Desprende-se daí o entendimento de que tal dicotomia peca pelo reducionismo, e que ambos os grupos de ciências têm se flexibilizado no nível intradisciplinar. Sintomático desta relação é a atribuição 'de um estatuto privilegiado às ciências naturais\footnote{\cite[p.117]{Interdisciplinares_Consolidados}}' em detrimento de entendimentos oriundos das ciências sociais. Da parte das ciências sociais, o entendimento da primazia de fatores não ambientais prejudicava a interdisciplinaridade.
+
+As concepções de visão holística centrada nos meios societais e ecológicos é destacada, e detalha-se a importância das disciplinas de ciências aplicadas. Percebe que estas por vezes gozam de maior acesso aos centros de poder e decisão existentes na sociedade. Para ilustrar tal integração, o texto traz o caso da interdisciplinaridade nos estudos da agronomia. A contrbuição da organização rigorosa dos procedimentos coletivos de pesquisa é destacada, e a construção do objeto comum é apresentada, considerando a primazia do caráter geoespacial\footnote{\cite[p.118]{Interdisciplinares_Consolidados}} do objeto e sua subsequente problemática. O apriorismo da geoespacialidade é atribuído à delimitação do escopo espacial do objeto de pesquisa, condição oriunda de suas determinações finalísticas, práticas, e suas ambições de implementação de soluções. Como exemplo de tal espacialidade afetada pela  interdisciplinaridade, o texto traz o exemplo da transgenia presente nas atividades da biotecnologia e comenta as possíveis generalizações de tais conhecimentos. Conclui-se apresentando o caráter dado pela empiria da realidade encontrada na ida à campo durante as operações. As epistemologias convergentes sobre o mesmo objeto podem se sincronizar considerando seu domínio sobre as várias dimensões escalares do objeto, gerando assim uma construção coletiva das ferramentas de análise. Técnicas de segmentação do objeto orientadas pela dimensionalidade atingida por cada metodologia participante podem ser consideradas. O fator temporal é também destacado e precisa ser considerado durante a concepção das equipes de pesquisa. A relação entre o objeto estudado e as equipes formadas tmbém é destacada considerando a integração entre diferentes níveis de experiência em equipes de diversos tamanhos para o grupo. O tema da liderança do grupo também e relevanante para tais pesquisas e o processo de busca por uma linguagem operacional comum é destacado, sugere-se a utilização de um glossário compartilhado que repercutirá no processo de escrita interdisciplinar.
+
+
+\subsection{Avaliação de práticas de pesquisa interdisciplinares}
+
+A maturidade das práticas de avaliação das pesquisas interdisciplinares é detalhada, e é sugerido que o processo avaliativo analise duas dimensôes, primeiramente, a dimensão organizacional, em segundo lugar, analisa-se a dimensão teórica da abordagem. As publicações interdisciplinares e suas respectivas revistas científicas são determinadas por tais condições, no sentido de estas possuírem um escopo específico, capaz de divulgar conhecimentos à um público dirigido. As outras dimensionalidades societais da pesquisa são percebidas ao se destacar a exegêse de informações que afetam outro grupos exteriores à pesquisa, sejam estes, os participantes do objeto pesquisado, financiadores. Destaca-se o fato de serem estes afetados pelos processos de transmissão dos conhecimentos. A alteridade capaz de conduzir a avaliação também é questionada, a qual é datalhada os se perceber como a dimensão teórica das práticas de pesquisa pode ser avaliada tomando-se como base a integração dos objetos de estudo no nível intradisciplinar. O atendimento de todas as condições supracitadas caracteriza um processo de avaliação.
+
+
+\subsection{O papel dos órgãos de fomento à pesquisa - Conclusões}
+
+O diálogo com as instituições de fomento se sobrepõe ao tema da avaliação e as contribuições de tasi orgãos no delineammento dos procedimentos, critérios, prazos, resultados  e disseminação do conhecimento científico é destacada.
+
+
+
+\newpage
+
+\section{Resenha - Cap.8 - Uma Visão Crítica da Prática Interdisciplinar}
+
+
+O capítulo de \cite{Critica_Interdisciplinar} aborda externalidades que permeiam as práticas interdisciplinares com ênfase no caráter societal destas. Destaca a competitividade e egoísmo como práticas deletérias e sintomáticas de um darwinismo social hobbesiano. Tais problemas afetam o caráter holístico proposto pela abordagem transdisciplinar. Os impactos do apego à tais formas de sociabilidade são percebidos através da didática da memorização, presente em algumas abordagens de ensino. Esta prática deletéria se soma à outras deficiências da institucionalidade acadêmica e escolar e atrasa o projeto de implementação da transdisciplinaridade. Analisa-se situações concretas e questiona-se a formação de profissionais necessários para tanto, ao mesmo tempo sugere-se que diversos males da sociedade contemporânea podem ser atribuídos à estes. Destaca-se que a falta de interdisciplinaridade na gestão pública e seus insucessos se devem, em parte, pela compartimentalização. Sintomático das mudanças ocorridas é a adoção da Agenda 21 e suas propostas de 'desenvolvimento, a administração sustentável de recursos e a erradicação da pobreza\footnote{\cite[p.150]{Critica_Interdisciplinar}}'; outros exemplos de barreiras para o desenvolvimento interdisciplinar são discutidos. O tema da verticalização e dentro das ongs, sua flexibilidade e capacidade de adaptação é destacada como fato positivo e a capilaridade destas frente aos contextos sociais onde se inserem é percebida como um fato positivo e elemento de concretude.
+
+
+
+
+\newpage
+
+\section{Resenha - Cap.9 - Projetos em Ciências Ambientais: Relato de Casos}
+
+As características supracitadas dos estudos interdisciplinares é retomada por \cite{Interdisciplinar_casos} e é reforçada a noção da contaminação das esferas societais exteriores à pesquisa em si pelos resultados da mesma. O tema da linguagem comum é associado ao imperativo da divulgação científica e a necessidade de clareza em sua comunicação. A especificidade da comunicação científica e sua terminologia é apresentada como um empecílio.
+
+
+\subsection{Práticas da interdisciplinaridade: projetos na área de ecotoxicologia}
+
+O caso específico da pesquisa em ecotoxicologia da Fundação Estadual
+de Proteção Ambiental Henrique Luís Roessler é citado como exemplo e seus participantes são destacados. Advém de tal pesquisa a criação de um modelo interdisciplinar de avaliação ecotoxicológica, acerca da equipe, é destacada sua composição e diversidade de graduações, formam a equipe especialistas em:
+
+\begin{citacao}
+(...) ecotoxicologia química e biológica, genética toxicológica,
+genética médica, medicina, ecologia de ecossistemas, química analítica, química
+de elementos-traço, hidrologia, geologia, tratamento de efluentes, análise de
+processos industriais - petróleo e petroquímicos -, socioeconomia e estatística(...) \cite[p.159]{Interdisciplinar_casos}
+\end{citacao}
+
+A longa seleção de instituições participantes do projeto é detalhada e sua composição é destacada.
+
+
+\subsection{Metodologias para promover e consolidar a interdisciplinaridade}
+
+Os processos de elaboração da metodologia interdisciplinar são trazidos e é dada atenção para o processo de elaboração da proposta de trabalho; destalha-se a divisão e as incumbências de dos grupos formados. Ao grupo grande cabem as atividade de realização de curso de nivelamento técnico, participação de integrantes do projeto de diferentes especialidades em encontros relevantes, a promoção de cursos para formação básica com a participação de toda a equipe, a participação em consultorias nacionais e internacionais, a realização de seminários de integração e a Promoção de Ciclo de seminários, a organização de palestras com conferencistas convidados, e finalmente, a realização de reuniões de planejamento e avaliação\footnote{Excertos de \cite[p.163-164]{Interdisciplinar_casos}}.
+
+Acerca das atividades dos chamados grupos pequenos, é destacada a participação em congressos, a realização de estágios e visitas técnicas, a promoção de reuniões de planejamento e avaliação, a participação em trabalhos de campo e finalmente, a elaboração de trabalhos científicos de áreas específicas\footnote{Excertos de \cite[p.164]{Interdisciplinar_casos}}. Acerca das atividades conjuntas dos grupos grande e pequenos para avaliação e integração de resultado, o texto destaca as atividades de discussão das hipóteses e resultados, discussões com consultores, conclusões das atividades, planejamento e elaboração de mapas temáticos e elaboração dos trabalhos. Sobre as atividades de comunicação, o texto destaca as dimensões externas e interna ao projeto e detalha suas especificidades.
+
+
+\subsection{Dificuldades e alternativas para equacionar problemas}
+
+A quantidade e diversidade de participantes é destacada como um problema no gerenciamento dos projetos, e a agilidade da integração destes está correlacionada ao tamanho e diversidade do grupo em questão. Destaca-se o papel do coordenador em tais situações. O equilíbrio entre a especificidade dos temas dentro de uma disciplina, e sua contextualização no coletivo, é apresentado como em elemento importante na originalidade das conclusões.
+
+
+
+\newpage{}
+
+\section{Resenha - Cap.10 - Interdisciplinaridade: Necessidade das ciências modernas e imperativo das questões ambientais}
+
+Acerca dos imperativos que definem as ciências modernas, \cite{modernas_Interdisciplinar} destaca o entendimento da complexidade presente nas ciências ambientais, e reafirma os pressupostos o caráter societal desta problemática. 
+
+
+\subsection{Aspectos conceituais da interdisciplinaridade}
+
+As definições da interdisciplinaridade colocadas pela OCDE são destacados e reforçam os argumentos apresentados nos capítulos anteriores. Estas definições delimitam características desse tipo de de estudo e percebem as contradições surgidas da necessidade de equilíbrio entre diversos temas exógenos ao ambiente acadêmico, nomeadamente: os processos de especialização e complementaridade entre as disciplinas, a necessidade de acolher as demandas colocadas pelos discentes envolvidos, sugere a consideração dos limites colocados pelas características operacionais presentes no ambiente universitário, ressalta a necessidade de treinamento e capacitação dos envolvidos e, finalmente, ressalta as necessidades societais que pretendem sem atendidas pela interdisciplinaridade no referido projeto ambiental.
+
+
+\subsection{características gerais das questões ambientais}
+
+O caráter societal da pesquisa ambiental e a necessidade da interdisciplinaridade é retomado trazendo argumentos da Agenda 21 da ONU como exemplo. O tema da produção de ciência e tecnologia é destacado e as relações desta frente às exterioridades é repetido ao se apresentar o tema da necessidade de comunicação dentro da comunidade acadêmica frente à mesma necessidade dirigida ao público externo.
+
+
+\subsection{Os desafios para a aplicação dos princípios da interdisciplinaridade}
+
+O tema da mudança paradigmática apresentado por \cite{Kuhn2012-oa} é retomado para destacar dificuldades na implementação dos projetos interdisciplinares. Os argumentos que percebem a sinergia entre metodologia e a verificação do esforço transdisciplinar são retomados e esquematizados.
+
+
+\subsection{Prioridades atuais para atuação interdisciplinar}
+
+O texto avança sobre uma sequencia de casos históricos pertinentes à discussão. Destaca-se, primeiramente, a gestão integrada de bacias hidrográficas\footnote{\cite[p.177]{modernas_Interdisciplinar}} e detalha-se a importância deste tipo de gestão casos que se encaixam neste perfil. O tema da gestão da biodiversidade\footnote{\cite[p.177]{modernas_Interdisciplinar}} é 
+apresentado e é destacado o potencial farmacológico da flora e da fauna. O tema transversal das mudanças climáticas\footnote{\cite[p.179]{modernas_Interdisciplinar}} também é apresentado e é destacada a distância existente entre a retórica política e a práxis econômica e industrial. Segue-se a apresentação dos temas do zoneamento ecológico e econômico e dos indicadores ambientais. Todos os temas são permeados por críticas à falta de integração nas implementações interdisciplinares. O tema da revisão dos processis da avaliação de impactos ambientais\footnote{\cite[p.181]{modernas_Interdisciplinar}} traz elementos novos oriundos de uma postura reflexiva acerca dos trabalhos práticos em ciências ambientais e sua efetividade. Para tanto é revivido o argumento da falta de integração e coordenação em tais práticas. O tema da análise de ciclo de vida\footnote{\cite[p.182]{modernas_Interdisciplinar}} dos produtos é apresentado, direcionando o foco das pesquisas para a dimensão industrial afetada pela implemantação das normas ISO 14000 e 14041.
+
+
+\subsection{Perspectivas futuras}
+
+Sobre o tema das perspectivas futuras são apontadas três tendências\footnote{\cite[p.183]{modernas_Interdisciplinar}}, nomeadamente: o imperativo da organização da cooperação técnico-científica, a  necessidade da consolidação de bases de dados e compartilhamento das informações, e finalmente, o aprofundamento da cooperação universidade-órgãos ambientais e universidade-indústria.
+
+
+\newpage
+
+\section{Resenha - Cap.11 - Interdisciplinaridade e Sociedade}
+
+O tema dos aportes financeiros realizados através do PADCT é retomado e o papel do Banco Mundial é destacado. A historicidade da integração do entendimento societal na abordagem interdisciplinar que analisa o objeto ambiental é retomada em \cite[p.190]{Interdisciplinaridade_Sociedade} através de casos concretos analisados. A mudança da adjetivação ambiental para um enfoque ambiental 'substantivo' é destacada e o surgimento dos programas CIAMB é apresentado. As problemáticas dadas pela integração interdisciplinar apresentadas anteriormente são discutidas tendo como base o caso específico do CIAMB. A evolução dos trabalhos é sintetizada numa sequencia de etapas de articulação com foco específico, escopo temático e demanda disciplinar delimitadas. A dinâmica de tais articulações é discutida detalhadamente e os produtos de tais articulações são conceituados e esquematizados.
+
+
+\newpage
+
+\section{Resenha - Cap.14 - A questão da interdisciplinaridade e o avanço da ciência}
+
+\subsection{A questão da interdisciplinaridade e o avanço da ciência}
+
+
+O tema da integração dos saberes e a divisão causada pela compartimentalização da ciência é retomado em \cite{Interdisciplinaridade_nucleos}, e as sobreposições interdisciplinares são destacadas ao se destacar um elemento central 'mainstream\footnote{\cite[p.247]{Interdisciplinaridade_nucleos}}' na ciência, competindo com elementos marginalizados.
+
+
+\subsection{Os núcleos interdisciplinares}
+
+As dificuldades causadas pela necessidade de sinergia são permeadas pelo corporativismo universitário e os casos de grupos que foram terminados na UNICAMP e da USP nas décadas de 80 e 90 são trazidos como exemplo. Destaca-se que tais programas foram instituídos pelos respectivos Conselhos Universitários e possuírem prazo determinado de 5 anos para seu funcionamento. Vários subprogramas dentro da USP que serviram como desdobramento das primeiras iniciativas são apresentados.
+
+
+\subsection{Questionando a legitimidade dos núcleos}
+
+As desconfianças universitárias causadas pelo viés compartimentalizado são destacadas, e é percebido algum nível de descrença frente à abordagem transdisciplinar. É retomado o argumento dos paradigmas dentro da ciência normal para ressaltar tal desconfiança
+
+
+\subsection{As ciências humanas e os núcleos interdisciplinares}
+
+O caráter artesanal da pesquisas em humanidades é destacado como um imperativo capaz de contribuir para o enriquecimento das pesquisas interdisciplinares. A capacidade de transmitir esses conhecimentos para o restante da sociedade é percebida como uma possibilidade dada por este tipo de fusão.
+
+
+
+
+
+\newpage
+
+\section{Resenha - Cap.15 - Desafios em Recursos Hídricos}
+
+O tema da hidrologia é trazido como exemplo de interdisciplinaridade, e a relação entre as descrições qualitativa e quantitativa é destacada. Aponta-se as seguintes características do primeiro momento de tais estudos, \cite[p.254]{Interdisciplinaridade_Hidricos} afirma que esta área se encontrava 'excessivamente compartimentada', 'espacialmente limitada', e como uma 'subárea da Hidráulica'. Aponta-se a UNESCO, na década de 60, como impulsionador de mudanças na ciência devido à fatores como a pressão societal e os avanços nas técnicas de análise quantitativas não lineares, a posterior incorporação de conhecimentos da geografia, física, química e biologia também é destacada.
+
+
+\subsection{Conceitos básicos dos sistemas hídricos}
+
+
+Outras competências são destacadas como úteis para a área e um quadro esquemático das relações entre sociedade e ambiente é apresentado. Destaca-se a sobreposição destas áreas ao se detalhado nos seguintes objetos de estudo, nomeadamente\footnote{\cite[p.255-257]{Interdisciplinaridade_Hidricos}}: desenvolvimento Urbano, onde destaca-se a gestão de resíduos sólidos; desenvolvimento rural, com ênfase no papel da irrigação; energia, com destaque em seu caráter renovável; navegação com destaque para o transporte fluvial; recreação, com destaque para o caráter sustentável de tais atividades e, finalmente, a resiliência de tais sistemas à eventos críticos é apresentada.
+
+
+\subsection{Cenário histórico}
+
+O caráter pós-moderno dos entendimentos que modernizaram os estudos hidrológicos é apresentado ao se enfatizar o período pós segunda Guerra Mundial. No contexto, a degradação ambiental começa a ser entendida e seus impactos percebidos. É apresentado o caso da legislação acera do uso de águas no contexto Estadunidense nos anos 70. O acidente em Chernobil, na década de 80, é destacado como um evento que reforçou a percepção do papel da hidrologia no entendimento do ambiente. A sensação de interação global mediada pelo ambiente fica aparente. O discurso do desenvolvimento sustentável emerge nos anos 90 como o catalisados de identidades e a integração dos investimentos estrangeiros com a criação de infraestruturas são destacados. Tais eventos e outros são esquematizados na forma de uma tabela. A intencionalidade dada pela preocupação ambiental passa a ser um elemento motor de tais discussões e a criação da Agência nacional das águas é destacada.
+
+
+\subsection{Interdisciplinaridade}
+
+A relação entre os estudos de hidrologia e os processos de tomada de decisão, e o caráter societal de tais discussões é destacada. O papel da hidrologia é detalhado e os elementos do ciclo hidrológico que interagem com elementos antrópicos é detalhado esquematicamente.
+
+
+\subsection{Desafios científicos e tecnológicos em recursos hídricos}
+
+O contexto do Brasil e os conhecimentos hidrológicos são detalhados. São apontados os elementos da variabilidade climática na produção energética, do desenvolvimento urbano e a relação da hidrologia nas regiões semi-áridas são detalhados. Os casos da bacia hidrográfica do Rio Paraná e sua relação com os biomas locais é apresentada. O aumento da vazão na bacia é discutido e o aumento dos reservatórios é discutido. O tema do desenvolvimento urbano é apresentado e é discutida a contaminação dos mananciais e a gestão de resíduos sólidos é destacada. Acerca das questões específicas do ambiente semi-árido, destaca-se a preocupação com a sustentabilidade hídrica das regiões e o impacto societal do empobrecimento das populações.
+
+
+
+
+\newpage
+
+\section{Resenha - Cap.16 - Uma Visão Atual e Futura da Interdisciplinaridade
+em C\&T Ambiental}
+
+
+Uma vasta coleção de publicações e eventos sintomáticos do avanço da influência interdisciplinar nos estudos socioambientais é apresentada e argumenta-se que tal profusão de eventos e publicações de alto nível é sintomática do amadurecimento; vide \cite{Interdisciplinaridade_Futura} . Tal fato converge com as percepções da gravidade dos problemas ambientais contemporâneos e destaca-se sua complexidade e urgência. As dimensões industria, tecnológica e científica da problemática socioambiental são percebidas como elemento que transcende o domínio acadêmico. Os imperativos socioeconômicos são destacados e o papel dos exclusão social dos fluxos de capital e o interesse corporativo são apontados como fatores relevantes. Conclui-se destacando o papel catalisador do PADCT/CIAMB.
+
+
+\subsection{O quadro de hoje, a perspectiva de amanhã}
+
+O caráter futurista\footnote{\cite[p.271]{Interdisciplinaridade_Futura}} da interdisciplinaridade é destacado e o presente desenvolvimento das atividades interdisciplinares é apontado como uma propriedade emergente, discordando da ideia de tal rota ser um rota predefinida. O tema da excessiva especialização disciplinar é retomada e retoma-se o argumento de a pesquisa ambienta ser um processo ainda não concluído, retoma-se também o caráter indutor do PADCT/CIAMB e afirma-se que a interdisciplinaridade não pretende substituir os saberes disciplinares, esta pretende apenas complementá-la. O tema da ciência norma e da mudança de paradigma é retomado e este argumento desdobra-se sobre a interpretação de Morin sobre a temática socioambiental. O argumento do caráter revolucionário e despretensioso da abordagem interdisciplinar é apresentado.
+
+
+\subsection{O quadro emergente das ciências ambientais}
+
+A institucionalização dos estudos interdisciplinares é retomada e o tema da desacomodação é usado para retomar os imperativos epistemológicos supracitados. Destaca-se também o tema da apropriação do conhecimento pela sociedade e seu caráter transformador. O papes das ONGS é apontado como sintoma de tal conjuntura.
+
+
+
+
+
+\newpage
+
+\section{Resenha - Cana-de-açúcar como tema gerador no ensino de química}
+
+O tema do ensino de química no contexto do ensino médio é apresentado por \cite{Cana_quimica} através do objeto que é a cana-de-açúcar. O caráter societal e a formação cidadã são destacados no texto. O tema da interdisciplinaridade é contextualizado e seu papel mediador do caráter cidadão do ensino é enfatizado. O contexto societal é anunciado e a cognição dos discentes escolhidos acerca do tema é apresentada.
+
+\subsection{Metodologia}
+
+
+Os procedimentos de levantamento de dados são apresentados e consistem na aplicação de aulas teóricas, práticas e outros materiais. O caráter experimental e dialógico da tarefa é destacado.
+
+\subsection{Resultados e discussão}
+
+Dos questionamentos objetivos infere-se que o ensino de química é percebido como elemento positivo. Outras dificuldades da realidade são destacadas.
+
+
+
+
+
+
+
+
+\newpage
+
+\section{O trabalho interdisciplinar no ensino médio: a reaproximação das 'duas culturas'}
+
+
+O texto de \cite{interdisciplinar_Duas_Culturas} destaca a modernização das técnicas de ensino e o imperativo da transdisciplinaridade é retomado. O contexto geossocial do estudo é apresentado.
+
+
+\subsection{Orientações curriculares para o Ensino Médio}
+
+O tema da interdisciplinaridade é percebido como um dos fundamentos das orientações curriculares vigentes no Ensino Médio e suas características são apresentadas. O caráter integrador do elemento societal é destacado e a interdisciplinaridade é percebida como uma ferramenta na construção da unicidade das relações sociais.
+
+
+\subsection{A interdisciplinaridade como interação entre educadores}
+
+A exigência da criação de uma nova forma de inteligência caracterizada pela intensa troca de conhecimento entre especialistas diferenciados é destacada e o tema da superação da fragmentação dos conhecimentos é discutido. A interdisciplinaridade no domínio escolar é analisada detalhadamente percebendo-se o apriorismo empirista dentro da vertente estadunidense, o caráter integrador presente na vertente francesas e o caráter pragmático-operacional presente na vertente brasileira dos estudo interdisciplinares.  
+
+
+\subsection{O Caminho da Pesquisa - A pedagogia interdisciplinar no cotidiano escolar - Considerações Finais}
+
+A equipe multidisciplinar envolvida no projeto é apresentada, os objetivos, critérios de avaliação e a interação do grupo é destacada. Atribui-se o caráter de disciplina-piloto ao componente curricular de Ciências e discute-se as interações acerca de tal decisão. Detalha-se as interações entre os diversos componentes.
+
+O texto conclui destacando as seguintes características edificantes e necessárias para o curso de um projeto disciplinar, nomeadamente\footnote{\cite[p.12-14]{interdisciplinar_Duas_Culturas}}: 'Tempo para planejamento', 'Coragem de inovar', 'Entusiasmo', 'Espírito de equipe', 'Flexibilidade', 'Liderança', 'Formação inicial interdisciplinar', 'Formação continuada', 'Projeto Pedagógico Interdisciplinar', 'Material didático interdisciplinar'.
+
+\postextual
+
+\newpage
+
+\bibliography{Interdisciplinaridade}
+
+\end{document}

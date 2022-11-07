@@ -1,0 +1,214 @@
+\documentclass{beamer}
+
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{times}         % Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}      % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}      % Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}      % Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl}          % Lista de simbolos
+\usepackage{color}            % Controle das cores
+\usepackage{graphicx}         % Inclusão de gráficos
+\usepackage{microtype}        % para melhorias de justificação
+% ---
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}           % para geração de dummy text
+% ---
+      
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}  % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite} % Citações padrão ABNT
+% ---
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1 %
+      Nenhuma citação no texto.%
+   \or
+      Citado na página #2.%
+   \else
+      Citado #1 vezes nas páginas #2.%
+   \fi}%
+% ---
+\usetheme{Berlin}
+
+% --- Informações de dados para CAPA e FOLHA DE ROSTO ---
+\title{Seminário - Interdisciplinaridade:
+Necessidade das Ciências
+Modernas e Imperativo das
+Questões Ambientais}
+
+\author{João Henrique da Silva}
+\institute{UEM DCI PROFCIAMB}
+\logo{
+\includegraphics[width=1cm]{logo.png}
+\includegraphics[width=1cm]{uem.png}
+}
+
+%\local{Brasil}
+\date{Junho - 2022}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+      %pagebackref=true,
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={},
+      pdfcreator={},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,           % false: boxed links; true: colored links
+      linkcolor=blue,            % color of internal links
+      citecolor=blue,            % color of links to bibliography
+      filecolor=magenta,            % color of file links
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Espaçamento simples
+\linespread{1.3}
+
+
+%\usetheme{lucid}
+\begin{document}
+    \frame {
+        \titlepage
+    }
+    \frame {
+        \frametitle{Ontologia e Interdisciplinaridade}
+        \framesubtitle{ASPECTOS CONCEITUAIS DA INTERDISCIPLINARIDADE}
+    \begin{itemize}
+        \item Objetos complexos \cite[cap.6]{Paradigma_Transdisciplinar_Metodologica}
+        \item Superação do reducionismo Positivista
+        \item Necessidade colaboração Institucional
+    \end{itemize}
+
+    }
+    \frame {
+        \frametitle{Ontologia e Interdisciplinaridade}
+        \framesubtitle{Gerenciamento da produção Científica }
+    \begin{itemize}
+        \item 1 O desenvolvimento da ciência como o resultado de dois movimentos
+        \item 2 Solicitações por parte dos estudantes
+        \item 3 Problemas operacionais, e administrativos, das universidades
+        \item 4 Necessidade de treinamento
+        \item 5 As demandas sociais
+    \end{itemize}
+    }
+    \frame {
+        \frametitle{Ontologia e Interdisciplinaridade}
+        \framesubtitle{OS DESAFIOS PARA A APLICAÇÃO DOS PRINCÍPIOS DA
+INTERDISCIPLINARIDADE }
+    \begin{itemize}
+        \item Ciência normal e paradigmas \cite{Kuhn2012-oa}
+        \item Massa crítica de Cientistas - STEM
+        \item Contribuições abertas
+        \item Melhoria da Comunicação entre instituições
+        \item Independência da comunidade
+científica e tecnológica para conduzir suas pesquisas e publicá-las
+    \end{itemize}
+    } 
+    \frame {
+        \frametitle{Ontologia e Interdisciplinaridade}
+        \framesubtitle{OS DESAFIOS PARA A APLICAÇÃO DOS PRINCÍPIOS DA
+INTERDISCIPLINARIDADE }
+    \begin{itemize}
+        \item 1. A aceitação de uma metodologia comum
+        \item 2. Tentativa de formulação interdisciplinar da questão maior,
+        \item 3. Tradução da questão global na linguagem específica de cada disciplina
+        \item 4. Verificação constante da capacidade de resposta das questões
+        \item 5. Acordo sobre a resposta
+científica e tecnológica para conduzir suas pesquisas e publicá-las
+    \end{itemize}
+    } 
+    \frame {
+        \frametitle{Ontologia e Interdisciplinaridade}
+        \framesubtitle{PRIORIDADES ATUAIS PARA ATUAÇÃO INTERDISCIPLINAR}
+    \begin{itemize}
+        \item GESTÃO INTEGRADA DE BACIAS HIDROGRÁFICAS
+        \item GESTÃO DA BIODIVERSIDADE
+        \item MUDANÇAS CLIMÁTICAS
+        \item ZONEAMENTO ECOLÓGICO E ECONÔMICO
+        \item INDICADORES AMBIENTAIS
+    \end{itemize}
+    } 
+    \frame {
+        \frametitle{Ontologia e Interdisciplinaridade}
+        \framesubtitle{PRIORIDADES ATUAIS PARA ATUAÇÃO INTERDISCIPLINAR}
+    \begin{itemize}
+        \item Condições sócioeconômicas das comunidades locais e nacionais
+        \item GESTÃO DA BIODIVERSIDADE
+        \item MUDANÇAS CLIMÁTICAS
+        \item ZONEAMENTO ECOLÓGICO E ECONÔMICO
+        \item INDICADORES AMBIENTAIS
+    \end{itemize}
+    } 
+    \frame {
+        \frametitle{Ontologia e Interdisciplinaridade}
+        \framesubtitle{ZONEAMENTO ECOLÓGICO E ECONÔMICO}
+    \begin{itemize}
+        \item INDICADORES AMBIENTAIS
+        \item REVISÃO DOS PROCESSOS DA AVALIAÇÃO DE IMPACTOS A MBIENTAIS
+        \item ANÁLISE DE CICLO DE VIDA DOS PRODUTOS
+        \item Blackrock group e os ESG
+        \item Ecossocialismo e outras determinações econômicas
+    \end{itemize}
+    } 
+    \frame {
+        \frametitle{Ontologia e Interdisciplinaridade}
+        \framesubtitle{PERSPECTIVAS FUTURAS}
+    \begin{itemize}
+        \item Organização da cooperação técnico-científica
+        \item Consolidação de bases de dados e compartilhamento das informações
+        \item Cooperação universidade-órgãos ambientais e universidade-indústria
+        \item Blackrock group e os ESG
+        \item Ecossocialismo e outras determinações econômicas
+    \end{itemize}
+    }
+
+\bibliography{interdisciplinaridade}
+
+\end{document}

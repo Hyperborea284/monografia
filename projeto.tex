@@ -1,0 +1,374 @@
+\documentclass[
+   % -- opções da classe memoir --
+   article,       % indica que é um artigo acadêmico
+   12pt,          % tamanho da fonte
+   oneside,       % para impressão apenas no recto. Oposto a twoside
+   a4paper,       % tamanho do papel. 
+   % -- opções da classe abntex2 --
+   %chapter=TITLE,      % títulos de capítulos convertidos em letras maiúsculas
+   %section=TITLE,      % títulos de seções convertidos em letras maiúsculas
+   %subsection=TITLE,   % títulos de subseções convertidos em letras maiúsculas
+   %subsubsection=TITLE % títulos de subsubseções convertidos em letras maiúsculas
+   % -- opções do pacote babel --
+   english,       % idioma adicional para hifenização
+   brazil,           % o último idioma é o principal do documento
+   sumario=tradicional
+   ]{abntex2}
+
+
+% ---
+% PACOTES
+% ---
+
+% ---
+% Pacotes fundamentais 
+% ---
+\usepackage{times}         % Usa a fonte Latin Modern
+\usepackage[T1]{fontenc}      % Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}      % Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}      % Indenta o primeiro parágrafo de cada seção.
+\usepackage{nomencl}          % Lista de simbolos
+\usepackage{color}            % Controle das cores
+\usepackage{graphicx}         % Inclusão de gráficos
+\usepackage{microtype}        % para melhorias de justificação
+% ---
+      
+% ---
+% Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
+% ---
+\usepackage{lipsum}           % para geração de dummy text
+% ---
+      
+% ---
+% Pacotes de citações
+% ---
+\usepackage[brazilian,hyperpageref]{backref}  % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite} % Citações padrão ABNT
+% ---
+
+% ---
+% Configurações do pacote backref
+% Usado sem a opção hyperpageref de backref
+\renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
+% Texto padrão antes do número das páginas
+\renewcommand{\backref}{}
+% Define os textos da citação
+\renewcommand*{\backrefalt}[4]{
+   \ifcase #1 %
+      Nenhuma citação no texto.%
+   \or
+      Citado na página #2.%
+   \else
+      Citado #1 vezes nas páginas #2.%
+   \fi}%
+% ---
+
+% --- Informações de dados para CAPA e FOLHA DE ROSTO ---
+\title{Representações sociais das tecnologias de armazenamento de energia segundo os discentes do Novo Ensino Médio}
+
+\author{João Henrique da Silva}
+
+\local{Maringá PR}
+\data{Junho - 2022}
+% ---
+
+% ---
+% Configurações de aparência do PDF final
+
+% alterando o aspecto da cor azul
+\definecolor{blue}{RGB}{41,5,195}
+
+% informações do PDF
+\makeatletter
+\hypersetup{
+      %pagebackref=true,
+      pdftitle={\@title}, 
+      pdfauthor={\@author},
+      pdfsubject={},
+      pdfcreator={},
+      pdfkeywords={abnt}{latex}{abntex}{abntex2}{atigo científico}, 
+      colorlinks=true,           % false: boxed links; true: colored links
+      linkcolor=blue,            % color of internal links
+      citecolor=blue,            % color of links to bibliography
+      filecolor=magenta,            % color of file links
+      urlcolor=blue,
+      bookmarksdepth=4
+}
+\makeatother
+% --- 
+
+% ---
+% compila o indice
+% ---
+\makeindex
+% ---
+
+% ---
+% Altera as margens padrões
+% ---
+\setlrmarginsandblock{2cm}{2cm}{*}
+\setulmarginsandblock{2cm}{2cm}{*}
+\checkandfixthelayout
+% ---
+
+% --- 
+% Espaçamentos entre linhas e parágrafos 
+% --- 
+
+% O tamanho do parágrafo é dado por:
+\setlength{\parindent}{1.3cm}
+
+% Controle do espaçamento entre um parágrafo e outro:
+\setlength{\parskip}{0.2cm}  % tente também \onelineskip
+
+% Espaçamento simples
+\linespread{1.3}
+
+
+% ----
+% Início do documento
+% ----
+\begin{document}
+
+% Seleciona o idioma do documento (conforme pacotes do babel)
+%\selectlanguage{english}
+\selectlanguage{brazil}
+
+% Retira espaço extra obsoleto entre as frases.
+\frenchspacing 
+
+\maketitle
+
+\newpage
+
+\textual
+
+\section{Introdução}
+
+O estudo das representações sociais permite um diálogo profundo entre os campos da sociologia e da psicologia, criando objetos de estudo complexos\footnote{\cite[p.35]{Interdisciplinar_Complexidade}}. O caráter interdisciplinar do seus objetos permite o detalhamento de elementos cognitivos que moldam a linguagem e revela relações de poder presentes nas estruturas sociais. Percebe-se então o papel da educação enquanto ferramenta de transmissão de conhecimentos reificados, e sugere-se que o entendimento das exterioridades ambientais que afetam o indivíduo e sua sociedade podem ser compreendidos pelo estudo da representações sociais.
+
+Partindo de tais fundamentos, pretende-se realizar a investigação acerca das representações sociais das tecnologias de armazenamento de energia. Esta proposta se realiza no contexto do entendimento das representações utilizadas pelos discentes do Novo Ensino Médio, em seu esforço para significar as tecnologias presentes em seu tempo, suas consequências e as necessidades impostas pela relação entre indivíduo, sociedade e ambiente. 
+
+Este objeto de estudo exige uma abordagem interdisciplinar por incluir elementos determinados por condições diversas, especificamente: as relações entre as idiossincrasias individuais, campo subjetivo que se embasa nas discussões da psicologia; inclui ademais elementos sócio-antropológicos, ao perceber como a linguagem e a educação determinam o processo de significação, o qual molda o entendimento contido nas representações sociais; e finalmente, elementos da relação sócio-ambiental, onde o entendimento acerca dos elementos naturais do ambiente, sua historicidade e desdobramentos da sua interação com a sociedade são destacados. O ambiente escolar se apresenta então como locus onde as representações e os saberes reificados competem pela legitimidade. A construção de um produto educacional capaz de interpretar as determinações presentes em tal objeto interdisciplinar é proposta e esta pretende mediar entendimentos ambientais e tecnológicos e apresentá-los ao corpo discente do Novo Ensino Médio.
+
+
+
+
+
+
+\subsection{O papel da educação em Durkheim e Moscovici}
+
+O papel irresistível\footnote{\cite[p.47]{Durkheim_Educacao}} das instituições escolares foi apresentado por \cite{Durkheim_Educacao} enquanto ferramenta para a realização de duas dimensões contraditórias da vida humana. A primeira destas possui âmbito mais genérico e percebe a necessidade de um desenvolvimento harmonioso entre o indivíduo e suas exterioridades. Tal entendimento advém de um argumento focado no caráter específico da interação entre o indivíduo e sociedade, fato que se manifesta na unicidade de suas aptidões, como estas se desenvolvem, absorvem e criam conhecimentos socialmente úteis. Percebe-se aqui o inicio de um argumento para refutar primeiramente, o entendimento Kantiano acerca da busca da perfeição estática e harmoniosa desejável para vida humana, e que também visa refutar o entendimento complementar dado pela abordagem utilitarista, centrada na busca individualista da felicidade. 
+
+Tal esforço não se completa em Durkheim pois este, embora tenha percebido os apriorismos que operavam na filosofia que o antecedeu, acabou por tratar a educação como uma ferramenta da sociedade que busca gerar a conformidade. Característica esta que converge com a natureza estática do apriorismo Kantiano já citado, apriorismo este que foi transmitido para Durkheim através da sua incorporação de elementos da tradição positivista. Percebe-se portanto a intenção de se entender a educação enquanto entidade estática, fato que se destaca no caráter intergeracional dado pela coexistência\footnote{\cite[p.49]{Durkheim_Educacao} e } entre jovens e adultos; estes, quando apresentados de forma dicotômica e antagônica, ressaltam uma das tensões existentes dentro do ambiente educacional, onde a educação passa a ser percebida pelo autor como a portadora de um cânone, uma entidade estática que modela a sempre presente desordem social. Acerca de tal característica ordenadora da educação \cite[p.30]{Representacees_sociais_moscovici} estende tal discussão e incorpora os elementos da psicologia ao destacar a importância que a cognição e seus vieses possuem, sendo que estes determinam parte do entendimento idiossincrático sobre a realidade exterior ao indivíduo. Para tanto destaca-se a importância da capacidade de processar e organizar informações sobre a exterioridade, tal esforço é necessário para que o indivíduo se defina e não se perca no ruído das externalidades que o cerca. 
+
+Ao argumentar sobre o papel da cognição na elaboração das representações sociais, o autor destaca três elementos\footnote{\cite[p.30-31]{Representacees_sociais_moscovici}} capazes de relacionarem a aparência e a realidade, sendo estes: o vício causado pela normalização que induz a invisibilidade de elementos sociais e naturais que compõem a realidade exterior; a naturalização e incorporação acrítica de elementos factuais exteriores ao indivíduo e, finalmente; a determinação imposta pela conformidade exigida pelo contexto social. O distanciamento entre a realidade em si e a realidade apreendida pelo indivíduo se apresenta então, como o campo para a mediação das representações sociais, locus onde estas operam através dos elementos simbólicos consensuais que foram construídos historicamente pela exterioridade social. Percebe-se também que estas representações mediam a compreensão de seu contexto e das interações possíveis com o ambiente natural. Logo, a inacessibilidade da realidade em si retoma o problema atendido pela função irresistível da educação. Pode-se concluir tal argumento ao se perceber a educação enquanto esforço para a apropriação de um arcabouço de elementos simbólicos historicamente construídos.
+
+Posteriormente, e visando superar tais limitações, destaca-se o entendimento de que a educação foi percebida por \cite[p.49]{Representacees_sociais_moscovici} como esforço de disseminação e construção do saber reificado; ademais pode-se perceber que esta forma do saber pretende ser um elemento referencial de normalidade científica que converge com a análise de \cite{Kuhn2012-oa}, capaz de orientar as mediações vividas no esforço coletivo de produção de um conhecimento o qual pretende também ser socialmente e ambientalmente responsável. O autor destaca o fato de a sociedade funcionar como um ser pensante e produtor de conhecimentos, argumento compartilhado por Durkheim e presente em sua teoria das Instituições. Para tanto a distinção entre os tipos de conhecimento nos leva a perceber a divisão que existem nas duas formas do conhecimento, chamadas de universo consensual e universo reificado; acerca da distinção destes o autor afirma que:
+
+\begin{citacao}
+Em um universo consensual, a sociedade
+é vista como um grupo de pessoas que são iguais e livres, cada um
+com possibilidade de falar em nome do grupo e sob seu auspício.(...)
+Num universo reificado, a sociedade é vista como um sistema
+de diferentes papéis e classes, cujos membros são desiguais. 
+Somente a competência adquirida determina seu grau de participação
+de acordo com o mérito, seu direito de trabalhar como médico, 
+como psicólogo, como comerciante, ou de se abster desde
+que eles não tenham competência na matéria. \cite[p.50-51]{Representacees_sociais_moscovici}
+\end{citacao}
+
+
+Tal distinção entre os tipos de saberes se desdobra sobre os procedimentos de construção dos conhecimentos que permitem a ancoragem e a objetivação dos saberes. O esforço social para se criar um locus consensual que permita a comunicação exige um reconhecimento das particularidades presentes em uma dada realidade. Tal criação de um consenso dentro de um grupo, acerca de outros indivíduos ou de parte da realidade natural, se manifesta também nas mediações propostas pela educação ao esta se impor enquanto forma legítima da transmissão dos saberes socialmente construídos. Em termos operacionais, a ancoragem dos conhecimentos e a criação de rótulos sintéticos se apresentam como procedimentos criadores do locus consensual. Para tanto, exige-se o reconhecimento da normalidade das classificações as quais funcionam como elemento de consenso que permite a comunicação acerca da realidade; o autor destaca que:
+
+\begin{citacao}
+Ancorar é, pois, classificar e dar nome a alguma coisa. Coisas
+que não são classificadas e que não possuem nome são estranhas,
+não existentes e ao mesmo tempo ameaçadoras. Nós experimentamos 
+uma resistência, um distanciamento, quando não somos 
+capazes de avaliar algo, de descrevê-lo a nós mesmos ou a outras
+pessoas. O primeiro passo para superar essa resistência, em 
+direção à conciliação de um objeto ou pessoa, acontece quando nós
+somos capazes de colocar esse objeto ou pessoa em uma 
+determinada categoria, de rotulá-lo com um nome conhecido.\cite[p.61-62]{Representacees_sociais_moscovici}
+\end{citacao}
+
+
+Tal esforço cognitivo para construir significados pode se dar através do destaque de generalizações ou por particularizações. Ambos procedimentos cognitivos pretendem construir mediações simbólicas entre o domínio difuso do real e as especificidades de uma realidade, seja através do reducionismo marcante, centrado em uma característica particular, ou seja pela extrapolação generalizadora de características que permitem a criação de grupos e conjuntos. Este procedimento ressalta a discrepância entre visões particulares e visões dominantes presentes em um grupo social, o qual, ao criar suas representações, encontra a inércia dos conhecimentos dominantes já presentes numa dada sociedade. Os esforços para nomear e classificar se destacam então, enquanto procedimento para superar o anonimato e o desconhecimento de elementos da realidade. Pode-se concluir que o esforço para simbolizar e criar associações através do ato de nomear, interage com o contexto social e, portanto, servem como instrumentos para a ancoragem das representações. A inércia dos paradigmas legitimados é um sintoma da importância das necessidades de estabilidade e consistência. A energia cognitiva desprendida ao se realizar o esforço interpretativo\footnote{Vide as investigações etnológicas de \cite{Culturas_Geertz} que inauguraram reflexões sobre o persistência da cultura e sua mediação simbólica entre os elementos reais e abstratos.} da realidade pode ser percebida ao se 'classificar e dar nomes\footnote{\cite[p.68]{Representacees_sociais_moscovici}}'; destaca o autor:
+
+\begin{citacao}
+(...)sistemas de classificação e de nomeação
+(classificar e dar nomes) não são, simplesmente, meios de graduar
+e de rotular pessoas ou objetos considerados como entidades 
+discretas. Seu objetivo principal é facilitar a interpretação de 
+características, a compreensão de intenções e motivos subjacentes às
+ações das pessoas, na realidade, formar opiniões.\cite[p.70]{Representacees_sociais_moscovici}
+\end{citacao}
+
+
+Emerge de tal entendimento a percepção da relação entre as necessidades de estabilidade e consistência existentes no processo de criação de representações sociais. Para tanto os elementos da estabilidade e da rotinização atuam como vieses reforçados pela paralaxe cognitiva dos diversos grupos sociais, enquanto estes disputam a legitimidade dos processo de ancoragem.
+
+
+\subsection{O papel mediador da educação na transmissão de saberes ambientais: ancoragem e objetivação}
+
+A materialização das abstrações mediadas pela linguagem expressa os elementos presentes nas representações sociais. Tal processo gradual de mediação é sintomático dos níveis de apreensão da realidade elaborados pela população que carrega tais representações. A discussão sobre os limites de uma ontologia se faz necessária e para tanto sugere-se a criação de um objeto de estudo interdisciplinar.
+
+Tal objeto pode ser delimitado pelo consenso reificado nos esforços de significação dos elementos de realidade. Recorta-se aqui a educação e destaca-se os esforços desta para comunicar os elementos de realidade apreendidos pelo conhecimento ambiental reificado. Dentro deste recorte, encontram-se discussões tecnológicas acerca das ferramentas ambientas e de outras práticas humanas em sua relação com a natureza. Por fim, as determinações político-econômicas que permitem a existência de tecnologias com impacto ambiental precisam ser percebidas e sugere-se que as tecnologias de armazenamento de energia, no presente contexto histórico, são elementos de realidade sintomáticos desta síntese de condições. As várias camadas de mediações apresentadas neste saber reificado atuam de maneira geradora e criam um objeto. O autor aproveita da tradição platônica e afirma, ao discutir o processo de objetivação criação de teorias e noção de normalidade, que:
+
+\begin{citacao}
+A materialização de uma abstração é uma das características
+mais misteriosas do pensamento e da fala. Autoridades políticas e
+intelectuais, de toda espécie, a exploram com a finalidade de 
+subjugar as massas.  Em outras palavras, tal autoridade está 
+fundamentada na arte de transformar uma representação na realidade
+da representação; transformar a palavra que substitui a coisa, na
+coisa que substitui a palavra.\cite[p.78]{Representacees_sociais_moscovici}
+\end{citacao}
+
+
+Parte-se da premissa de que há uma ausência, nas representações que o corpo discente do Novo Ensino Médio\footnote{\cite{Itinirarios_nem}} carrega, de um núcleo figurativo que detalhe elementos sintomáticos das práticas sociais de natureza tecnológica e político-econômica, presentes no objeto interdisciplinar reificado apresentado anteriormente. Acerca da noção de núcleo figurativo, o autor apresenta este como um 'complexo de imagens que reproduzem visivelmente um complexo de ideias\footnote{\cite[p.72]{Representacees_sociais_moscovici}}', podendo então ser entendido como uma coleção de elementos simbólicos compartilhados por uma determinada população, a qual, em sua historicidade, interagiu com sua exterioridade e criou um consenso acerca da significação atribuída à tais elementos. De tais observações pode-se destacar o papel figurativo dos grupos e indivíduos, os quais, na medida são percebidos como legítimos executores do poder de significação, impõem uma visão de mundo considerada legítima por seu grupo de pertencimento. Tal poder leva à aceitação de novos paradigmas de significação e dá concretude aos elementos que compõem o sistema psíquico de significação compartilhado.
+
+A criação dos elementos da comunicação compartilhados por uma população pode então ser percebida como ato gerador daquilo que passa a ser considerado 'comum', daquela forma de comunicação consensual  que dá sentido ao mundo e a impressão de coesão ao grupo. A verbalização de tais elementos possui uma periodicidade que destaca a importância destes para a subjetividade que os comunica. Partindo desta afirmação, pode-se chegar à conclusão de que a aceitação dos paradigmas semânticos que se manifestam através da linguagem, pode ser mensurada pela recorrência frequente\footnote{\cite[p.73]{Representacees_sociais_moscovici}} e prioridade dada aos elementos presentes numa dada terminologia. Sendo então a linguagem e seus elementos de significação um objeto mensurável, uma quantificação da frequencia de termos recorrentes pode revelar associações, prioridades e a profundidade semântica do detalhamento carregado pelas representações sociais. Tais condições destacam a hipostasia dada à certos termos e a importância destes para as subjetividades que os comunicam. A conclusão lógica de tal desdobramento é a assimilação destas imagens carregadas pela linguagem. A capacidade que o conceito possui de significar perde então seu caráter abstrato e passa a ser um elemento de realidade coexistindo com outros elementos; acerca de tal transformação, afirma o autor:
+
+\begin{citacao}
+A imagem do
+conceito deixa de ser um signo e torna-se a réplica da realidade,
+um simulacro, no verdadeiro sentido da palavra. A noção, pois, ou a
+entidade da qual ela proveio, perde seu caráter abstrato, 
+arbitrário e adquire uma existência quase física, independente. 
+Ela passa a possuir a autoridade de um fenômeno natural para os que a
+usam \cite[p.74]{Representacees_sociais_moscovici}. 
+\end{citacao}
+
+
+Percebe-se então como a aceitação da terminologia consensual media os entendimentos e passa a servir como referência real para os conceitos. Desdobra-se daí que os conceitos 'passam a existir como objetos, (e que estes) são o que significam\footnote{\cite[p.74]{Representacees_sociais_moscovici}}'. A profundidade de tal aceitação pode levar ao esquecimento da situação original onde tal conceito foi significado. Portanto é possível que o esquecimento da origem de tais conceitos leve estes à se transformarem. A dinâmica de tais transformações varia conforme cada cultura e a própria noção de causalidade necessário para a explicação do fenômeno comunicado pode ser distorcida ou até mesmo perdida. Atuam sobre tal perda, as determinações de natureza política e econômica vigentes em uma dada sociedade. Pode-se concluir tal argumentação, de maneira sintética, aproveitando do argumento do autor, o qual destaca a o papel mediador da linguagem e da cognição no esforço de construção de significados\footnote{\cite[p.31]{Interdisciplinar_Complexidade}} mantidos pelas representações sociais; afirma este que:
+
+\begin{citacao}
+Os nomes, pois,
+que inventamos e criamos para dar forma abstrata a substâncias
+ou fenômenos complexos, tornam-se a substância ou o fenômeno e
+é isso que nós nunca paramos de fazer. (...) Nossas representações,
+pois, tornam o não-familiar em algo familiar. O que é uma maneira
+diferente de dizer que elas dependem da memória \cite[p.77-78]{Representacees_sociais_moscovici}.
+\end{citacao}
+
+Logo, a inexistência de um núcleo figurativo utilizado pelo corpo discente estudado estimula a produção de um objeto educacional que contenha os elementos reificados de significação os quais percebem as práticas, políticas, tecnológicas e outras ferramentas que possuem impacto sobre o ambiente natural.
+
+
+\subsection{Os conhecimentos reificados acerca do armazenamento de energia}
+
+Para avançar a discussão aqui proposta, propõe-se o entendimento das tecnologias e políticas associadas às práticas de armazenamento de energia. Tal tema diverge das investigações acerca da redução de consumo e destaca características históricas do desenvolvimento tecnológico\footnote{Percebe-se o caráter dialético da mudança tecnológica presente na análise com base nas impressões presentes em \cite{DIALECTICAL_TECHNOLOGY}.} vigente e percebe as potencialidades deste, no que tange seu impacto ambiental. Diversas práticas podem ser incluídas aqui e a relação de cada uma delas com o ambiente natural, através do trabalho humano, podem ser destacadas.
+
+Em termos históricos primeiramente surgem as práticas de estocagem da energia na forma química, como por exemplo, a lenha, o carvão, e os derivados de petróleo, atividades as quais serviram de base para a maior parte da história tecnológica vivida pela humanidade. Tais atividades possuem um notório impacto danoso sobre o ambiente natural e, a significação atribuída à estas práticas já se encontra razoavelmente disseminada na mídia e na educação formal. Tais práticas foram complementadas por formas mais avançadas de controle sobre as forças naturais, como as atividades presentes na indústria da energia nuclear. Esta forma de armazenamento, com base em preceitos da física, parte de um conhecimento e controle mais profundo sobre os elementos, em seu nível atômico, fato este que permite uma estocagem e produção ordens de magnitude mais elevadas do que as formas químicas de armazenamento de energia.
+
+A fase mais recente de práticas e tecnologias acerca da geração de energia, especificamente as formas de produção da energia renovável, possuem uma história que se inicia com o advento da geração por meios hidráulicos, situação que coincidiu com a institucionalização dos conhecimentos acerca da eletricidade nas formas de corrente direta e alternada. A capacidade de estocagem presente nos reservatórios hídricos se apresenta então como um fato relevante e, destaca-se que tais práticas somente tenham tomado as proporções generalizadas que encontramos com o advento das grandes obras hidroelétricas. Tais práticas tecnológicas, embora não sejam totalmente isentas de impactos nocivos ao ambiente natural, afetam o ambiente natural de maneira menos agressiva, podendo assim ser consideradas menos danosas que as práticas tecnológicas supracitadas. O advento do paradigma moderno das energias renováveis, cujo impacto ambiental é menor, pode ser percebido com o surgimento e generalização, no período recente, das tecnologias de geração eólica e fotovoltaica. Esta outras práticas de geração ainda carecem de uma associação com tecnologias de armazenamento da energia, pois, de maneira distinta de um reservatório de água, uma reserva de carvão natural, de urânio ou de petróleo, estas tecnologias renováveis não possuem a capacidade de armazenamento dos elementos naturais dos quais necessitam para operar. Devido esta condição, o imperativo do armazenamento da energia produzida na forma elétrica se apresenta como tema a ser investigado e este imperativo se destaca do temas das diversas formas de armazenamento da energia potencial. Acerca das infraestruturas de armazenamento da energia potencial, encontramos um paradigma vasto de tecnologias, das quais pode-se destacar as reservas naturais de carvão, petróleo, materiais físseis de origem natural como o urânio, materiais físseis de origem artificial como o plutônio, e reservas hidráulicas na forma de reservatórios de represas. Uma caraterística compartilhada por todas essas formas é a estocagem do insumo usado na geração da energia, e portanto, representam um paradigma tecnológico que aproveita do um legado de conhecimentos bem definido. Formas mais recentes e menos difundidas de geração da energia como a energia maremotriz, a energia geotérmica, a energia termossolar, e a energia gravitacional em reservatórios de água padecem, cada uma em sua medida, das mesmas dificuldades estruturais causadas pela inexistência de mecanismos de armazenagem de larga escala da energia produzida.
+
+A escala da capacidade de armazenamento presente nas tecnologias de baterias químicas com base em ácido e chumbo e das baterias de lítio ainda não alcançaram a grandeza escalar necessária para atuar como elemento balanceador das cargas necessárias pelas redes elétricas atuais. Embora tenha ocorrido a generalização destas formas de armazenamento em aplicações que exigem uma quantidade menor de energia, o desenvolvimento e integração de elementos balanceadores de carga em larga escala ainda não se realizou. Tal condição pode ser percebida na arquitetura dos sistemas de distribuição de energia contemporâneos, os quais conectam o lado gerador e o lado consumidor da energia de maneira praticamente instantânea.
+A mensuração do percentual de produção energética renovável carrega consigo um viés oriundo do paradigma vigente que é o da inexistência\footnote{\cite{OECD_IEA_2012}}, dentro dos sistemas elétricos contemporâneos, de grandes elementos armazenadores da energia produzida. Tal condição implica na existência de redes energéticas onde geradores e consumidores atuam em tempo real; tem-se como exemplo e sintoma de tal arquitetura a função exercida pelo Operador Nacional do Sistema - ONS, no contexto do Brasil\footnote{\cite{Servicos_Ancilares}}.
+Pode-se fazer uma distinção entre estes sistemas legados de armazenagem dos insumos necessários para a produção da energia frente os sistemas de armazenamento por baterias, uma vez que estas tecnologias estocam o produto, que é a energia ao invés de estocar seu insumo como o petróleo, água represada ou hidrogênio. Tal distinção estrutural é sintomática de um paradigma tecnológico emergente que atende à necessidades estruturais causadas pela infraestrutura de geração e distribuição da energia na forma elétrica e seus respectivos padrões de consumo. Existe então uma diversidade de abordagens propostas\footnote{\cite{Energetic_evaluation}} para o armazenamento energético em grande escala, as quais utilizam principalmente reservas de insumos, variações de processos eletroquímicos como os presentes em baterias de lítio, e sistemas mecânicos de armazenamento da energia também já foram propostos e implementados.
+
+O elemento natural que é o hidrogênio têm sido estudado e se apresenta como forma do estado da arte dentro das atividades de geração e armazenamento da energia. Sendo esta tecnologia capaz de atuar enquanto ferramenta de armazenamento da energia potencial. Tal insumo emergente portanto, se mostra como uma das formas do conhecimento reificado. A emergência de um paradigma tecnológico ao redor das tecnologias do hidrogênio é sintomática da maturidade científica deste setor da atividade humana, e suas práticas permitem que mensuremos algumas das responsabilidades colocadas pela Agenda 2030. Este paradigma tecnológico emergente possui o estudo da fusão do átomo de hidrogênio como seu elemento de maior destaque. Percebe-se também as contribuições do campo de estudos das células geradoras de eletricidade movidas a hidrogênio, as quais já se encontram em sistemas industriais e produtos comerciais, em menor escala. O tema da armazenagem e manuseio do hidrogênio, nas suas diversas formas, permeia este paradigma e traz consigo processos e padrões industriais que criaram um mercado próprio\footnote{\cite{hydrogen_markets}} e suas respectivas redes comerciais. Ademais sugere-se que a inexistência de grandes elementos armazenadores da energia supracitada possa, eventualmente, ser mitigada usando de arranjos de células geradoras de eletricidade movidas a hidrogênio associadas às tecnologias de armazenagem de hidrogênio na forma de hidreto metálico\footnote{\cite{Comparison_hydrogen_hydrates}}. A discussão acerca da origem verde ou não-verde\footnote{\cite{Developments_hydrogen}} do hidrogênio é outro elemento sintomático da maturidade deste paradigma científico e de seus conhecimentos reificados. Este fato se associa ao legado da infraestrutura energética presente e sua historicidade. Deve-se perceber também que a origem não-verde é majoritária no hidrogênio produzido, no presente momento. Fato este que entra em conflito com parte da proposta presente na Agenda 2030. Por fim, a densidade energética potencial\footnote{\cite{B815553B}}, e o ciclo de vida dos sistemas e dos materiais necessários para a implementação de macro sistemas energéticos, podem impactar as mensurações do percentual de produção energética renovável colocadas pela Agenda 2030.
+
+
+\subsection{Os impactos sócio-ambientais dos conhecimentos sobre o armazenamento da energia}
+
+O propósito de se criar uma sociedade menos desigual, geradora das condições para o pleno desenvolvimento do ser humano, é um tema tratado pela ONU de maneira multidimensional, fato que exige uma perspectiva histórico-crítica e uma didática interdisciplinar\footnote{\cite[Cap.~7-9]{Lincoln1985-ua}} para que tais objetivos sejam compreendidos e implementados nos diversos níveis educacionais. Os pressupostos colocados pelos objetivos '7-Assegurar o acesso confiável, sustentável, moderno e a preço
+acessível à energia para todos'\footnote{\cite[p. 21]{Agenda_2030}}, e '9-Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a inovação'\footnote{\cite[p. 22]{Agenda_2030}}, propostos pela Agenda 2030 contribuem para tal discussão. Com destacado interesse nas dimensões econômica, social e ambiental\footnote{\cite[p. 6]{Agenda_2030}}, as lideranças que representaram os países signatários, elaboraram objetivos ambiciosos, os quais exigem profundas mudanças na relação entre o ser humano e a natureza, com especial atenção para as determinações colocadas pelo paradigma tecnológico\footnote{\cite[Cap.~3]{Kuhn2012-oa}} presente nos setores da energia e da infraestrutura.
+
+A familiaridade com o tema das formas de produção e armazenamento da energia vivida pelos discentes do Novo Ensino Médio precisa então ser investigada, e propõe-se uma interpretação orientada pela teoria das representações sociais de Moscovici. Tal abordagem busca compreender a carga semântica presente nas representações naturalizadas pelos discentes e tenta perceber seus limites. O desconhecimento por parte destes das possíveis aplicações de tais tecnologias, da arquitetura de seus sistemas, de sua historicidade e dispersão geográfica, de suas redes comerciais e industrias, de suas relações econômicas e das determinações impostas pelas determinações de Estado e de Governo, e principalmente das consequências ambientais da existência ou não de tais ferramentas figuram como objeto central da investigação aqui proposta.
+
+Faz-se necessário destacar o caráter interdisciplinar do objeto analisado, \cite[p.19]{Interdisciplinar_Complexidade} discute o papel das 'externalidades' causadas pelo desenvolvimento e crescimento econômico. Tais saberes, quando confinados às especificades de um campo do saber, destacam elementos causadores da crise ambiental vigente. O caráter societal do objeto de estudo proposto não pode ser compreendido através de uma metodologia reducionista com base em disciplinas compartimentalizadas, como afirma \cite[p.53]{consideracoes_Interdisciplinaridade}. Sugere-se aqui que a necesssidade de desnaturalizar\footnote{\cite[p.29]{Interdisciplinar_Complexidade}} os processos político-econômicos exige o entendimento científico-tecnológico das ferramentas disponíveis para a interação entre a sociedade e o ambiente, com destacada atenção ao escopo de tais ferramentas e suas consequências.
+
+
+\section{Justificativa}
+
+A produção monográfica se justifica pela compatibilidade entre a teoria das representações sociais e o ambiente de transição educacional propiciado pelo advento do Novo Ensino Médio. Ambas as dimensões trazem a abordagem da interdisciplinaridade como apresentada por \cite[p.56-58]{consideracoes_Interdisciplinaridade} e valorizam a criação de objetos de estudo complexos, os quais pode ser compreendidos quando detalha-se suas múltiplas dimensões. Os saberes reificados selecionados se justificam primeiramente, por compartilharem da mesma abordagem interdisciplinar e, ademais, se justificam pela sua capacidade instrumental de influenciar o ambiente natural, sendo portanto sintomáticos da capacidade humana de ação sobre a natureza.
+
+Tais conhecimentos interdisciplinares justificam também a elaboração de um objeto educacional, na forma de uma sequência didática. Sugere-se que, a provável inexistência de um núcleo figurativo que contenha detalhes das múltiplas dimensões contidas nos saberes reificados precisa ser sanada. Ademais, a elaboração de uma sequência didática abordando as diferentes dimensões do objeto que são as tecnologias para o armazenamento de energia, converge com a proposta da construção de um saber interdisciplinar que seja ambiental e socialmente responsável. 
+
+
+\section{Referencial teórico}
+
+Parte-se do estudo sobre as representações sociais proposto por \cite{Representacees_sociais_moscovici} para se discutir as representações das tecnologias que foram apropriadas pelos discentes. Tal discussão extende os argumentos de \cite{Durkheim_Educacao} ao detalhar o papel da educação na sociedade. A investigação proposta também pode se beneficiar do detalhamento nos procedimentos de descrição densa apresentados por \cite{Culturas_Geertz}.
+
+A vasta ramificação dos estudos sobre representações presente na proposta de edificação de uma ciência social do conhecimento apresentada por \cite[p.6]{Representacoes_Jodelet} destaca três características das pesquisas em representações sociais, duas das quais são atendidas por esta abordagem, nomeadamente: o texto monográfico atende ao princípio da transversalidade, ao se apropriar de conhecimentos de mais de um campo de pesquisas para sua elaboração e atende ao princípio da complexidade ao investigar a existência de um núcleo figurativo que trata de fenômenos da tecnologia e do ambiente que não podem ser reduzidos à uma única dimensionalidade; e seu produto educacional pode, através de sua terceira característica, dar vitalidade aos conteúdos do objeto reificado, uma vez que estes pretendem influir sobre a sociedade, fomentando uma atitude social e ambiental consciente.
+
+O tema das mudanças paradigmáticas desenvolvido por \cite{Kuhn2012-oa} é utilizado para fundamentar a delimitação do objeto reificado; tal fundamento converge com a percepção do caráter interdisciplinar da análise e pode ser estendida para incorporar as discussões sobre a superação do paradigma positivista e as abordagens que o sucederam presentes em \cite{Lincoln1985-ua}.
+
+Ao sobrepor tais argumentações, percebe-se uma multiplicidade de abordagens convergentes que pretendem explicar as mediações existentes na produção social do conhecimento e seus possíveis desdobramentos para o entendimento da função social da educação.
+Finalmente, este trabalho se justifica pela necessidade de informar e subsidiar o processo de acompanhamento e avaliação pela sociedade, a qual absorverá os conteúdos presentes nos itinerário do Novo Ensino Médio, junto das consequências ambientais presentes nas determinações de seu tempo. A abordagem proposta aqui também pode contribuir para os entendimentos acerca do tema na medida em que interessarem à comunidade acadêmica, agentes públicos e tomadores de decisão.
+
+
+\section{Objetivos}
+\subsection{Objetivo geral}
+
+Pretende-se produzir uma publicação monográfica, acerca das representações sociais dos sistemas de armazenamento de energia utilizadas pelos discentes do Novo Ensino Médio e um produto educacional acerca do mesmo tema moldado pela representações sociais dos sistemas de armazenamento de energia que forem identificadas.
+
+\subsection{Objetivos específicos}
+
+Pretende-se caracterizar as  representações sociais práticas tecnológicas, econômicas e ambientais utilizadas pelos discentes do Novo Ensino Médio ao entenderem as determinações colocadas pelo advento dos sistemas de armazenamento de energia. Esta caracterização deve servir para a criação do produto educacional.
+Para tanto faz-se necessária criação de um corpus do saber reificado contendo elementos da produção industrial, comercial e científica acerca do advento dos sistemas de armazenamento de energia, associada à respectiva revisão bibliográfica, o qual será confrontado com o conteúdo do núcleo figurativo das representações investigadas. O produto educacional terá a forma de sequencia didática interdisciplinar que abordará o objeto das representações usando os recortes interdisciplinares colocados pelos itinerários formativos do Novo Ensino Médio.
+
+
+\section{Metodologia}
+
+O caráter qualitativo da pesquisa proposta se apresenta ao se aproveitar das relações entre epistemologia e ontologia apresentadas por \cite{ontologia_epistemologia} para se organizar os processos de coleta e análise de dados no caso estudado.
+
+Soma-se à proposta a análise da produção científica no campo das representações sociais organizada por \cite[p.9]{Representacoes_Jodelet}, de onde selecionamos procedimentos para a investigação das representações os quais permitam que se detalhe os processos de simbolização e interpretação. Sugere-se a apresentação destes conteúdos através do procedimento interpretativo denso desenvolvido por \cite[p.93]{Culturas_Geertz} a qual pretende captar o ethos da visão de mundo representada.
+
+Para o processo de coleta de dados encadearemos os procedimentos apresentados em \cite{Metodologia-Pesquisa} partindo da distinção entre estado da arte e estado do conhecimento \cite{estado_arte_conhecimento}. Tal distinção visa separar os domínios das representações do domínio dos conhecimentos reificados presentes no estado da arte, destacando suas múltiplas dimensões deste segundo domínio.
+
+Acerca da lida específica com o conteúdo das representações, parte-se do viés proposto por \cite[p.130]{representacoes_metodologia} ao enfatizar o caráter interpretativo da análise. O procedimento analítico pretende identificar os elementos que eventualmente possam se destacar na forma de 'núcleo central', pela ênfase destes em suas funções generadora e organizadora. Ademais elementos que eventualmente possam se destacar na forma de 'sistema periférico', pela ênfase em suas funções de 'concretização, regulação; defesa\footnote{\cite[p.132]{representacoes_metodologia}.}' também podem ser detalhados. A presença de narrativas\footnote{\cite{narrativas}} estruturadas também pode ser destacada.
+
+Tais funções podem ser identificadas através dos procedimentos de levantamento de dados primários usando de questionários\footnote{\cite[p.237]{QUESTIONaRIO_epistemologia}} seguido da seleção de indivíduos para a realização de entrevistas\footnote{\cite[p.228]{QUESTIONaRIO_epistemologia}} transcritas. Espera-se que tais dados coletados sejam unidos em um corpus de texto que permitam a análise de termos recorrentes e sua prioridade, via contagem da ordem média de evocações, como destacado em \cite[p.137]{representacoes_metodologia}. 
+
+Tais procedimentos quantitativos visam complementar a segmentação conceitual apresentada anteriormente, colocando a análise quantitativa como secundária, configuração que enquadra a pesquisa na abordagem quali-quanti. Eventuais coocorrências e associações da terminologia dotadas de significante correlação estatística podem ser analisadas utilizando-se de ferramentas de linguística computacional, nomeadamente a biblioteca NLTK - Natural language toolkit\footnote{https://www.nltk.org/}, presente na linguagem Python e o software Iramutek\footnote{Acerca de tais técnicas vide \cite{IRAMUTEQ_analise}, \cite{Gestao_Informacao}, \cite{IRAMUTEQ_TUTORIAL} e \cite{lexical_frequencies}.}.
+
+
+\section{Produto educacional}
+
+A produção de materiais didáticos acerca deste paradigma tecnológico se apresenta como necessária, visto que o tema traz diversos elementos interdisciplinares.
+
+O produto educacional\footnote{Acerca do tema vide a contribuição de \cite{PRODUTOS_EDUCACIONAIS}} proposto será apresentado na forma de sequência pedagógica interdisciplinar contento elementos dos itinerários formativo do Novo Ensino Médio\footnote{\cite{Itinirarios_nem}}. Tais conteúdos se apresentam nos itinerários de 'Ciências da Natureza e suas tecnologias' e de 'Ciências Humanas e Sociais aplicadas'. O produto pretende sanar as lacunas nas representações que forem percebidas no entendimento da problemática proposta, considerando-se aquilo que será inquirido aos discentes.
+
+No itinerário de Ciências Humanas, tal conteúdo pode usar como argumento central uma linha do tempo histórica da transformações nas tecnológicas analisadas. Sugere-se que esta contextualização deve ser seguida da caracterização das práticas tecnológicas e da subsequente caracterização dos sistemas político-econômicos e suas consequências para o ambiente humano e natural. Por fim sugere-se que o material contenha uma análise de possíveis cenários futuros afim de reforçar a percepção da dinâmica de tais transformações. Possíveis tensões, críticas e outros elementos deletérios ou inviabilizadores da implementação de tais tecnologias podem ser incluídos afim de reforçar o detalhamento de tais transformações. Estão também presentes elementos das ciências humanas, na forma dos conceitos das disciplinas de filosofia e sociologia; nomeadamente: conceitos de paradigma, dialética, sistemas sociais e impacto humano sobre o meio ambiente.
+
+Estão presentes elementos que pertencem ao itinerário das ciências da natureza, na forma dos conceitos das disciplinas de física e química; nomeadamente: conceitos de energia potencial, armazenada e gasta, energia cinética, química, térmica e nuclear, perda de energia, densidade energética, absorção e adsorção, termodinâmica, geração de eletricidade, consumo de eletricidade e sistemas industriais. Este produto pretende sanar a ausência de materiais educacionais acerca das tecnologias de armazenagem de energia, sua produção e consumo, e atende à necessidade de se criar comparações entre as diversas abordagens tecnológicas e suas respectivas densidades energéticas e impactos ambientais.
+
+O produto final também deve apresentar, associado às representações identificadas, elementos dos conteúdos reificados oriundos de materiais ainda não catalogados e sistematizados acerca do tema das formas de armazenamento de energia; fato sintomático da profusão de esforços de diversas organizações estatais, privadas e da sociedade civil organizada.
+
+Prevê-se então que o produto educacional detalhará a historicidade concreta que permite a transição colocada por este paradigma tecnológico, característica que, como afirmado anteriormente, atende a necessidade de informar e subsidiar o processo de acompanhamento e avaliação vivenciado pela comunidade escolar e acadêmica, por agentes públicos e tomadores de decisão, impactados por tais mudanças tecnológicas e seus possíveis impactos.
+
+
+
+\section{Cronograma}
+
+Sugere-se a integralização das 96 (noventa e seis) unidades de créditos necessárias, sendo 27 (vinte e sete) créditos em disciplinas concentradas em cinco disciplinas obrigatórias, a serem cursadas no período letivo de 2022, conforme a disponibilidade: 
+
+
+
+\begin{description}[font=$\bullet$~\normalfont\scshape]
+\item [DCI4002] - Gestão Ambiental
+\item [DCI4003] - Interdisciplinaridade em Ciências Ambientais
+\item [DCI4004] - Metodologia Científica e Desenvolvimento de Projetos em Educação nas Ciências Ambientais
+\item [DCI4005] - Seminário de Pesquisa
+\item [DCI4006] - Ambiente, Sociedade e Educação
+\end{description}
+
+
+Seguidas de outras três disciplinas eletivas, a serem cursadas, conforme a disponibilidade, no período letivo de 2023, preferencialmente:
+
+\begin{description}[font=$\bullet$~\normalfont\scshape]
+\item [DCI4011] - Energia e Meio Ambiente
+\item [DCI4013] - Gestão de Recursos Naturais
+\item [DCI4017] - Mudanças Climáticas e Meio Ambiente
+\item [DCI4015] - Indicadores para Avaliação de Desenvolvimento Sustentável
+\end{description}
+
+Conclui-se com outros 69 (sessenta e nove) créditos na elaboração da Dissertação e do Produto Técnico ou Educacional, distribuídos nos anos letivos de 2022 e 2023.
+
+\postextual
+
+\bibliography{Interdisciplinaridade}
+
+\end{document}
