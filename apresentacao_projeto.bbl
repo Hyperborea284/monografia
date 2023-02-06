@@ -1,0 +1,25 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.7 }
+
+\bibitem[Bardin 1977]{bardin_conteudo}
+\abntrefinfo{Bardin}{BARDIN}{1977}
+{BARDIN, L. \emph{An{\'a}lise de conte{\'u}do}. [S.l.]: Edi{\c c}{\~o}es 70,
+  1977. 226~p.  (Persona - Psicologia).}
+
+\bibitem[Durkheim 2007]{Durkheim_Educacao}
+\abntrefinfo{Durkheim}{DURKHEIM}{2007}
+{DURKHEIM, {\'E}. \emph{{\'E}mile Durkheim}. [S.l.]: Edi{\c c}{\~o}es 70 Lda.,
+  2007.
+ISBN 978-972-44-1385-3.}
+
+\bibitem[Moscovici 2007]{Representacees_sociais_moscovici}
+\abntrefinfo{Moscovici}{MOSCOVICI}{2007}
+{MOSCOVICI, S. \emph{Representa{\c c}{\~o}es sociais: investiga{\c c}{\~o}es em
+  psicologia social}. Vozes, 2007. 395~p. Dispon{\'\i}vel em:
+  \url{https://www.academia.edu/25698906/MOSCOVICI\_S\_Representa\%C3\%A7\%C3\%B5es\_Sociais}.}
+
+\end{thebibliography}

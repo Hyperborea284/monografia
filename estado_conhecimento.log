@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2022.7.3)  9 NOV 2022 12:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.1.13)  13 JAN 2023 21:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -518,14 +518,14 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language63). Reported on input line 105.
+(babel)             (\language70). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language63). Reported on input line 108.
+(babel)             (\language70). Reported on input line 108.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language3). Reported on input line 111.
+(babel)             (\language44). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
@@ -1097,11 +1097,12 @@ LaTeX Info: Redefining \newblock on input line 591.
 LaTeX Info: Redefining \cite on input line 618.
 \ABCItoken=\toks44
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 141.
+\estado_conhecimento@idxfile=\write5
+\openout5 = `estado_conhecimento.idx'.
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@ifnextchar' on input line 111.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 111.
+Writing index file estado_conhecimento.idx 
 
 ******************************************************
 Stock height and width: 845.04684pt by 597.50787pt
@@ -1122,30 +1123,39 @@ Sidefoothsep and sidefootwidth: 7pt and 49pt
 Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
 ******************************************************
 
-(./estado_conhecimento.aux)
+(./estado_conhecimento.aux
+
+LaTeX Warning: Label `tab-nivinv' multiply defined.
+
+
+LaTeX Warning: Label `tab-nivinv' multiply defined.
+
+
+LaTeX Warning: Label `tab-nivinv' multiply defined.
+
+)
 \openout1 = `estado_conhecimento.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-Package hyperref Info: Link coloring ON on input line 140.
-
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 176.
+LaTeX Font Info:    ... okay on input line 176.
+Package hyperref Info: Link coloring ON on input line 176.
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1158,10 +1168,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 140.
-LaTeX Info: Redefining \ref on input line 140.
-LaTeX Info: Redefining \pageref on input line 140.
-LaTeX Info: Redefining \nameref on input line 140.
+LaTeX Info: Redefining \nameref on input line 176.
+LaTeX Info: Redefining \ref on input line 176.
+LaTeX Info: Redefining \pageref on input line 176.
+LaTeX Info: Redefining \nameref on input line 176.
 \myptabbox=\box72
 \myptabboxwidth=\skip264
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1186,18 +1196,18 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 140.
-Package microtype Info: Applying patch `item' on input line 140.
-Package microtype Info: Applying patch `toc' on input line 140.
-Package microtype Info: Applying patch `eqnum' on input line 140.
-Package microtype Info: Applying patch `footnote' on input line 140.
+LaTeX Info: Redefining \microtypecontext on input line 176.
+Package microtype Info: Applying patch `item' on input line 176.
+Package microtype Info: Applying patch `toc' on input line 176.
+Package microtype Info: Applying patch `eqnum' on input line 176.
+Package microtype Info: Applying patch `footnote' on input line 176.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 140.
+LaTeX Info: Redefining \showhyphens on input line 176.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1206,48 +1216,38 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-! Undefined control sequence.
-<recently read> \theforeigntitle 
-                                 
-l.164 
-      
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-64.
+99.
+
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-64.
+99.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-164.
+199.
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-164.
+199.
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 164.
+(Font)              <12> on input line 199.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 164.
+(Font)              <8> on input line 199.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 164.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-71.
+(Font)              <6> on input line 199.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 2
+07.
 
 (/usr/share/texmf/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1256,22 +1256,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 208.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 212.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 212.
-<logo.png, id=14, 401.5pt x 244.915pt>
+<logo.png, id=19, 401.5pt x 244.915pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 213.
-(pdftex.def)             Requested size: 85.35826pt x 52.06897pt.
-<uem.png, id=16, 800.2698pt x 382.5492pt>
+Package pdftex.def Info: logo.png  used on input line 239.
+(pdftex.def)             Requested size: 56.9055pt x 34.71014pt.
+<uem.png, id=21, 800.2698pt x 382.5492pt>
 File: uem.png Graphic file (type png)
 <use uem.png>
-Package pdftex.def Info: uem.png  used on input line 213.
-(pdftex.def)             Requested size: 85.35826pt x 40.80219pt.
+Package pdftex.def Info: uem.png  used on input line 239.
+(pdftex.def)             Requested size: 56.9055pt x 27.20145pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.png> <./uem.png
@@ -1279,77 +1273,133 @@ Package pdftex.def Info: uem.png  used on input line 213.
 pdfTeX warning: /usr/bin/pdflatex (file ./uem.png): large interlaced PNG might 
 cause out of memory (use non-interlaced PNG to fix this)
 >]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-39.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 251.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 266.
-(pdftex.def)             Requested size: 85.35826pt x 52.06897pt.
+Package pdftex.def Info: logo.png  used on input line 297.
+(pdftex.def)             Requested size: 56.9055pt x 34.71014pt.
 File: uem.png Graphic file (type png)
 <use uem.png>
-Package pdftex.def Info: uem.png  used on input line 266.
-(pdftex.def)             Requested size: 85.35826pt x 40.80219pt.
+Package pdftex.def Info: uem.png  used on input line 297.
+(pdftex.def)             Requested size: 56.9055pt x 27.20145pt.
  [2]
+<est_con_2021.png, id=69, 571.6557pt x 411.2163pt>
+File: est_con_2021.png Graphic file (type png)
+<use est_con_2021.png>
+Package pdftex.def Info: est_con_2021.png  used on input line 333.
+(pdftex.def)             Requested size: 571.6543pt x 411.21529pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 341.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 341.
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 302.
-(pdftex.def)             Requested size: 85.35826pt x 52.06897pt.
+Package pdftex.def Info: logo.png  used on input line 342.
+(pdftex.def)             Requested size: 56.9055pt x 34.71014pt.
 File: uem.png Graphic file (type png)
 <use uem.png>
-Package pdftex.def Info: uem.png  used on input line 302.
-(pdftex.def)             Requested size: 85.35826pt x 40.80219pt.
- [3] (./estado_conhecimento.bbl (./estado_conhecimento.brf)
-\tf@brf=\write5
-\openout5 = `estado_conhecimento.brf'.
+Package pdftex.def Info: uem.png  used on input line 342.
+(pdftex.def)             Requested size: 56.9055pt x 27.20145pt.
+ [3 <./est_con_2021.png>]
+<resumes_reinert.png, id=87, 505.6491pt x 505.6491pt>
+File: resumes_reinert.png Graphic file (type png)
+<use resumes_reinert.png>
+Package pdftex.def Info: resumes_reinert.png  used on input line 350.
+(pdftex.def)             Requested size: 505.64784pt x 505.64784pt.
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 353.
+(pdftex.def)             Requested size: 56.9055pt x 34.71014pt.
+File: uem.png Graphic file (type png)
+<use uem.png>
+Package pdftex.def Info: uem.png  used on input line 353.
+(pdftex.def)             Requested size: 56.9055pt x 27.20145pt.
+ [4]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 364.
+(pdftex.def)             Requested size: 56.9055pt x 34.71014pt.
+File: uem.png Graphic file (type png)
+<use uem.png>
+Package pdftex.def Info: uem.png  used on input line 364.
+(pdftex.def)             Requested size: 56.9055pt x 27.20145pt.
+ [5 <./resumes_reinert.png>]
+(./estado_conhecimento.bbl (./estado_conhecimento.brf)
+\tf@brf=\write6
+\openout6 = `estado_conhecimento.brf'.
 
 
 bibitemlist
-)
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 305.
-(pdftex.def)             Requested size: 85.35826pt x 52.06897pt.
+Package pdftex.def Info: logo.png  used on input line 25.
+(pdftex.def)             Requested size: 56.9055pt x 34.71014pt.
 File: uem.png Graphic file (type png)
 <use uem.png>
-Package pdftex.def Info: uem.png  used on input line 305.
-(pdftex.def)             Requested size: 85.35826pt x 40.80219pt.
- [4] (./estado_conhecimento.aux)
+Package pdftex.def Info: uem.png  used on input line 25.
+(pdftex.def)             Requested size: 56.9055pt x 27.20145pt.
+[6])
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 385.
+(pdftex.def)             Requested size: 56.9055pt x 34.71014pt.
+File: uem.png Graphic file (type png)
+<use uem.png>
+Package pdftex.def Info: uem.png  used on input line 385.
+(pdftex.def)             Requested size: 56.9055pt x 27.20145pt.
+ [7]
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 385.
+(pdftex.def)             Requested size: 56.9055pt x 34.71014pt.
+File: uem.png Graphic file (type png)
+<use uem.png>
+Package pdftex.def Info: uem.png  used on input line 385.
+(pdftex.def)             Requested size: 56.9055pt x 27.20145pt.
+ [8
 
-Package rerunfilecheck Warning: File `estado_conhecimento.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
 
-Package rerunfilecheck Info: Checksums for `estado_conhecimento.brf':
-(rerunfilecheck)             Before: CA86944F000F10ED3432298692E182D6;459
-(rerunfilecheck)             After:  AC4C9916391A45242106783003310701;419.
+]
+
+LaTeX Warning: Float too large for page by 36.04138pt on input line 488.
+
+File: logo.png Graphic file (type png)
+<use logo.png>
+Package pdftex.def Info: logo.png  used on input line 491.
+(pdftex.def)             Requested size: 56.9055pt x 34.71014pt.
+File: uem.png Graphic file (type png)
+<use uem.png>
+Package pdftex.def Info: uem.png  used on input line 491.
+(pdftex.def)             Requested size: 56.9055pt x 27.20145pt.
+[9] (./estado_conhecimento.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package rerunfilecheck Info: File `estado_conhecimento.brf' has not changed.
+(rerunfilecheck)             Checksum: F6EAEA85412F976DAF38FF1C02578029;701.
  ) 
 Here is how much of TeX's memory you used:
- 29083 strings out of 478287
- 533496 string characters out of 5849290
- 1001814 words of memory out of 5000000
- 46626 multiletter control sequences out of 15000+600000
- 541747 words of font info for 126 fonts, out of 8000000 for 9000
+ 29106 strings out of 478287
+ 533937 string characters out of 5849289
+ 1010828 words of memory out of 5000000
+ 46606 multiletter control sequences out of 15000+600000
+ 549738 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 110i,15n,106p,1016b,1198s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 110i,15n,106p,3380b,1420s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
-public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/sh
-are/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></u
-sr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmtt12.pfb>
-Output written on estado_conhecimento.pdf (4 pages, 515106 bytes).
+public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/
+share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/publi
+c/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/te
+xmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/
+public/lm/lmss17.pfb>
+Output written on estado_conhecimento.pdf (9 pages, 724789 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
- 27 named destinations out of 1000 (max. 500000)
- 42119 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 259 PDF objects out of 1000 (max. 8388607)
+ 204 compressed objects within 3 object streams
+ 37 named destinations out of 1000 (max. 500000)
+ 45201 words of extra memory for PDF output out of 51595 (max. 10000000)
 
