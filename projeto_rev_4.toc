@@ -1,0 +1,38 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase {Introdução}}{19}{chapter.1}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase {O papel da educação em Durkheim e Moscovici}}{21}{chapter.2}%
+\contentsline {section}{\numberline {2.1}O papel mediador da educação na construção de saberes ambientais: ancoragem e objetivação}{24}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Os conhecimentos reificados acerca do poluição}{26}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Poluição e geração de energia}{27}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Poluição e atividade industrial}{30}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Poluição, consumo e lixo}{30}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.3}Os impactos socioambientais dos conhecimentos sobre a poluição}{30}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Semântica e poluição}{31}{section.2.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase {Justificativa}}{33}{chapter.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase {Referencial teórico}}{35}{chapter.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase {Objetivos}}{37}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Objetivo geral}{37}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Objetivos específicos}{37}{section.5.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase {Metodologia}}{39}{chapter.6}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {7}\MakeTextUppercase {Produto educacional}}{41}{chapter.7}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {8}\MakeTextUppercase {Cronograma}}{43}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Quadro das disciplinas}{43}{section.8.1}%
+\vspace {\cftbeforechapterskip }
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\MakeTextUppercase {Refer\^encias}}{45}{section*.15}%
+\vspace {\cftbeforechapterskip }
