@@ -1,2 +1,11 @@
-\contentsline {quadro}{\numberline {1}{\ignorespaces Disciplinas obrigatórias}}{43}{quadro.8.1}%
-\contentsline {quadro}{\numberline {2}{\ignorespaces Disciplinas eletivas}}{43}{quadro.8.2}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {quadro}{\numberline {5.1}{\ignorespaces Exemplo de código em Python 3 para importar um corpus e dividi-lo em entrevistas.}}{39}{quadro.5.1}%
+\contentsline {quadro}{\numberline {5.2}{\ignorespaces Exemplo de código em Python 3 para identificar o idioma e as entidades num texto.}}{42}{quadro.5.2}%
+\contentsline {quadro}{\numberline {5.3}{\ignorespaces Exemplo de código em Python 3 para limpar corpus de texto.}}{43}{quadro.5.3}%
+\contentsline {quadro}{\numberline {5.4}{\ignorespaces Exemplo de código em Python 3 para calcular os OME num corpus de texto.}}{44}{quadro.5.4}%
+\contentsline {quadro}{\numberline {5.5}{\ignorespaces Exemplo de código em Python 3 o qual parte das OME num corpus de texto e retorna o núcleo central, e as zonas periféricas.}}{45}{quadro.5.5}%
+\addvspace {10\p@ }

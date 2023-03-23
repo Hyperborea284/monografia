@@ -5,31 +5,28 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
-\bibitem[{Almeida J{\'u}nior} e Oliveira 2021]{ontologia_epistemologia}
-\abntrefinfo{{Almeida J{\'u}nior} e Oliveira}{{Almeida J{\'u}nior};
-  OLIVEIRA}{2021}
-{{Almeida J{\'u}nior}, E. R.~B. de~de; OLIVEIRA, C.~M. de. Estudo de caso: da
-  ontologia e epistemologia aos procedimentos para a pesquisa.
-In:  \underline{\ \ \ \ \ \ \ \ }. \emph{Metodologia da Pesquisa em Educa{\c
-  c}{\~a}o e Ensino de Ci{\^e}ncias}. Massoni, 2021. p.~16.
-ISBN 978-65-87542-35-5.
-Dispon{\'\i}vel em:
-  \url{https://www.researchgate.net/profile/Carlos-Magalhaes-Junior/publication/358189924\_Metodologia\_da\_Pesquisa\_em\_Educacao\_e\_Ensino\_de\_Ciencias/links/61f4261caad5781d41b6dd5e/Metodologia-da-Pesquisa-em-Educacao-e-Ensino-de-Ciencias.pdf?origin=publication\_detail}.}
-
 \bibitem[Araujo, Ferst e Vilela 2021]{estado_arte_conhecimento}
 \abntrefinfo{Araujo, Ferst e Vilela}{ARAUJO; FERST; VILELA}{2021}
-{ARAUJO, C. S.~O. de; FERST, E.~M.; VILELA, M. V.~F. Diferen{\c c}a entre
-  estado da arte e estado do conhecimento.
-In:  \underline{\ \ \ \ \ \ \ \ }. \emph{Metodologia da Pesquisa em Educa{\c
-  c}{\~a}o e Ensino de Ci{\^e}ncias}. Massoni, 2021. p.~16.
+{ARAUJO, C. S. O.~d.; FERST, E.~M.; VILELA, M. V.~F. Diferença entre estado da
+  arte e estado do conhecimento. In:  JúNIOR, C. A. O.~d. M.; BATISTA, M.~C.
+  (Ed.). \emph{Metodologia da Pesquisa em Educação e Ensino de Ciências}.
+  Maringá - PR: Massoni, 2021. p.~16.
 ISBN 978-65-87542-35-5.
 Dispon{\'\i}vel em:
   \url{https://www.researchgate.net/profile/Carlos-Magalhaes-Junior/publication/358189924\_Metodologia\_da\_Pesquisa\_em\_Educacao\_e\_Ensino\_de\_Ciencias/links/61f4261caad5781d41b6dd5e/Metodologia-da-Pesquisa-em-Educacao-e-Ensino-de-Ciencias.pdf?origin=publication\_detail}.}
 
-\bibitem[Bardin 1977]{bardin_conteudo}
-\abntrefinfo{Bardin}{BARDIN}{1977}
-{BARDIN, L. \emph{An{\'a}lise de conte{\'u}do}. [S.l.]: Edi{\c c}{\~o}es 70,
-  1977. 226~p.  (Persona - Psicologia).}
+\bibitem[Bardin 2016]{bardin_analise}
+\abntrefinfo{Bardin}{BARDIN}{2016}
+{BARDIN, L. \emph{Análise de conteúdo}. [S.l.]: Edições 70, 2016. 292~p.
+  (Coleção Persona: Psicologia).}
+
+\bibitem[Brasil. Ministério do Meio Ambiente 2023]{mma:poluicao}
+\abntrefinfo{Brasil. Ministério do Meio Ambiente}{BRASIL. MINISTéRIO DO MEIO
+  AMBIENTE}{2023}
+{BRASIL. MINISTéRIO DO MEIO AMBIENTE. \emph{Poluição das águas}. 2023.
+Acesso em: 19 mar. 2023.
+Dispon{\'\i}vel em:
+  \url{http://www.mma.gov.br/saneamento-ambiental/polui\%C3\%A7\%C3\%A3o-das-\%C3\%A1guas.html}.}
 
 \bibitem[C{\^a}mara e Ferreira 2017]{Gestao_Informacao}
 \abntrefinfo{C{\^a}mara e Ferreira}{C{\^A}MARA; FERREIRA}{2017}
@@ -67,6 +64,15 @@ ISBN 987-85-61501-11-2. Dispon{\'\i}vel em:
   2007.
 ISBN 978-972-44-1385-3.}
 
+\bibitem[Dutoit 2002]{dutoit2002high}
+\abntrefinfo{Dutoit}{DUTOIT}{2002}
+{DUTOIT, T. High-quality text-to-speech synthesis: an overview.
+\emph{TCTS Lab, Faculte Polytechnique de Mons}, 31, bvd Dolez, B-7000 MONS
+  (Belgium), 2002.
+Email: dutoit@tcts.fpms.ac.be, tel: /32/65/374133, fax: /32/65/374129.
+Dispon{\'\i}vel em:
+  \url{https://www.academia.edu/download/3436726/Dutoit.pdf}.}
+
 \bibitem[EPE e MPE 2018]{Potencial_Energeticos_2050}
 \abntrefinfo{EPE e MPE}{EPE; MPE}{2018}
 {EPE, E. P.~E.; MPE, M. M.~E. de~e. \emph{Potencial dos Recursos
@@ -100,12 +106,6 @@ ISBN 978-65-87542-35-5.
 Dispon{\'\i}vel em:
   \url{https://www.researchgate.net/profile/Carlos-Magalhaes-Junior/publication/358189924\_Metodologia\_da\_Pesquisa\_em\_Educacao\_e\_Ensino\_de\_Ciencias/links/61f4261caad5781d41b6dd5e/Metodologia-da-Pesquisa-em-Educacao-e-Ensino-de-Ciencias.pdf?origin=publication\_detail}.}
 
-\bibitem[Forsberg 2007]{hydrogen_markets}
-\abntrefinfo{Forsberg}{FORSBERG}{2007}
-{FORSBERG, C.~W. Future hydrogen markets for large-scale hydrogen production
-  systems.
-\emph{International Journal of Hydrogen Energy}, v.~32, n.~4, p.~8, mar. 2007.}
-
 \bibitem[Gancho 2002]{narrativas}
 \abntrefinfo{Gancho}{GANCHO}{2002}
 {GANCHO, C.~V. \emph{Como analisar narrativas}. [S.l.]: Editora {\'A}tica,
@@ -117,6 +117,29 @@ ISBN 85 08 03788 0.}
 {GEERTZ, C. \emph{A interpreta{\c c}{\~a}o das culturas}. [S.l.: s.n.], 1989.
   323~p.
 ISBN ISBN 978-85-216-1333-6.}
+
+\bibitem[{Google LLC} 2023]{live-transcribe}
+\abntrefinfo{{Google LLC}}{{Google LLC}}{2023}
+{{Google LLC}. \emph{{Live Transcribe \& Notification}}. 2023.
+  \url{https://play.google.com/store/apps/details?id=com.google.audio.hearing.visualization.accessibility.scribe&hl=en&gl=US}.
+Acesso em: 19 mar. 2023.}
+
+\bibitem[Guo et al. 2021]{guo2021green}
+\abntrefinfo{Guo et al.}{GUO et al.}{2021}
+{GUO, X. et al. Green and sustainable manufacturing: A review and research
+  agenda.
+\emph{Journal of Cleaner Production}, Elsevier, v.~293, p. 126239, 2021.
+Dispon{\'\i}vel em:
+  \url{https://www.researchgate.net/publication/364937335\_Sustainable\_Lean\_and\_Green\_Manufacturing\_An\_Empirical\_Review\_of\_Their\_Strategies}.}
+
+\bibitem[Hiyakumoto, Prevost e Cassell 2000]{hiyakumoto2000semantic}
+\abntrefinfo{Hiyakumoto, Prevost e Cassell}{HIYAKUMOTO; PREVOST; CASSELL}{2000}
+{HIYAKUMOTO, L.; PREVOST, S.; CASSELL, J. Semantic and discourse information
+  for text-to-speech intonation. In:  \emph{Proc. of the 6th European
+  Conference on Speech Communication and Technology}. Cambridge, MA USA: The
+  Media Laboratory, Massachusetts Institute of Technology, 2000. p. 2217--2220.
+  Email: {hyaku, prevost, justine}@media.mit.edu. Dispon{\'\i}vel em:
+  \url{http://www.isca-speech.org/archive/eurospeech\_2001/e01\_2217.pdf}.}
 
 \bibitem[Jodelet 1993]{Representacoes_Jodelet}
 \abntrefinfo{Jodelet}{JODELET}{1993}
@@ -131,14 +154,23 @@ p.~30, 1993.}
 Dispon{\'\i}vel em:
   \url{https://www.academia.edu/38029596/DIALECTICAL\_TECHNOLOGY\_HEGEL\_ON\_MEANS\_TOOLS\_AND\_THE\_MACHINE}.}
 
-\bibitem[Klamt e Santos 2021]{IRAMUTEQ_analise}
+\bibitem[Júnior e Oliveira 2021]{ontologia_epistemologia}
+\abntrefinfo{Júnior e Oliveira}{JúNIOR; OLIVEIRA}{2021}
+{JúNIOR, E. R. B.~d. A.; OLIVEIRA, C. M.~d. Estudo de caso: da ontologia e
+  epistemologia aos procedimentos para a pesquisa.
+In:  \underline{\ \ \ \ \ \ \ \ }. \emph{Metodologia da Pesquisa em Educação
+  e Ensino de Ciências}. Massoni, 2021. p.~16.
+ISBN 978-65-87542-35-5.
+Dispon{\'\i}vel em:
+  \url{https://www.researchgate.net/profile/Carlos-Magalhaes-Junior/publication/358189924\_Metodologia\_da\_Pesquisa\_em\_Educacao\_e\_Ensino\_de\_Ciencias/links/61f4261caad5781d41b6dd5eMetodologia-da-Pesquisa-em-Educacao-e-Ensino-de-Ciencias.pdf?origin=publication\_detail}.}
+
+\bibitem[Klamt e Santos 2021]{klamt2021}
 \abntrefinfo{Klamt e Santos}{KLAMT; SANTOS}{2021}
-{KLAMT, L.~M.; SANTOS, V.~S. dos. O uso do software iramuteq na an{\'a}lise de
-  conte{\'u}do - estudo comparativo entre os trabalhos de conclus{\~a}o de
-  curso do profept e os referenciais do programa.
+{KLAMT, L.~M.; SANTOS, V. S.~d. O uso do software iramuteq na análise de
+  conteúdo - estudo comparativo entre os trabalhos de conclusão de curso do
+  profept e os referenciais do programa.
 \emph{Research, Society and Development}, v.~10, n.~4, p.~15, 2021.
-ISSN ISSN 2525-3409.
-Dispon{\'\i}vel em: \url{http://dx.doi.org/10.33448/rsd-v10i4.13786}.}
+ISSN 2525-3409.}
 
 \bibitem[Kuhn 2012]{Kuhn2012-oa}
 \abntrefinfo{Kuhn}{KUHN}{2012}
@@ -169,19 +201,27 @@ ISBN 978-65-87542-35-5.
 Dispon{\'\i}vel em:
   \url{https://www.researchgate.net/profile/Carlos-Magalhaes-Junior/publication/358189924\_Metodologia\_da\_Pesquisa\_em\_Educacao\_e\_Ensino\_de\_Ciencias/links/61f4261caad5781d41b6dd5e/Metodologia-da-Pesquisa-em-Educacao-e-Ensino-de-Ciencias.pdf?origin=publication\_detail}.}
 
+\bibitem[Li et al. 2019]{li2019air}
+\abntrefinfo{Li et al.}{LI et al.}{2019}
+{LI, Q. et al. Air pollution and its impact on human health and the
+  environment: a global challenge for the twenty-first century.
+\emph{Environmental science and pollution research}, Springer, v.~26, n.~31, p.
+  31909--31925, 2019.
+Dispon{\'\i}vel em:
+  \url{https://environhealthprevmed.biomedcentral.com/articles/10.1007/s12199-007-0018-5}.}
+
 \bibitem[Lincoln e Guba 1985]{Lincoln1985-ua}
 \abntrefinfo{Lincoln e Guba}{LINCOLN; GUBA}{1985}
 {LINCOLN, Y.~S.; GUBA, E.~G. \emph{Naturalistic Inquiry}. Thousand Oaks, CA:
   SAGE Publications, 1985.}
 
-\bibitem[Manso 2010]{Servicos_Ancilares}
-\abntrefinfo{Manso}{MANSO}{2010}
-{MANSO, J. C.~G.
-\emph{Valoriza{\c c}{\~a}o de Servi{\c c}os Ancilares de Reserva em Geradores
-  Hidrel{\'e}tricos}.
-171~p. Tese (Doutorado), abr. 2010.
-Dispon{\'\i}vel em:
-  \url{https://www.feis.unesp.br/Home/departamentos/engenhariaeletrica/pos-graduacao/064-tese\_juan\_carlos\_galvis.pdf}.}
+\bibitem[Mesacasa e Cunha 2019]{mesacasa2019desenvolvimento}
+\abntrefinfo{Mesacasa e Cunha}{MESACASA; CUNHA}{2019}
+{MESACASA, A.; CUNHA, M. A. A.~d. Desenvolvimento de produtos de moda a partir
+  de resíduos têxteis: um estudo na cidade de pato branco-pr.
+\emph{DAPesquisa}, Universidade do Estado de Santa Catarina, v.~14, n.~23, p.
+  66--87, 2019.
+ISSN 1808-3129.}
 
 \bibitem[Moscovici 2007]{Representacees_sociais_moscovici}
 \abntrefinfo{Moscovici}{MOSCOVICI}{2007}
@@ -189,27 +229,16 @@ Dispon{\'\i}vel em:
   psicologia social}. Vozes, 2007. 395~p. Dispon{\'\i}vel em:
   \url{https://www.academia.edu/25698906/MOSCOVICI\_S\_Representa\%C3\%A7\%C3\%B5es\_Sociais}.}
 
-\bibitem[M{\"u}ller e Adametz 2016]{Energetic_evaluation}
-\abntrefinfo{M{\"u}ller e Adametz}{M{\"U}LLER; ADAMETZ}{2016}
-{M{\"U}LLER, K.; ADAMETZ, P. Energetic evaluation of hydrogen storage in metal
-  hydrides.
-\emph{International Journal of Energy Research}, v.~40, n.~13, p.~31, maio
-  2016.
-Dispon{\'\i}vel em: \url{https://doi.org/10.1002/er.3563}.}
-
 \bibitem[Nations 2015]{Agenda_2030}
 \abntrefinfo{Nations}{NATIONS}{2015}
 {NATIONS, U. \emph{Transforming our World: the 2030 Agenda for sustainable
   development}. 2015. 41~p. Dispon{\'\i}vel em:
   \url{https://sdgs.un.org/sites/default/files/publications/21252030\%20Agenda\%20for\%20Sustainable\%20Development\%20web.pdf}.}
 
-\bibitem[Newborough e Cooley 2020]{Developments_hydrogen}
-\abntrefinfo{Newborough e Cooley}{NEWBOROUGH; COOLEY}{2020}
-{NEWBOROUGH, M.; COOLEY, G. Developments in the global hydrogen market: The
-  spectrum of hydrogen colours.
-\emph{Fuel Cells Bulletin}, n.~11, nov. 2020.
-Dispon{\'\i}vel em:
-  \url{https://www.magonlinelibrary.com/doi/epub/10.1016/S1464-2859\%2820\%2930546-0}.}
+\bibitem[NLTK 2022]{Python_NLTK}
+\abntrefinfo{NLTK}{NLTK}{2022}
+{NLTK. \emph{Natural Language Toolkit}. 2022.
+Dispon{\'\i}vel em: \url{https://www.nltk.org}. Acesso em: 11 nov 2022.}
 
 \bibitem[Ortiz, Triani e {Magalh{\~a}es J{\'u}nior}
   2021]{representacoes_metodologia}
@@ -222,20 +251,6 @@ In:  \underline{\ \ \ \ \ \ \ \ }. \emph{Metodologia da Pesquisa em Educa{\c
 ISBN 978-65-87542-35-5.
 Dispon{\'\i}vel em:
   \url{https://www.researchgate.net/profile/Carlos-Magalhaes-Junior/publication/358189924\_Metodologia\_da\_Pesquisa\_em\_Educacao\_e\_Ensino\_de\_Ciencias/links/61f4261caad5781d41b6dd5e/Metodologia-da-Pesquisa-em-Educacao-e-Ensino-de-Ciencias.pdf?origin=publication\_detail}.}
-
-\bibitem[Pasquier 2012]{OECD_IEA_2012}
-\abntrefinfo{Pasquier}{PASQUIER}{2012}
-{\emph{Energy Efficiency Policy Developments}. OECD/IEA, 2012. 24~p.
-Dispon{\'\i}vel em:
-  \url{https://www.oecd-ilibrary.org/docserver/5k3wb8f2dr36-en.pdf?expires=1645614162&id=id&accname=guest&checksum=DCFD9D21AE06347A8F5F3788BEC11727}.}
-
-\bibitem[Profio et al. 2009]{Comparison_hydrogen_hydrates}
-\abntrefinfo{Profio et al.}{PROFIO et al.}{2009}
-{PROFIO, P. et al. Comparison of hydrogen hydrates with existing hydrogen
-  storage technologies: Energetic and economic evaluations.
-\emph{International Journal of Hydrogen Energy}, v.~34, n.~22, p.~7, nov. 2009.
-Dispon{\'\i}vel em:
-  \url{https://www.sciencedirect.com/science/article/abs/pii/S0360319909014967}.}
 
 \bibitem[Rosa e Batista 2021]{PRODUTOS_EDUCACIONAIS}
 \abntrefinfo{Rosa e Batista}{ROSA; BATISTA}{2021}
@@ -254,13 +269,27 @@ Dispon{\'\i}vel em:
   \url{https://professor.escoladigital.pr.gov.br/sites/professores/arquivos\_restritos/files/documento/2022-02/caderno\_itinerarios\_formativos2022.pdf\#page=63;
   https://www.gov.br/mec/pt-br/novo-ensino-medio/itinerarios-formativos-do-novo-ensino-medio}.}
 
-\bibitem[Shevlin e Guo 2009]{B815553B}
-\abntrefinfo{Shevlin e Guo}{SHEVLIN; GUO}{2009}
-{SHEVLIN, S.~A.; GUO, Z.~X. Density functional theory simulations of complex
-  hydride and carbon-based hydrogen storage materials.
-\emph{Chem. Soc. Rev.}, The Royal Society of Chemistry, v.~38, p. 211--225,
-  2009.
-Dispon{\'\i}vel em: \url{http://dx.doi.org/10.1039/B815553B}.}
+\bibitem[Santos et al. 2021]{santos2021visao}
+\abntrefinfo{Santos et al.}{SANTOS et al.}{2021}
+{SANTOS, C.~A. et al. A visão doutrinária do conflito: uma análise crítica
+  e sua representação social.
+\emph{Revista do Instituto de Direito Constitucional e Cidadania-IDCC},
+  Instituto de Direito Constitucional e Cidadania-IDCC, v.~6, n.~2, p.~e031,
+  2021.}
+
+\bibitem[Serge et al. 1985]{psic_social_moscovici1}
+\abntrefinfo{Serge et al.}{SERGE et al.}{1985}
+{SERGE, M. et al. \emph{Psicolog{\'\i}a social 1: Influencia y cambio de
+  actitudes, Individuos y grupos}. [S.l.]: Paid{\'o}s Ib{\'e}rica, S. A., 1985.
+  360~p.
+ISBN 978-84-7509-344-4.}
+
+\bibitem[Silva e Neto 2015]{Silva2015}
+\abntrefinfo{Silva e Neto}{SILVA; NETO}{2015}
+{SILVA, A. S.~d.; NETO, M. H.~L. de. Cana-de-a\c{c}\'{u}car como tema gerador
+  no ensino de qu\'{i}mica. In:  \emph{Anais do Congresso Nacional de Pesquisa
+  e Ensino em Ci\^{e}ncias}. [S.l.]: Universidade Federal de Campina Grande --
+  UFCG, 2015. p.~6.}
 
 \bibitem[Solaun e Cerda 2019]{Climate_quantitative_projections}
 \abntrefinfo{Solaun e Cerda}{SOLAUN; CERDA}{2019}
